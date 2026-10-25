@@ -293,6 +293,20 @@ article .katex-display {
 .map-fallback[hidden] {
   display: none;
 }
+
+.typewriter {
+  display: inline-block;
+  font-family: var(--codeFont), monospace;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: type 2.5s steps(25) forwards;
+}
+
+@keyframes type {
+  to { width: 100%; }
+}
+
 .course-progress {
   padding: 24px 0;
   border-top: 1px solid var(--lightgray);
