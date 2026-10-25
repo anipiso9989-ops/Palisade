@@ -294,17 +294,31 @@ article .katex-display {
   display: none;
 }
 
-.typewriter {
+.summit-hero .typewriter {
   display: inline-block;
-  font-family: var(--codeFont), monospace;
-  overflow: hidden;
   white-space: nowrap;
-  width: 0;
-  animation: type 2.5s steps(25) forwards;
 }
 
-@keyframes type {
-  to { width: 100%; }
+// Reveal the existing text without changing either line's size or accessibility.
+// The full heading stays visible when motion is reduced.
+@media (prefers-reduced-motion: no-preference) {
+  .summit-hero .typewriter {
+    animation: hero-typewriter 1.5s steps(9, end) both;
+  }
+
+  .summit-hero .typewriter ~ .typewriter {
+    animation-delay: 1.5s;
+    animation-timing-function: steps(11, end);
+  }
+}
+
+@keyframes hero-typewriter {
+  from {
+    clip-path: inset(-0.1em 100% -0.1em 0);
+  }
+  to {
+    clip-path: inset(-0.1em 0 -0.1em 0);
+  }
 }
 
 .course-progress {

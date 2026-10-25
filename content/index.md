@@ -5,8 +5,8 @@ description: A free, self-paced education for ambitious independent thinkers.
 
 <div class="summit-hero">
 <h1>
-  <span class="typewriter" style="animation-duration: 1.5s; steps(9);">Go beyond</span><br>
-  <span class="typewriter" style="animation-delay: 1.5s; animation-duration: 1.5s; steps(11);">the <em>answer.</em></span>
+  <span class="typewriter">Go beyond</span><br>
+  <span class="typewriter">the <em>answer.</em></span>
 </h1>
 <p class="hero-intro">Mathematics for those who want to understand it.</p>
 <a class="summit-link internal" href="./#course-catalog">Explore courses</a>
