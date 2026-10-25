@@ -1,0 +1,38 @@
+[
+  {
+    "code": "1.1",
+    "title": "Precalculus",
+    "slug": "precalculus",
+    "level": "Preparatory"
+  },
+  {
+    "code": "2.1",
+    "title": "Calculus I",
+    "slug": "calculus-i",
+    "level": "Foundational"
+  },
+  {
+    "code": "2.2",
+    "title": "Calculus II",
+    "slug": "calculus-ii",
+    "level": "Foundational"
+  },
+  {
+    "code": "2.3",
+    "title": "Calculus III",
+    "slug": "calculus-iii",
+    "level": "Foundational"
+  },
+  {
+    "code": "2.4",
+    "title": "Linear Algebra",
+    "slug": "linear-algebra",
+    "level": "Foundational"
+  },
+  {
+    "code": "2.5",
+    "title": "Differential Equations",
+    "slug": "differential-equations",
+    "level": "Foundational"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "plugins": {
+    "palisade-nav": {
+      "source": "./plugins/palisade-nav",
+      "resolved": "./plugins/palisade-nav",
+      "commit": "local"
+    }
+  }
+}

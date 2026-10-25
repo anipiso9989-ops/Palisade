@@ -1,0 +1,27 @@
+{
+  "name": "palisade-nav",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./components": "./index.js"
+  },
+  "quartz": {
+    "name": "palisade-nav",
+    "displayName": "Palisade navigation",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "components": {
+      "PalisadeNav": {
+        "displayName": "Palisade navigation",
+        "defaultPosition": "left",
+        "defaultPriority": 5
+      }
+    }
+  },
+  "scripts": {
+    "build": "node --check index.js && node --check progress.js"
+  }
+}

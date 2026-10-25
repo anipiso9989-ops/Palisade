@@ -1,0 +1,151 @@
+# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+configuration:
+  pageTitle: Palisade
+  pageTitleSuffix: ""
+  enableSPA: true
+  enablePopovers: false
+  analytics: null
+  locale: en-US
+  baseUrl: anipiso9989-ops.github.io/Palisade
+  ignorePatterns:
+    - private
+    - templates
+    - .obsidian
+  theme:
+    fontOrigin: local
+    cdnCaching: true
+    typography:
+      header: Georgia
+      body: Georgia
+      code: monospace
+    colors:
+      lightMode:
+        light: "#f6f5ef"
+        lightgray: "#dddeda"
+        gray: "#737e77"
+        darkgray: "#45534d"
+        dark: "#243d33"
+        secondary: "#2c5140"
+        tertiary: "#456b76"
+        highlight: rgba(44,81,64,0.07)
+        textHighlight: "#d8c99e66"
+      darkMode:
+        light: "#17251f"
+        lightgray: "#34453b"
+        gray: "#8fa597"
+        darkgray: "#c7d1c9"
+        dark: "#eeeede"
+        secondary: "#b8d0b6"
+        tertiary: "#a8c6ce"
+        highlight: rgba(184,208,182,0.09)
+        textHighlight: "#a48d4566"
+plugins:
+  - source: "@quartz-community/note-properties"
+    enabled: true
+    options:
+      hidePropertiesView: true
+    order: 5
+  - source: "@quartz-community/syntax-highlighting"
+    enabled: true
+    options:
+      theme:
+        light: github-light
+        dark: github-dark
+      keepBackground: false
+    order: 20
+  - source: "@quartz-community/obsidian-flavored-markdown"
+    enabled: true
+    options:
+      enableInHtmlEmbed: false
+      enableCheckbox: true
+    order: 30
+  - source: "@quartz-community/github-flavored-markdown"
+    enabled: true
+    order: 40
+  - source: "@quartz-community/crawl-links"
+    enabled: true
+    options:
+      markdownLinkResolution: relative
+    order: 60
+  - source: "@quartz-community/description"
+    enabled: true
+    order: 70
+  - source: "@quartz-community/latex"
+    enabled: true
+    options:
+      renderEngine: katex
+      customMacros:
+        \R: \mathbb{R}
+        \N: \mathbb{N}
+        \Z: \mathbb{Z}
+        \Q: \mathbb{Q}
+        \C: \mathbb{C}
+    order: 80
+  - source: "@quartz-community/remove-draft"
+    enabled: true
+  - source: "@quartz-community/content-index"
+    enabled: true
+    options:
+      enableSiteMap: true
+      enableRSS: false
+  - source: "@quartz-community/content-page"
+    enabled: true
+  - source: "@quartz-community/folder-page"
+    enabled: true
+    options:
+      showFolderCount: false
+  - source: "@quartz-community/tag-page"
+    enabled: true
+  - source: "@quartz-community/search"
+    enabled: true
+    layout:
+      position: left
+      priority: 15
+  - source: "@quartz-community/article-title"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 10
+      condition: not-index
+  - source: "@quartz-community/darkmode"
+    enabled: true
+    layout:
+      position: left
+      priority: 50
+  - source: "@quartz-community/breadcrumbs"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 5
+      condition: not-index
+  - source: "@quartz-community/footer"
+    enabled: true
+    options:
+      links:
+        GitHub: https://github.com/anipiso9989-ops/Palisade
+    layout:
+      position: footer
+      priority: 50
+  - source: "@quartz-community/unlisted-pages"
+    enabled: true
+    options: {}
+    order: 45
+  - source: ./plugins/palisade-nav
+    enabled: true
+    layout:
+      position: left
+      priority: 5
+layout:
+  byPageType:
+    "404":
+      positions:
+        beforeBody: []
+        left: []
+        right: []
+    content: {}
+    folder:
+      positions:
+        right: []
+    tag:
+      positions:
+        right: []
