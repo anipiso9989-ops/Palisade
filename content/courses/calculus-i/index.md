@@ -16,4 +16,4 @@ Materials are in preparation. No lessons are published yet.
 
 <div class="course-progress" data-course="2.1" aria-live="polite" hidden></div>
 
-[All courses](../../index#course-catalog)
+[All courses](../../#course-catalog)

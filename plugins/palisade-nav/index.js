@@ -20,7 +20,7 @@ export const PalisadeNav = () => {
       h(
         "a",
         {
-          href: `${root}/${url}`,
+          href: `${root}/${url}${url ? "/" : ""}`,
           class: "palisade-nav-link internal",
           "aria-current":
             current === url || (url === "" && current === "index") ? "page" : undefined,
@@ -50,22 +50,7 @@ export const PalisadeNav = () => {
     return h(
       "div",
       { class: "palisade-navigation" },
-      h(
-        "a",
-        { class: "palisade-brand", href: `${root}/`, "aria-label": "Palisade home" },
-        h(
-          "svg",
-          { viewBox: "0 0 48 48", "aria-hidden": "true", width: 40, height: 40 },
-          h("path", {
-            d: "M10 38V10h16a10 10 0 0 1 0 20H10 M18 38V18h8a2 2 0 0 1 0 4h-8",
-            fill: "none",
-            stroke: "currentColor",
-            "stroke-width": 1.6,
-            "stroke-linejoin": "round",
-          }),
-        ),
-        h("span", {}, "Palisade"),
-      ),
+      h("a", { class: "site-name", href: `${root}/` }, "Palisade"),
       h(
         "nav",
         { "aria-label": "Primary navigation", class: "palisade-primary" },

@@ -156,20 +156,11 @@ article .katex-display {
 .palisade-navigation {
   width: 100%;
 }
-.palisade-brand {
-  display: flex;
-  gap: 8px;
-  align-items: center;
+.site-name {
+  display: block;
+  font: 500 1.2rem/1.5 var(--ui-font);
   color: var(--dark);
   margin-bottom: 44px;
-}
-.palisade-brand svg {
-  color: var(--secondary);
-  flex-shrink: 0;
-}
-.palisade-brand > span {
-  font: 600 1.55rem/1 var(--ui-font);
-  letter-spacing: -0.06em;
 }
 .palisade-primary,
 .palisade-courses {
@@ -397,7 +388,7 @@ progress {
     border-right: 0;
     border-bottom: 1px solid var(--lightgray);
   }
-  .palisade-brand {
+  .site-name {
     margin-bottom: 22px;
   }
   .palisade-primary {
@@ -468,5 +459,27 @@ progress {
   *::after {
     transition: none !important;
     animation: none !important;
+  }
+}
+
+.world-section {
+  margin-top: 64px;
+}
+.world-section > h2 {
+  font: 500 clamp(2rem, 3.5vw, 3.2rem)/1.2 var(--ui-font);
+  letter-spacing: -0.045em;
+  color: var(--dark);
+  max-width: 22ch;
+  margin: 0 0 24px;
+}
+.world-section .world-map {
+  margin-top: 0;
+}
+@media (max-width: 800px) {
+  .world-section {
+    margin-top: 40px;
+  }
+  .world-section > h2 {
+    font-size: clamp(1.5rem, 6.5vw, 2rem);
   }
 }
