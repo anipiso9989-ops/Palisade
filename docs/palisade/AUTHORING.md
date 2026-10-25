@@ -34,6 +34,6 @@ Rocky Mountain National Park inspires the palette and linework: spruce, granite,
 
 Theme colors and typography live in `quartz.config.yaml`; layout styling in `quartz/styles/custom.scss`; navigation and local progress in `plugins/palisade-nav/`. Content remains Markdown-first. Course metadata for the sidebar is in `plugins/palisade-nav/courses.json`.
 
-## GitHub Pages (when ready)
+## GitHub Pages
 
-The supplied workflow checks and builds pushes and pull requests. Deployment is manual: select **Settings → Pages → Source: GitHub Actions**, then run **Palisade / Deploy to Pages** from Actions. The configured base URL is `anipiso9989-ops.github.io/Palisade`. For a custom domain, update `configuration.baseUrl` and configure DNS before enabling the CNAME plugin. GitHub Pages availability for a private repository depends on your GitHub plan. No deployment is required to use or edit the repository.
+The build workflow checks pushes and pull requests. The Pages workflow rebuilds and publishes on every push to the default `v5` branch, and it also supports manual deployment from that branch. For one-time setup, select **Settings → Pages → Source: GitHub Actions**, then run **Palisade / Deploy to Pages** from `v5` for the first deployment. Subsequent updates to `v5` publish automatically after type checking and the build succeed. A failed build leaves the previous site online. The configured base URL is `anipiso9989-ops.github.io/Palisade`. For a custom domain, update `configuration.baseUrl` and configure DNS before enabling the CNAME plugin. GitHub Pages availability for a private repository depends on your GitHub plan. No deployment is required to use or edit the repository.
