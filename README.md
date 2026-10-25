@@ -2,7 +2,7 @@
 
 **Mastery over memorization. Depth over breadth. Excellence by default.**
 
-An independent, text-first mathematics education project for ambitious students, built with **Quartz 5.0.0**. A dark-first interface with layered charcoal surfaces, off-white typography, mint accents, and an interactive dotted world map.
+An independent, text-first mathematics education project for ambitious students, built with **Quartz 5.0.0**. A dark-first interface with charcoal surfaces, off-white typography, a fully neutral palette, and an interactive dotted world map.
 
 ## Current state
 
@@ -61,3 +61,5 @@ The home-page canvas adapts the supplied React component for Quartz's static, Pr
 The map observes container resizing, pauses outside the viewport and in hidden tabs, renders a static map for reduced motion, and cleans up listeners and animation frames on navigation. It has no geographic analytics or location claims. The silhouette is embedded and makes no network requests.
 
 Design reference: [Dark Mode Design Expert](https://github.com/curiositech/some_claude_skills/blob/main/.claude/skills/dark-mode-design-expert/SKILL.md), particularly semantic color tokens, tonal elevation, and contrast. Palisade intentionally stays dark regardless of OS preference; both Quartz palettes match, and the initial theme is set before paint so code highlighting also uses dark colors.
+
+The landing page uses self-hosted Cascadia Mono (400, 500, and 600 weights, Latin subset) from `@fontsource/cascadia-mono` 5.3.0. Its SIL Open Font License is included beside the font files. All interface, branding, and map colors use equal RGB channels; links, focus states, and status labels stay distinguishable through contrast and structure.

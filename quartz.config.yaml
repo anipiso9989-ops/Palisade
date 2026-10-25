@@ -22,25 +22,25 @@ configuration:
     colors:
       # Both palettes are intentionally dark: no light flash, regardless of OS or saved preference.
       lightMode:
-        light: "#0a0a0c"
-        lightgray: "#303137"
-        gray: "#a1a1ab"
-        darkgray: "#c4c4cc"
-        dark: "#ececf0"
-        secondary: "#a3e6c5"
-        tertiary: "#c0f4dc"
-        highlight: rgba(163,230,197,0.07)
-        textHighlight: "#a3e6c533"
+        light: "#0a0a0a"
+        lightgray: "#303030"
+        gray: "#a1a1a1"
+        darkgray: "#c4c4c4"
+        dark: "#ececec"
+        secondary: "#dedede"
+        tertiary: "#f2f2f2"
+        highlight: rgba(222,222,222,0.07)
+        textHighlight: "#dedede33"
       darkMode:
-        light: "#0a0a0c"
-        lightgray: "#303137"
-        gray: "#a1a1ab"
-        darkgray: "#c4c4cc"
-        dark: "#ececf0"
-        secondary: "#a3e6c5"
-        tertiary: "#c0f4dc"
-        highlight: rgba(163,230,197,0.07)
-        textHighlight: "#a3e6c533"
+        light: "#0a0a0a"
+        lightgray: "#303030"
+        gray: "#a1a1a1"
+        darkgray: "#c4c4c4"
+        dark: "#ececec"
+        secondary: "#dedede"
+        tertiary: "#f2f2f2"
+        highlight: rgba(222,222,222,0.07)
+        textHighlight: "#dedede33"
 plugins:
   - source: "@quartz-community/note-properties"
     enabled: true

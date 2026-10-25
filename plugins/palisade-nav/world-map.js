@@ -95,13 +95,13 @@
         const alpha = Math.min(1, Math.max(0.08, baseAlpha + glow * 0.75))
         // Scale dots down on small containers so coastlines stay legible.
         const radius = Math.min(1.35, (mapW / GRID_COLS) * 0.38) * (1 + glow * 0.35)
-        ctx.fillStyle = `rgba(236, 236, 240, ${alpha.toFixed(3)})`
+        ctx.fillStyle = `rgba(236, 236, 236, ${alpha.toFixed(3)})`
         ctx.beginPath()
         ctx.arc(px, py, radius, 0, Math.PI * 2)
         ctx.fill()
       }
       if (!motion.matches && mouse.presence > 0.01) {
-        ctx.strokeStyle = `rgba(236, 236, 240, ${0.85 * mouse.presence})`
+        ctx.strokeStyle = `rgba(236, 236, 236, ${0.85 * mouse.presence})`
         ctx.lineWidth = 1
         ctx.beginPath()
         ctx.arc(mouse.x, mouse.y, 10, 0, Math.PI * 2)
