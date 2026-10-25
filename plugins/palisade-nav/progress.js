@@ -1,5 +1,5 @@
 // This file is shipped as a Quartz afterDOMLoaded resource. No network requests.
-(() => {
+;(() => {
   function renderProgress() {
     const data = document.getElementById("palisade-progress-data")
     if (!data) return
@@ -11,15 +11,22 @@
     try {
       const raw = JSON.parse(localStorage.getItem(key) || "{}")
       if (raw && typeof raw === "object" && !Array.isArray(raw)) saved = raw
-    } catch { storageAvailable = false }
-    const count = (course) => items.filter((i) => (!course || i.course === course) && saved[i.id] === true).length
+    } catch {
+      storageAvailable = false
+    }
+    const count = (course) =>
+      items.filter((i) => (!course || i.course === course) && saved[i.id] === true).length
     const total = (course) => items.filter((i) => !course || i.course === course).length
-    const message = (course) => !storageAvailable
-      ? "Browser storage is unavailable. Progress cannot be saved here."
-      : total(course) ? `${count(course)} of ${total(course)} articles marked complete`
-      : "No articles published yet. Your ascent begins when the first materials arrive."
+    const message = (course) =>
+      !storageAvailable
+        ? "Browser storage is unavailable. Progress cannot be saved here."
+        : total(course)
+          ? `${count(course)} of ${total(course)} articles marked complete`
+          : "No articles published yet."
     document.querySelectorAll(".course-progress").forEach((el) => {
       el.replaceChildren()
+      el.hidden = total(el.dataset.course) === 0
+      if (el.hidden) return
       const title = document.createElement("h3")
       title.textContent = "Your reading progress"
       const p = document.createElement("p")
@@ -29,13 +36,18 @@
     const dashboard = document.querySelector(".progress-dashboard")
     if (dashboard) {
       dashboard.replaceChildren()
-      for (const course of courses) {
+      if (!items.length) {
+        const empty = document.createElement("p")
+        empty.textContent = "No articles are available to track yet."
+        dashboard.append(empty)
+      }
+      for (const course of courses.filter((c) => total(c.code) > 0)) {
         const row = document.createElement("section")
         row.className = "progress-row"
         const label = document.createElement("h2")
-        label.textContent = `${course.code} — ${course.title}`
+        label.textContent = course.title
         const text = document.createElement("p")
-        text.textContent = total(course.code) ? message(course.code) : "Planned · No articles published"
+        text.textContent = message(course.code)
         row.append(label, text)
         if (total(course.code)) {
           const meter = document.createElement("progress")
@@ -61,7 +73,8 @@
       button.setAttribute("aria-pressed", String(completed))
       button.textContent = completed ? "Article complete · Undo" : "Mark article complete"
       document.getElementById("completion-status").textContent = storageAvailable
-        ? "Saved only in this browser." : message()
+        ? "Saved only in this browser."
+        : message()
       button.onclick = () => {
         saved[id] = !completed
         try {
@@ -69,7 +82,8 @@
           renderProgress()
         } catch {
           button.disabled = true
-          document.getElementById("completion-status").textContent = "Browser storage is unavailable. This change was not saved."
+          document.getElementById("completion-status").textContent =
+            "Browser storage is unavailable. This change was not saved."
         }
       }
     }

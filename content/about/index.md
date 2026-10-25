@@ -1,9 +1,7 @@
 ---
-title: The Palisade philosophy
+title: Philosophy
 description: Mastery over memorization. Depth over breadth. Excellence by default.
 ---
-
-<div class="eyebrow">THE STANDARD / OUR PURPOSE</div>
 
 Palisade is an independent mathematics education project for exceptionally ambitious students. Its aim is to cultivate world-class mathematical thinkers through an uncompromising commitment to intellectual excellence.
 
@@ -25,13 +23,13 @@ All instruction will be text-based, free, and self-paced. No video lectures. Mat
 
 ## The academic path
 
-| Level | Designation |
-| --- | --- |
-| 1.X | Preparatory |
-| 2.X | Foundational |
-| 3.X | Intermediate |
-| 4.X | Advanced |
-| 5.X | Specialized |
+| Level | Designation  |
+| ----- | ------------ |
+| 1.X   | Preparatory  |
+| 2.X   | Foundational |
+| 3.X   | Intermediate |
+| 4.X   | Advanced     |
+| 5.X   | Specialized  |
 
 The initial scope is six mathematics courses, beginning with **1.1 — Precalculus**. Academic quality and curricular coherence take priority over catalog expansion.
 

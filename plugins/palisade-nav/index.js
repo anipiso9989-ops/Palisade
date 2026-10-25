@@ -64,32 +64,19 @@ export const PalisadeNav = () => {
             "stroke-linejoin": "round",
           }),
         ),
-        h("span", {}, "Palisade", h("small", {}, "MATHEMATICS")),
+        h("span", {}, "Palisade"),
       ),
       h(
         "nav",
         { "aria-label": "Primary navigation", class: "palisade-primary" },
-        link("", "Overview"),
+        link("", "Home"),
         link("about", "Philosophy"),
-        link("progress", "Your progress"),
+        link("progress", "Progress"),
       ),
       h(
         "nav",
         { "aria-label": "Course navigation", class: "palisade-courses" },
-        h("p", { class: "nav-label" }, "THE CURRICULUM"),
-        ...courses.map((c) =>
-          link(`courses/${c.slug}`, [
-            h("span", { class: "nav-code" }, c.code),
-            h("span", {}, c.title),
-          ]),
-        ),
-      ),
-      h(
-        "div",
-        { class: "palisade-sidebar-note" },
-        h("span", { class: "sidebar-rule" }),
-        h("p", {}, "The discipline to go deeper."),
-        h("small", {}, "FREE · SELF-PACED · TEXT-FIRST"),
+        ...courses.map((c) => link(`courses/${c.slug}`, c.title)),
       ),
       h("div", {
         id: "palisade-progress-data",

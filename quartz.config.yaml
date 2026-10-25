@@ -115,13 +115,13 @@ plugins:
       position: left
       priority: 50
   - source: "@quartz-community/breadcrumbs"
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 5
       condition: not-index
   - source: "@quartz-community/footer"
-    enabled: true
+    enabled: false
     options:
       links:
         GitHub: https://github.com/anipiso9989-ops/Palisade
