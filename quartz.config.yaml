@@ -2,7 +2,8 @@
 configuration:
   pageTitle: Palisade
   pageTitleSuffix: ""
-  enableSPA: true
+  # Let GitHub Pages canonicalize directory URLs during full page navigation.
+  enableSPA: false
   enablePopovers: false
   analytics: null
   locale: en-US
