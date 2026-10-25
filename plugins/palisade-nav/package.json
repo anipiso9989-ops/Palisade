@@ -22,6 +22,6 @@
     }
   },
   "scripts": {
-    "build": "node --check index.js && node --check progress.js && node --check world-map.js"
+    "build": "node --check index.js && node --check progress.js && node --check world-map.js && node --check curriculum.js && node --check tree.js"
   }
 }

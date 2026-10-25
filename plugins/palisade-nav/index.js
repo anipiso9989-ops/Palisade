@@ -1,10 +1,14 @@
 import { h } from "preact"
 import { readFileSync } from "node:fs"
+import { curriculumTree } from "./curriculum.js"
 
 const courses = JSON.parse(readFileSync(new URL("./courses.json", import.meta.url), "utf8"))
-const clientScript = ["progress.js", "world-map.js"]
+const curriculum = JSON.parse(readFileSync(new URL("./curriculum.json", import.meta.url), "utf8"))
+const tree = curriculumTree(courses, curriculum)
+const clientScript = ["progress.js", "world-map.js", "tree.js"]
   .map((file) => readFileSync(new URL(file, import.meta.url), "utf8"))
   .join("\n;\n")
+  .replace("__CURRICULUM_TREE__", JSON.stringify(tree))
 const rootOf = (slug) =>
   slug
     .split("/")
@@ -28,10 +32,41 @@ export const PalisadeNav = () => {
         },
         title,
       )
+    const isAncestor = (path) => current === path || current.startsWith(`${path}/`)
+    const chevron = () =>
+      h(
+        "svg",
+        {
+          class: "tree-chevron",
+          viewBox: "0 0 16 16",
+          width: 16,
+          height: 16,
+          "aria-hidden": "true",
+        },
+        h("path", { d: "m6 3 5 5-5 5", fill: "none", stroke: "currentColor", "stroke-width": 1.5 }),
+      )
+    const renderTree = (nodes) =>
+      nodes.map((node) => {
+        const anchor = link(node.path, node.title, { class: "tree-link internal" })
+        if (!node.children) return anchor
+        const active = isAncestor(node.path)
+        return h(
+          "details",
+          {
+            class: "tree-branch",
+            open: active,
+            "data-path": node.path,
+            "data-loaded": String(active),
+          },
+          h("summary", {}, chevron(), anchor),
+          h("div", { class: "tree-children" }, active ? renderTree(node.children) : null),
+        )
+      })
     const items = allFiles
       .filter(
         (f) =>
           f.frontmatter?.trackable === true &&
+          f.frontmatter?.placeholder !== true &&
           f.frontmatter?.kind === "article" &&
           f.frontmatter?.draft !== true &&
           f.frontmatter?.unlisted !== true &&
@@ -59,9 +94,19 @@ export const PalisadeNav = () => {
         link("progress", "Progress"),
       ),
       h(
-        "nav",
-        { "aria-label": "Course navigation", class: "palisade-courses" },
-        ...courses.map((c) => link(`courses/${c.slug}`, c.title)),
+        "details",
+        { class: "curriculum-panel", open: true },
+        h("summary", { class: "curriculum-toggle" }, chevron(), "Courses"),
+        h(
+          "nav",
+          {
+            "aria-label": "Course navigation",
+            class: "palisade-courses",
+            "data-tree-root": root,
+            "data-current": current,
+          },
+          ...renderTree(tree),
+        ),
       ),
       h("div", {
         id: "palisade-progress-data",

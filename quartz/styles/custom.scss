@@ -483,3 +483,111 @@ progress {
     font-size: clamp(1.5rem, 6.5vw, 2rem);
   }
 }
+
+/* Ordered curriculum folders: native keyboard-accessible toggles and separate links. */
+.page > #quartz-body {
+  grid-template-columns: 300px minmax(0, 1fr);
+  column-gap: 56px;
+}
+.page > #quartz-body .sidebar.left {
+  width: 300px;
+}
+.curriculum-panel {
+  border-top: 1px solid var(--lightgray);
+  padding-top: 20px;
+}
+.curriculum-panel > .curriculum-toggle {
+  display: none;
+}
+.palisade-courses {
+  border: 0;
+  padding-top: 0;
+  gap: 2px;
+}
+.tree-branch > summary,
+.curriculum-toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 4px;
+}
+.tree-branch > summary::-webkit-details-marker,
+.curriculum-toggle::-webkit-details-marker {
+  display: none;
+}
+.tree-chevron {
+  flex: 0 0 16px;
+  margin-top: 11px;
+  transition: transform 0.15s;
+  color: var(--gray);
+}
+.tree-branch[open] > summary > .tree-chevron,
+.curriculum-panel[open] > summary > .tree-chevron {
+  transform: rotate(90deg);
+}
+.tree-link.internal {
+  display: block;
+  background: transparent;
+  padding: 10px 5px;
+  font: 400 0.74rem/1.5 var(--ui-font);
+  color: var(--gray);
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+.tree-branch > summary > .tree-link {
+  flex: 1;
+  min-width: 0;
+}
+.tree-link.internal:hover {
+  color: var(--dark);
+  background: var(--surface-raised);
+}
+.tree-link[aria-current="page"] {
+  color: var(--dark);
+  background: var(--highlight);
+  font-weight: 500;
+}
+.tree-children {
+  margin-left: 8px;
+  padding-left: 12px;
+  border-left: 1px solid var(--lightgray);
+}
+.page-header .article-title {
+  overflow-wrap: anywhere;
+}
+@media (min-width: 801px) and (max-width: 1100px) {
+  .page > #quartz-body {
+    grid-template-columns: 250px minmax(0, 1fr);
+    column-gap: 32px;
+  }
+  .page > #quartz-body .sidebar.left {
+    width: 250px;
+  }
+}
+@media (max-width: 800px) {
+  .page > #quartz-body .sidebar.left {
+    width: 100%;
+  }
+  .curriculum-panel {
+    margin-top: 20px;
+  }
+  .curriculum-panel > .curriculum-toggle {
+    display: flex;
+    padding: 0 4px 8px;
+    font: 0.8rem/1.5 var(--ui-font);
+  }
+  .curriculum-toggle > .tree-chevron {
+    margin-top: 0;
+  }
+  .palisade-courses {
+    display: flex;
+    max-height: 55vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .tree-link.internal {
+    font-size: 0.78rem;
+  }
+}

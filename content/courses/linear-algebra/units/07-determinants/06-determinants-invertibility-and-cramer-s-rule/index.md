@@ -1,0 +1,11 @@
+---
+title: "7.6 — Determinants, Invertibility, and Cramer's Rule"
+course: "2.4"
+kind: "article"
+placeholder: true
+trackable: false
+unit: "07"
+topic: "7.6"
+---
+
+<!-- Empty curriculum page; instructional content has not been authored. -->

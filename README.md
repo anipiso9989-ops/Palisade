@@ -6,7 +6,7 @@ An independent, text-first mathematics education project for ambitious students,
 
 ## Current state
 
-An empty academic scaffold. The initial catalog has six clearly labeled planned course shells. There are **no authored lessons, syllabi, practice sets, solutions, or examinations** yet.
+The six courses have navigable, empty curriculum structures: 83 units and 664 topics, with a syllabus for each course, one examination per unit, and equivalent final examination placeholders A and B. No lesson, syllabus, problem set, solution, or examination content has been authored. Empty pages do not count toward reading progress.
 
 | Course | Title                  | Level        |
 | ------ | ---------------------- | ------------ |
@@ -38,7 +38,7 @@ npm run build
 
 - Responsive dark design, accessible focus states, and readable mathematical typography.
 - Quartz search, Markdown navigation, KaTeX, drafts, and a local navigation plugin.
-- Browser-local completion tracking for future published articles, with an honest empty state today.
+- Browser-local completion tracking for authored articles; empty curriculum pages are excluded.
 - Authoring templates for units, articles, practice, and examinations.
 - CI builds and automatic GitHub Pages deployment on every push to `v5` (after Pages is enabled).
 

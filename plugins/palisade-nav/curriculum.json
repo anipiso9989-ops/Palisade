@@ -1,0 +1,3939 @@
+{
+  "calculus-ii": {
+    "code": "2.2",
+    "title": "Calculus II",
+    "units": [
+      {
+        "number": 1,
+        "title": "Integration by Parts and Structural Methods",
+        "slug": "01-integration-by-parts-and-structural-methods",
+        "topics": [
+          {
+            "number": "1.1",
+            "title": "Review of Antiderivatives and Definite Integration",
+            "slug": "01-review-of-antiderivatives-and-definite-integration"
+          },
+          {
+            "number": "1.2",
+            "title": "Integration by Parts from the Product Rule",
+            "slug": "02-integration-by-parts-from-the-product-rule"
+          },
+          {
+            "number": "1.3",
+            "title": "Integration by Parts for Algebraic and Transcendental Functions",
+            "slug": "03-integration-by-parts-for-algebraic-and-transcendental-functions"
+          },
+          {
+            "number": "1.4",
+            "title": "Repeated Integration by Parts",
+            "slug": "04-repeated-integration-by-parts"
+          },
+          {
+            "number": "1.5",
+            "title": "Cyclic Integrals and Algebraic Resolution",
+            "slug": "05-cyclic-integrals-and-algebraic-resolution"
+          },
+          {
+            "number": "1.6",
+            "title": "Definite Integrals and Boundary Terms",
+            "slug": "06-definite-integrals-and-boundary-terms"
+          },
+          {
+            "number": "1.7",
+            "title": "Reduction Formulas and Recursive Integration",
+            "slug": "07-reduction-formulas-and-recursive-integration"
+          },
+          {
+            "number": "1.8",
+            "title": "Strategic Selection of Integration Methods",
+            "slug": "08-strategic-selection-of-integration-methods"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Trigonometric Integration and Substitution",
+        "slug": "02-trigonometric-integration-and-substitution",
+        "topics": [
+          {
+            "number": "2.1",
+            "title": "Integrals of Powers of Sine and Cosine",
+            "slug": "01-integrals-of-powers-of-sine-and-cosine"
+          },
+          {
+            "number": "2.2",
+            "title": "Integrals of Powers of Tangent and Secant",
+            "slug": "02-integrals-of-powers-of-tangent-and-secant"
+          },
+          {
+            "number": "2.3",
+            "title": "Trigonometric Identities in Integration",
+            "slug": "03-trigonometric-identities-in-integration"
+          },
+          {
+            "number": "2.4",
+            "title": "Products of Trigonometric Functions",
+            "slug": "04-products-of-trigonometric-functions"
+          },
+          {
+            "number": "2.5",
+            "title": "Trigonometric Substitution for Quadratic Radicals",
+            "slug": "05-trigonometric-substitution-for-quadratic-radicals"
+          },
+          {
+            "number": "2.6",
+            "title": "Completing the Square and Substitution Selection",
+            "slug": "06-completing-the-square-and-substitution-selection"
+          },
+          {
+            "number": "2.7",
+            "title": "The Tangent Half-Angle Substitution",
+            "slug": "07-the-tangent-half-angle-substitution"
+          },
+          {
+            "number": "2.8",
+            "title": "Advanced Trigonometric Integrals and Exact Evaluation",
+            "slug": "08-advanced-trigonometric-integrals-and-exact-evaluation"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "title": "Rational Functions and Advanced Integration Strategies",
+        "slug": "03-rational-functions-and-advanced-integration-strategies",
+        "topics": [
+          {
+            "number": "3.1",
+            "title": "Rational Functions and Polynomial Division",
+            "slug": "01-rational-functions-and-polynomial-division"
+          },
+          {
+            "number": "3.2",
+            "title": "Partial Fractions with Distinct Linear Factors",
+            "slug": "02-partial-fractions-with-distinct-linear-factors"
+          },
+          {
+            "number": "3.3",
+            "title": "Partial Fractions with Repeated Linear Factors",
+            "slug": "03-partial-fractions-with-repeated-linear-factors"
+          },
+          {
+            "number": "3.4",
+            "title": "Irreducible Quadratic Factors",
+            "slug": "04-irreducible-quadratic-factors"
+          },
+          {
+            "number": "3.5",
+            "title": "Repeated Irreducible Quadratic Factors",
+            "slug": "05-repeated-irreducible-quadratic-factors"
+          },
+          {
+            "number": "3.6",
+            "title": "Integration of General Rational Functions",
+            "slug": "06-integration-of-general-rational-functions"
+          },
+          {
+            "number": "3.7",
+            "title": "Algebraic Substitutions and Rationalization",
+            "slug": "07-algebraic-substitutions-and-rationalization"
+          },
+          {
+            "number": "3.8",
+            "title": "Advanced Integration Strategies and Non-Elementary Antiderivatives",
+            "slug": "08-advanced-integration-strategies-and-non-elementary-antiderivatives"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Geometric Applications of Definite Integration",
+        "slug": "04-geometric-applications-of-definite-integration",
+        "topics": [
+          {
+            "number": "4.1",
+            "title": "Signed Area and Geometric Area",
+            "slug": "01-signed-area-and-geometric-area"
+          },
+          {
+            "number": "4.2",
+            "title": "Area Between Curves Revisited",
+            "slug": "02-area-between-curves-revisited"
+          },
+          {
+            "number": "4.3",
+            "title": "Cross-Sectional Areas and Volume by Slicing",
+            "slug": "03-cross-sectional-areas-and-volume-by-slicing"
+          },
+          {
+            "number": "4.4",
+            "title": "Volumes of Solids of Revolution: The Disk Method",
+            "slug": "04-volumes-of-solids-of-revolution-the-disk-method"
+          },
+          {
+            "number": "4.5",
+            "title": "Volumes of Solids of Revolution: The Washer Method",
+            "slug": "05-volumes-of-solids-of-revolution-the-washer-method"
+          },
+          {
+            "number": "4.6",
+            "title": "Volumes of Solids of Revolution: The Shell Method",
+            "slug": "06-volumes-of-solids-of-revolution-the-shell-method"
+          },
+          {
+            "number": "4.7",
+            "title": "Choosing Coordinates and Constructing Volume Integrals",
+            "slug": "07-choosing-coordinates-and-constructing-volume-integrals"
+          },
+          {
+            "number": "4.8",
+            "title": "Advanced Geometric Integration Problems",
+            "slug": "08-advanced-geometric-integration-problems"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "title": "Arc Length, Surface Area, and Physical Applications",
+        "slug": "05-arc-length-surface-area-and-physical-applications",
+        "topics": [
+          {
+            "number": "5.1",
+            "title": "Arc Length of a Smooth Plane Curve",
+            "slug": "01-arc-length-of-a-smooth-plane-curve"
+          },
+          {
+            "number": "5.2",
+            "title": "Derivation and Application of the Arc Length Formula",
+            "slug": "02-derivation-and-application-of-the-arc-length-formula"
+          },
+          {
+            "number": "5.3",
+            "title": "Surface Area of Solids of Revolution",
+            "slug": "03-surface-area-of-solids-of-revolution"
+          },
+          {
+            "number": "5.4",
+            "title": "Work Done by a Variable Force",
+            "slug": "04-work-done-by-a-variable-force"
+          },
+          {
+            "number": "5.5",
+            "title": "Hooke's Law and Elastic Work",
+            "slug": "05-hooke-s-law-and-elastic-work"
+          },
+          {
+            "number": "5.6",
+            "title": "Fluid Pressure and Hydrostatic Force",
+            "slug": "06-fluid-pressure-and-hydrostatic-force"
+          },
+          {
+            "number": "5.7",
+            "title": "Mass, Moments, and Centers of Mass in One Dimension",
+            "slug": "07-mass-moments-and-centers-of-mass-in-one-dimension"
+          },
+          {
+            "number": "5.8",
+            "title": "Average Value and Weighted Accumulation",
+            "slug": "08-average-value-and-weighted-accumulation"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "title": "Numerical Integration and Error Analysis",
+        "slug": "06-numerical-integration-and-error-analysis",
+        "topics": [
+          {
+            "number": "6.1",
+            "title": "The Need for Numerical Integration",
+            "slug": "01-the-need-for-numerical-integration"
+          },
+          {
+            "number": "6.2",
+            "title": "Left, Right, and Midpoint Riemann Sum Approximations",
+            "slug": "02-left-right-and-midpoint-riemann-sum-approximations"
+          },
+          {
+            "number": "6.3",
+            "title": "The Trapezoidal Rule",
+            "slug": "03-the-trapezoidal-rule"
+          },
+          {
+            "number": "6.4",
+            "title": "The Midpoint Rule",
+            "slug": "04-the-midpoint-rule"
+          },
+          {
+            "number": "6.5",
+            "title": "Simpson's Rule",
+            "slug": "05-simpson-s-rule"
+          },
+          {
+            "number": "6.6",
+            "title": "Error Bounds for Numerical Integration",
+            "slug": "06-error-bounds-for-numerical-integration"
+          },
+          {
+            "number": "6.7",
+            "title": "Convergence and Accuracy of Numerical Approximations",
+            "slug": "07-convergence-and-accuracy-of-numerical-approximations"
+          },
+          {
+            "number": "6.8",
+            "title": "Choosing and Justifying Numerical Integration Methods",
+            "slug": "08-choosing-and-justifying-numerical-integration-methods"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "title": "Improper Integrals",
+        "slug": "07-improper-integrals",
+        "topics": [
+          {
+            "number": "7.1",
+            "title": "Improper Integrals over Unbounded Intervals",
+            "slug": "01-improper-integrals-over-unbounded-intervals"
+          },
+          {
+            "number": "7.2",
+            "title": "Improper Integrals with Unbounded Integrands",
+            "slug": "02-improper-integrals-with-unbounded-integrands"
+          },
+          {
+            "number": "7.3",
+            "title": "Convergence and Divergence of Improper Integrals",
+            "slug": "03-convergence-and-divergence-of-improper-integrals"
+          },
+          {
+            "number": "7.4",
+            "title": "Power Integrals and the p-Test",
+            "slug": "04-power-integrals-and-the-p-test"
+          },
+          {
+            "number": "7.5",
+            "title": "Direct Comparison for Improper Integrals",
+            "slug": "05-direct-comparison-for-improper-integrals"
+          },
+          {
+            "number": "7.6",
+            "title": "Limit Comparison and Asymptotic Behavior",
+            "slug": "06-limit-comparison-and-asymptotic-behavior"
+          },
+          {
+            "number": "7.7",
+            "title": "Absolute and Conditional Convergence of Improper Integrals",
+            "slug": "07-absolute-and-conditional-convergence-of-improper-integrals"
+          },
+          {
+            "number": "7.8",
+            "title": "Advanced Improper Integrals and Convergence Arguments",
+            "slug": "08-advanced-improper-integrals-and-convergence-arguments"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "title": "Parametric Calculus",
+        "slug": "08-parametric-calculus",
+        "topics": [
+          {
+            "number": "8.1",
+            "title": "Parametric Curves and Their Representations",
+            "slug": "01-parametric-curves-and-their-representations"
+          },
+          {
+            "number": "8.2",
+            "title": "Derivatives of Parametrically Defined Curves",
+            "slug": "02-derivatives-of-parametrically-defined-curves"
+          },
+          {
+            "number": "8.3",
+            "title": "Tangent Lines and Regular Points",
+            "slug": "03-tangent-lines-and-regular-points"
+          },
+          {
+            "number": "8.4",
+            "title": "Second Derivatives and Concavity",
+            "slug": "04-second-derivatives-and-concavity"
+          },
+          {
+            "number": "8.5",
+            "title": "Motion Along Parametric Curves",
+            "slug": "05-motion-along-parametric-curves"
+          },
+          {
+            "number": "8.6",
+            "title": "Arc Length of Parametric Curves",
+            "slug": "06-arc-length-of-parametric-curves"
+          },
+          {
+            "number": "8.7",
+            "title": "Area Associated with Parametric Curves",
+            "slug": "07-area-associated-with-parametric-curves"
+          },
+          {
+            "number": "8.8",
+            "title": "Advanced Parametric Curve Analysis",
+            "slug": "08-advanced-parametric-curve-analysis"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "title": "Polar Calculus",
+        "slug": "09-polar-calculus",
+        "topics": [
+          {
+            "number": "9.1",
+            "title": "Polar Coordinates and Curve Representation",
+            "slug": "01-polar-coordinates-and-curve-representation"
+          },
+          {
+            "number": "9.2",
+            "title": "Symmetry and Geometric Analysis of Polar Curves",
+            "slug": "02-symmetry-and-geometric-analysis-of-polar-curves"
+          },
+          {
+            "number": "9.3",
+            "title": "Tangent Lines and Polar Derivatives",
+            "slug": "03-tangent-lines-and-polar-derivatives"
+          },
+          {
+            "number": "9.4",
+            "title": "Area Enclosed by Polar Curves",
+            "slug": "04-area-enclosed-by-polar-curves"
+          },
+          {
+            "number": "9.5",
+            "title": "Area Between Polar Curves",
+            "slug": "05-area-between-polar-curves"
+          },
+          {
+            "number": "9.6",
+            "title": "Arc Length in Polar Coordinates",
+            "slug": "06-arc-length-in-polar-coordinates"
+          },
+          {
+            "number": "9.7",
+            "title": "Intersection Points and Multiple Representations",
+            "slug": "07-intersection-points-and-multiple-representations"
+          },
+          {
+            "number": "9.8",
+            "title": "Advanced Polar Integration and Curve Analysis",
+            "slug": "08-advanced-polar-integration-and-curve-analysis"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "title": "Infinite Sequences",
+        "slug": "10-infinite-sequences",
+        "topics": [
+          {
+            "number": "10.1",
+            "title": "Infinite Sequences and Their Limits",
+            "slug": "01-infinite-sequences-and-their-limits"
+          },
+          {
+            "number": "10.2",
+            "title": "Convergence and Divergence of Sequences",
+            "slug": "02-convergence-and-divergence-of-sequences"
+          },
+          {
+            "number": "10.3",
+            "title": "Algebraic Limit Laws for Sequences",
+            "slug": "03-algebraic-limit-laws-for-sequences"
+          },
+          {
+            "number": "10.4",
+            "title": "Monotone and Bounded Sequences",
+            "slug": "04-monotone-and-bounded-sequences"
+          },
+          {
+            "number": "10.5",
+            "title": "The Monotone Convergence Theorem",
+            "slug": "05-the-monotone-convergence-theorem"
+          },
+          {
+            "number": "10.6",
+            "title": "Recursively Defined Sequences",
+            "slug": "06-recursively-defined-sequences"
+          },
+          {
+            "number": "10.7",
+            "title": "Subsequences and the Cauchy Criterion",
+            "slug": "07-subsequences-and-the-cauchy-criterion"
+          },
+          {
+            "number": "10.8",
+            "title": "Advanced Sequence Limits and Asymptotic Comparisons",
+            "slug": "08-advanced-sequence-limits-and-asymptotic-comparisons"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "title": "Infinite Series and Positive-Term Convergence",
+        "slug": "11-infinite-series-and-positive-term-convergence",
+        "topics": [
+          {
+            "number": "11.1",
+            "title": "Infinite Series and Partial Sums",
+            "slug": "01-infinite-series-and-partial-sums"
+          },
+          {
+            "number": "11.2",
+            "title": "Geometric Series and Telescoping Series",
+            "slug": "02-geometric-series-and-telescoping-series"
+          },
+          {
+            "number": "11.3",
+            "title": "Necessary Conditions for Series Convergence",
+            "slug": "03-necessary-conditions-for-series-convergence"
+          },
+          {
+            "number": "11.4",
+            "title": "Positive-Term Series and Monotone Partial Sums",
+            "slug": "04-positive-term-series-and-monotone-partial-sums"
+          },
+          {
+            "number": "11.5",
+            "title": "The Integral Test and p-Series",
+            "slug": "05-the-integral-test-and-p-series"
+          },
+          {
+            "number": "11.6",
+            "title": "The Direct Comparison Test",
+            "slug": "06-the-direct-comparison-test"
+          },
+          {
+            "number": "11.7",
+            "title": "The Limit Comparison Test",
+            "slug": "07-the-limit-comparison-test"
+          },
+          {
+            "number": "11.8",
+            "title": "The Ratio Test, Root Test, and Their Limitations",
+            "slug": "08-the-ratio-test-root-test-and-their-limitations"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "title": "Alternating Series and General Convergence",
+        "slug": "12-alternating-series-and-general-convergence",
+        "topics": [
+          {
+            "number": "12.1",
+            "title": "Alternating Series and the Leibniz Criterion",
+            "slug": "01-alternating-series-and-the-leibniz-criterion"
+          },
+          {
+            "number": "12.2",
+            "title": "Alternating Series Remainder Estimates",
+            "slug": "02-alternating-series-remainder-estimates"
+          },
+          {
+            "number": "12.3",
+            "title": "Absolute Convergence",
+            "slug": "03-absolute-convergence"
+          },
+          {
+            "number": "12.4",
+            "title": "Conditional Convergence",
+            "slug": "04-conditional-convergence"
+          },
+          {
+            "number": "12.5",
+            "title": "General Series and the Cauchy Criterion",
+            "slug": "05-general-series-and-the-cauchy-criterion"
+          },
+          {
+            "number": "12.6",
+            "title": "The Dirichlet and Abel Convergence Tests",
+            "slug": "06-the-dirichlet-and-abel-convergence-tests"
+          },
+          {
+            "number": "12.7",
+            "title": "Rearrangements of Infinite Series",
+            "slug": "07-rearrangements-of-infinite-series"
+          },
+          {
+            "number": "12.8",
+            "title": "Advanced Convergence Problems and Counterexamples",
+            "slug": "08-advanced-convergence-problems-and-counterexamples"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "title": "Power Series",
+        "slug": "13-power-series",
+        "topics": [
+          {
+            "number": "13.1",
+            "title": "Power Series and Their Centers",
+            "slug": "01-power-series-and-their-centers"
+          },
+          {
+            "number": "13.2",
+            "title": "Radius and Interval of Convergence",
+            "slug": "02-radius-and-interval-of-convergence"
+          },
+          {
+            "number": "13.3",
+            "title": "Endpoint Convergence and Boundary Analysis",
+            "slug": "03-endpoint-convergence-and-boundary-analysis"
+          },
+          {
+            "number": "13.4",
+            "title": "Uniform Convergence on Compact Subintervals",
+            "slug": "04-uniform-convergence-on-compact-subintervals"
+          },
+          {
+            "number": "13.5",
+            "title": "Differentiation of Power Series",
+            "slug": "05-differentiation-of-power-series"
+          },
+          {
+            "number": "13.6",
+            "title": "Integration of Power Series",
+            "slug": "06-integration-of-power-series"
+          },
+          {
+            "number": "13.7",
+            "title": "Algebraic Operations on Power Series",
+            "slug": "07-algebraic-operations-on-power-series"
+          },
+          {
+            "number": "13.8",
+            "title": "Function Representation and Power Series Identities",
+            "slug": "08-function-representation-and-power-series-identities"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "title": "Taylor Series and Approximation Theory",
+        "slug": "14-taylor-series-and-approximation-theory",
+        "topics": [
+          {
+            "number": "14.1",
+            "title": "Taylor Polynomials and Local Approximation",
+            "slug": "01-taylor-polynomials-and-local-approximation"
+          },
+          {
+            "number": "14.2",
+            "title": "Taylor's Theorem and Remainder Formulas",
+            "slug": "02-taylor-s-theorem-and-remainder-formulas"
+          },
+          {
+            "number": "14.3",
+            "title": "Maclaurin Series of Elementary Functions",
+            "slug": "03-maclaurin-series-of-elementary-functions"
+          },
+          {
+            "number": "14.4",
+            "title": "Taylor Series and Conditions for Function Representation",
+            "slug": "04-taylor-series-and-conditions-for-function-representation"
+          },
+          {
+            "number": "14.5",
+            "title": "Taylor Series Operations and Composition",
+            "slug": "05-taylor-series-operations-and-composition"
+          },
+          {
+            "number": "14.6",
+            "title": "Error Bounds and Approximation Accuracy",
+            "slug": "06-error-bounds-and-approximation-accuracy"
+          },
+          {
+            "number": "14.7",
+            "title": "Taylor Series in Limits and Definite Integrals",
+            "slug": "07-taylor-series-in-limits-and-definite-integrals"
+          },
+          {
+            "number": "14.8",
+            "title": "Advanced Taylor Series and Asymptotic Analysis",
+            "slug": "08-advanced-taylor-series-and-asymptotic-analysis"
+          }
+        ]
+      }
+    ]
+  },
+  "calculus-iii": {
+    "code": "2.3",
+    "title": "Calculus III",
+    "units": [
+      {
+        "number": 1,
+        "title": "Euclidean Geometry and Vectors in Space",
+        "slug": "01-euclidean-geometry-and-vectors-in-space",
+        "topics": [
+          {
+            "number": "1.1",
+            "title": "Three-Dimensional Coordinate Systems and Euclidean Distance",
+            "slug": "01-three-dimensional-coordinate-systems-and-euclidean-distance"
+          },
+          {
+            "number": "1.2",
+            "title": "Vectors, Magnitudes, and Geometric Operations",
+            "slug": "02-vectors-magnitudes-and-geometric-operations"
+          },
+          {
+            "number": "1.3",
+            "title": "Dot Products, Angles, and Orthogonality",
+            "slug": "03-dot-products-angles-and-orthogonality"
+          },
+          {
+            "number": "1.4",
+            "title": "Cross Products and Oriented Area",
+            "slug": "04-cross-products-and-oriented-area"
+          },
+          {
+            "number": "1.5",
+            "title": "Scalar Triple Products and Oriented Volume",
+            "slug": "05-scalar-triple-products-and-oriented-volume"
+          },
+          {
+            "number": "1.6",
+            "title": "Equations of Lines and Planes in Space",
+            "slug": "06-equations-of-lines-and-planes-in-space"
+          },
+          {
+            "number": "1.7",
+            "title": "Distances, Intersections, and Spatial Geometry",
+            "slug": "07-distances-intersections-and-spatial-geometry"
+          },
+          {
+            "number": "1.8",
+            "title": "Quadric Surfaces and Three-Dimensional Graphs",
+            "slug": "08-quadric-surfaces-and-three-dimensional-graphs"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Vector-Valued Functions and Space Curves",
+        "slug": "02-vector-valued-functions-and-space-curves",
+        "topics": [
+          {
+            "number": "2.1",
+            "title": "Vector-Valued Functions and Parametrized Curves",
+            "slug": "01-vector-valued-functions-and-parametrized-curves"
+          },
+          {
+            "number": "2.2",
+            "title": "Limits and Continuity of Vector-Valued Functions",
+            "slug": "02-limits-and-continuity-of-vector-valued-functions"
+          },
+          {
+            "number": "2.3",
+            "title": "Derivatives and Integrals of Vector-Valued Functions",
+            "slug": "03-derivatives-and-integrals-of-vector-valued-functions"
+          },
+          {
+            "number": "2.4",
+            "title": "Tangent Vectors and Regular Parametrizations",
+            "slug": "04-tangent-vectors-and-regular-parametrizations"
+          },
+          {
+            "number": "2.5",
+            "title": "Velocity, Acceleration, and Speed",
+            "slug": "05-velocity-acceleration-and-speed"
+          },
+          {
+            "number": "2.6",
+            "title": "Arc Length and Arc-Length Parametrization",
+            "slug": "06-arc-length-and-arc-length-parametrization"
+          },
+          {
+            "number": "2.7",
+            "title": "Curvature and the Unit Tangent Vector",
+            "slug": "07-curvature-and-the-unit-tangent-vector"
+          },
+          {
+            "number": "2.8",
+            "title": "Principal Normal Vectors, Binormal Vectors, and Space-Curve Geometry",
+            "slug": "08-principal-normal-vectors-binormal-vectors-and-space-curve-geometry"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "title": "Multivariable Functions, Limits, and Continuity",
+        "slug": "03-multivariable-functions-limits-and-continuity",
+        "topics": [
+          {
+            "number": "3.1",
+            "title": "Functions of Several Variables and Their Domains",
+            "slug": "01-functions-of-several-variables-and-their-domains"
+          },
+          {
+            "number": "3.2",
+            "title": "Graphs, Level Curves, and Level Surfaces",
+            "slug": "02-graphs-level-curves-and-level-surfaces"
+          },
+          {
+            "number": "3.3",
+            "title": "Neighborhoods, Open Sets, and Boundary Points",
+            "slug": "03-neighborhoods-open-sets-and-boundary-points"
+          },
+          {
+            "number": "3.4",
+            "title": "Limits of Multivariable Functions",
+            "slug": "04-limits-of-multivariable-functions"
+          },
+          {
+            "number": "3.5",
+            "title": "The Epsilon–Delta Definition of Multivariable Limits",
+            "slug": "05-the-epsilondelta-definition-of-multivariable-limits"
+          },
+          {
+            "number": "3.6",
+            "title": "Path Dependence and Nonexistence of Limits",
+            "slug": "06-path-dependence-and-nonexistence-of-limits"
+          },
+          {
+            "number": "3.7",
+            "title": "Continuity of Multivariable Functions",
+            "slug": "07-continuity-of-multivariable-functions"
+          },
+          {
+            "number": "3.8",
+            "title": "Multivariable Limit Techniques and Continuity Theorems",
+            "slug": "08-multivariable-limit-techniques-and-continuity-theorems"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Partial Derivatives and Multivariable Differentiability",
+        "slug": "04-partial-derivatives-and-multivariable-differentiability",
+        "topics": [
+          {
+            "number": "4.1",
+            "title": "Partial Derivatives from First Principles",
+            "slug": "01-partial-derivatives-from-first-principles"
+          },
+          {
+            "number": "4.2",
+            "title": "Geometric Interpretation of Partial Derivatives",
+            "slug": "02-geometric-interpretation-of-partial-derivatives"
+          },
+          {
+            "number": "4.3",
+            "title": "Higher-Order and Mixed Partial Derivatives",
+            "slug": "03-higher-order-and-mixed-partial-derivatives"
+          },
+          {
+            "number": "4.4",
+            "title": "Equality of Mixed Partial Derivatives",
+            "slug": "04-equality-of-mixed-partial-derivatives"
+          },
+          {
+            "number": "4.5",
+            "title": "Differentiability and Linear Approximation",
+            "slug": "05-differentiability-and-linear-approximation"
+          },
+          {
+            "number": "4.6",
+            "title": "The Total Derivative and Differential",
+            "slug": "06-the-total-derivative-and-differential"
+          },
+          {
+            "number": "4.7",
+            "title": "Tangent Planes and Normal Lines",
+            "slug": "07-tangent-planes-and-normal-lines"
+          },
+          {
+            "number": "4.8",
+            "title": "Continuity, Partial Derivatives, and Differentiability",
+            "slug": "08-continuity-partial-derivatives-and-differentiability"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "title": "The Chain Rule, Directional Derivatives, and Gradients",
+        "slug": "05-the-chain-rule-directional-derivatives-and-gradients",
+        "topics": [
+          {
+            "number": "5.1",
+            "title": "The Multivariable Chain Rule",
+            "slug": "01-the-multivariable-chain-rule"
+          },
+          {
+            "number": "5.2",
+            "title": "The Chain Rule Along Parametrized Curves",
+            "slug": "02-the-chain-rule-along-parametrized-curves"
+          },
+          {
+            "number": "5.3",
+            "title": "General Composite Functions and Total Derivatives",
+            "slug": "03-general-composite-functions-and-total-derivatives"
+          },
+          {
+            "number": "5.4",
+            "title": "Directional Derivatives and Their Definitions",
+            "slug": "04-directional-derivatives-and-their-definitions"
+          },
+          {
+            "number": "5.5",
+            "title": "The Gradient and Its Geometric Interpretation",
+            "slug": "05-the-gradient-and-its-geometric-interpretation"
+          },
+          {
+            "number": "5.6",
+            "title": "Maximum Directional Change and Steepest Ascent",
+            "slug": "06-maximum-directional-change-and-steepest-ascent"
+          },
+          {
+            "number": "5.7",
+            "title": "Gradients and Normal Vectors to Level Sets",
+            "slug": "07-gradients-and-normal-vectors-to-level-sets"
+          },
+          {
+            "number": "5.8",
+            "title": "Advanced Chain Rule and Gradient Applications",
+            "slug": "08-advanced-chain-rule-and-gradient-applications"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "title": "Implicit Functions and Higher-Order Approximation",
+        "slug": "06-implicit-functions-and-higher-order-approximation",
+        "topics": [
+          {
+            "number": "6.1",
+            "title": "Implicitly Defined Functions and Level Sets",
+            "slug": "01-implicitly-defined-functions-and-level-sets"
+          },
+          {
+            "number": "6.2",
+            "title": "Implicit Differentiation in Two Variables",
+            "slug": "02-implicit-differentiation-in-two-variables"
+          },
+          {
+            "number": "6.3",
+            "title": "Implicit Differentiation in Three Variables",
+            "slug": "03-implicit-differentiation-in-three-variables"
+          },
+          {
+            "number": "6.4",
+            "title": "The Implicit Function Theorem: Local Conditions and Consequences",
+            "slug": "04-the-implicit-function-theorem-local-conditions-and-consequences"
+          },
+          {
+            "number": "6.5",
+            "title": "The Jacobian Matrix and Local Differentiability",
+            "slug": "05-the-jacobian-matrix-and-local-differentiability"
+          },
+          {
+            "number": "6.6",
+            "title": "Second Differentials and the Hessian Matrix",
+            "slug": "06-second-differentials-and-the-hessian-matrix"
+          },
+          {
+            "number": "6.7",
+            "title": "Multivariable Taylor Polynomials",
+            "slug": "07-multivariable-taylor-polynomials"
+          },
+          {
+            "number": "6.8",
+            "title": "Taylor's Theorem and Local Approximation Errors",
+            "slug": "08-taylor-s-theorem-and-local-approximation-errors"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "title": "Unconstrained Multivariable Optimization",
+        "slug": "07-unconstrained-multivariable-optimization",
+        "topics": [
+          {
+            "number": "7.1",
+            "title": "Local and Global Extrema in Several Variables",
+            "slug": "01-local-and-global-extrema-in-several-variables"
+          },
+          {
+            "number": "7.2",
+            "title": "Critical Points and Fermat's Theorem",
+            "slug": "02-critical-points-and-fermat-s-theorem"
+          },
+          {
+            "number": "7.3",
+            "title": "Stationary Points and the Gradient Condition",
+            "slug": "03-stationary-points-and-the-gradient-condition"
+          },
+          {
+            "number": "7.4",
+            "title": "The Second Derivative Test in Two Variables",
+            "slug": "04-the-second-derivative-test-in-two-variables"
+          },
+          {
+            "number": "7.5",
+            "title": "Hessian-Based Classification of Critical Points",
+            "slug": "05-hessian-based-classification-of-critical-points"
+          },
+          {
+            "number": "7.6",
+            "title": "Degenerate Critical Points and Inconclusive Tests",
+            "slug": "06-degenerate-critical-points-and-inconclusive-tests"
+          },
+          {
+            "number": "7.7",
+            "title": "Absolute Extrema on Closed and Bounded Regions",
+            "slug": "07-absolute-extrema-on-closed-and-bounded-regions"
+          },
+          {
+            "number": "7.8",
+            "title": "Advanced Unconstrained Optimization Problems",
+            "slug": "08-advanced-unconstrained-optimization-problems"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "title": "Constrained Optimization and Lagrange Multipliers",
+        "slug": "08-constrained-optimization-and-lagrange-multipliers",
+        "topics": [
+          {
+            "number": "8.1",
+            "title": "Optimization Under Equality Constraints",
+            "slug": "01-optimization-under-equality-constraints"
+          },
+          {
+            "number": "8.2",
+            "title": "Geometric Interpretation of Constrained Extrema",
+            "slug": "02-geometric-interpretation-of-constrained-extrema"
+          },
+          {
+            "number": "8.3",
+            "title": "Derivation of the Lagrange Multiplier Condition",
+            "slug": "03-derivation-of-the-lagrange-multiplier-condition"
+          },
+          {
+            "number": "8.4",
+            "title": "Lagrange Multipliers with One Constraint",
+            "slug": "04-lagrange-multipliers-with-one-constraint"
+          },
+          {
+            "number": "8.5",
+            "title": "Lagrange Multipliers with Two Constraints",
+            "slug": "05-lagrange-multipliers-with-two-constraints"
+          },
+          {
+            "number": "8.6",
+            "title": "Regularity Conditions and Constraint Gradients",
+            "slug": "06-regularity-conditions-and-constraint-gradients"
+          },
+          {
+            "number": "8.7",
+            "title": "Boundary Analysis and Global Optimization",
+            "slug": "07-boundary-analysis-and-global-optimization"
+          },
+          {
+            "number": "8.8",
+            "title": "Advanced Constrained Optimization Problems",
+            "slug": "08-advanced-constrained-optimization-problems"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "title": "Double Integrals and Iterated Integration",
+        "slug": "09-double-integrals-and-iterated-integration",
+        "topics": [
+          {
+            "number": "9.1",
+            "title": "Double Integrals and Two-Dimensional Riemann Sums",
+            "slug": "01-double-integrals-and-two-dimensional-riemann-sums"
+          },
+          {
+            "number": "9.2",
+            "title": "Integrability over Rectangular Regions",
+            "slug": "02-integrability-over-rectangular-regions"
+          },
+          {
+            "number": "9.3",
+            "title": "Iterated Integrals and Fubini's Theorem",
+            "slug": "03-iterated-integrals-and-fubini-s-theorem"
+          },
+          {
+            "number": "9.4",
+            "title": "Double Integrals over General Planar Regions",
+            "slug": "04-double-integrals-over-general-planar-regions"
+          },
+          {
+            "number": "9.5",
+            "title": "Type I and Type II Regions",
+            "slug": "05-type-i-and-type-ii-regions"
+          },
+          {
+            "number": "9.6",
+            "title": "Reversing the Order of Integration",
+            "slug": "06-reversing-the-order-of-integration"
+          },
+          {
+            "number": "9.7",
+            "title": "Area, Volume, and Average Value",
+            "slug": "07-area-volume-and-average-value"
+          },
+          {
+            "number": "9.8",
+            "title": "Advanced Double Integrals and Region Decomposition",
+            "slug": "08-advanced-double-integrals-and-region-decomposition"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "title": "Polar Integration and Change of Variables",
+        "slug": "10-polar-integration-and-change-of-variables",
+        "topics": [
+          {
+            "number": "10.1",
+            "title": "Double Integrals in Polar Coordinates",
+            "slug": "01-double-integrals-in-polar-coordinates"
+          },
+          {
+            "number": "10.2",
+            "title": "Derivation of the Polar Area Element",
+            "slug": "02-derivation-of-the-polar-area-element"
+          },
+          {
+            "number": "10.3",
+            "title": "Polar Regions and Integration Bounds",
+            "slug": "03-polar-regions-and-integration-bounds"
+          },
+          {
+            "number": "10.4",
+            "title": "General Coordinate Transformations",
+            "slug": "04-general-coordinate-transformations"
+          },
+          {
+            "number": "10.5",
+            "title": "The Jacobian Determinant and Local Area Scaling",
+            "slug": "05-the-jacobian-determinant-and-local-area-scaling"
+          },
+          {
+            "number": "10.6",
+            "title": "The Change of Variables Theorem for Double Integrals",
+            "slug": "06-the-change-of-variables-theorem-for-double-integrals"
+          },
+          {
+            "number": "10.7",
+            "title": "Linear and Nonlinear Coordinate Substitutions",
+            "slug": "07-linear-and-nonlinear-coordinate-substitutions"
+          },
+          {
+            "number": "10.8",
+            "title": "Advanced Change of Variables Problems",
+            "slug": "08-advanced-change-of-variables-problems"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "title": "Triple Integrals and Applications",
+        "slug": "11-triple-integrals-and-applications",
+        "topics": [
+          {
+            "number": "11.1",
+            "title": "Triple Integrals and Three-Dimensional Accumulation",
+            "slug": "01-triple-integrals-and-three-dimensional-accumulation"
+          },
+          {
+            "number": "11.2",
+            "title": "Iterated Triple Integrals in Cartesian Coordinates",
+            "slug": "02-iterated-triple-integrals-in-cartesian-coordinates"
+          },
+          {
+            "number": "11.3",
+            "title": "Integration over General Solid Regions",
+            "slug": "03-integration-over-general-solid-regions"
+          },
+          {
+            "number": "11.4",
+            "title": "Cylindrical Coordinates and Their Volume Element",
+            "slug": "04-cylindrical-coordinates-and-their-volume-element"
+          },
+          {
+            "number": "11.5",
+            "title": "Spherical Coordinates and Their Volume Element",
+            "slug": "05-spherical-coordinates-and-their-volume-element"
+          },
+          {
+            "number": "11.6",
+            "title": "Three-Dimensional Coordinate Transformations and Jacobians",
+            "slug": "06-three-dimensional-coordinate-transformations-and-jacobians"
+          },
+          {
+            "number": "11.7",
+            "title": "Mass, Centers of Mass, and Moments of Inertia",
+            "slug": "07-mass-centers-of-mass-and-moments-of-inertia"
+          },
+          {
+            "number": "11.8",
+            "title": "Advanced Triple Integrals and Geometric Applications",
+            "slug": "08-advanced-triple-integrals-and-geometric-applications"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "title": "Vector Fields and Line Integrals",
+        "slug": "12-vector-fields-and-line-integrals",
+        "topics": [
+          {
+            "number": "12.1",
+            "title": "Scalar and Vector Fields in Euclidean Space",
+            "slug": "01-scalar-and-vector-fields-in-euclidean-space"
+          },
+          {
+            "number": "12.2",
+            "title": "Scalar Line Integrals and Arc-Length Integration",
+            "slug": "02-scalar-line-integrals-and-arc-length-integration"
+          },
+          {
+            "number": "12.3",
+            "title": "Vector Line Integrals and Work",
+            "slug": "03-vector-line-integrals-and-work"
+          },
+          {
+            "number": "12.4",
+            "title": "Orientation, Reparametrization, and Path Dependence",
+            "slug": "04-orientation-reparametrization-and-path-dependence"
+          },
+          {
+            "number": "12.5",
+            "title": "Conservative Vector Fields and Potential Functions",
+            "slug": "05-conservative-vector-fields-and-potential-functions"
+          },
+          {
+            "number": "12.6",
+            "title": "The Fundamental Theorem for Line Integrals",
+            "slug": "06-the-fundamental-theorem-for-line-integrals"
+          },
+          {
+            "number": "12.7",
+            "title": "Path Independence and Closed-Curve Integrals",
+            "slug": "07-path-independence-and-closed-curve-integrals"
+          },
+          {
+            "number": "12.8",
+            "title": "Conservative Field Tests and Domain Conditions",
+            "slug": "08-conservative-field-tests-and-domain-conditions"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "title": "Green's Theorem and Planar Vector Fields",
+        "slug": "13-green-s-theorem-and-planar-vector-fields",
+        "topics": [
+          {
+            "number": "13.1",
+            "title": "Circulation Around Closed Plane Curves",
+            "slug": "01-circulation-around-closed-plane-curves"
+          },
+          {
+            "number": "13.2",
+            "title": "Green's Theorem in Circulation Form",
+            "slug": "02-green-s-theorem-in-circulation-form"
+          },
+          {
+            "number": "13.3",
+            "title": "Orientation and Positively Oriented Boundaries",
+            "slug": "03-orientation-and-positively-oriented-boundaries"
+          },
+          {
+            "number": "13.4",
+            "title": "Green's Theorem in Flux Form",
+            "slug": "04-green-s-theorem-in-flux-form"
+          },
+          {
+            "number": "13.5",
+            "title": "Planar Divergence and Scalar Curl",
+            "slug": "05-planar-divergence-and-scalar-curl"
+          },
+          {
+            "number": "13.6",
+            "title": "Area Computation Using Green's Theorem",
+            "slug": "06-area-computation-using-green-s-theorem"
+          },
+          {
+            "number": "13.7",
+            "title": "Multiply Connected Regions and Boundary Components",
+            "slug": "07-multiply-connected-regions-and-boundary-components"
+          },
+          {
+            "number": "13.8",
+            "title": "Advanced Applications and Limitations of Green's Theorem",
+            "slug": "08-advanced-applications-and-limitations-of-green-s-theorem"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "title": "Parametrized Surfaces and Surface Integrals",
+        "slug": "14-parametrized-surfaces-and-surface-integrals",
+        "topics": [
+          {
+            "number": "14.1",
+            "title": "Parametrized Surfaces and Regularity",
+            "slug": "01-parametrized-surfaces-and-regularity"
+          },
+          {
+            "number": "14.2",
+            "title": "Tangent Vectors and Tangent Planes",
+            "slug": "02-tangent-vectors-and-tangent-planes"
+          },
+          {
+            "number": "14.3",
+            "title": "Surface Normals and Orientation",
+            "slug": "03-surface-normals-and-orientation"
+          },
+          {
+            "number": "14.4",
+            "title": "Surface Area and the Surface Area Element",
+            "slug": "04-surface-area-and-the-surface-area-element"
+          },
+          {
+            "number": "14.5",
+            "title": "Scalar Surface Integrals",
+            "slug": "05-scalar-surface-integrals"
+          },
+          {
+            "number": "14.6",
+            "title": "Vector Surface Integrals and Flux",
+            "slug": "06-vector-surface-integrals-and-flux"
+          },
+          {
+            "number": "14.7",
+            "title": "Surface Orientation and Reparametrization",
+            "slug": "07-surface-orientation-and-reparametrization"
+          },
+          {
+            "number": "14.8",
+            "title": "Advanced Surface Integration Problems",
+            "slug": "08-advanced-surface-integration-problems"
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "title": "Stokes' Theorem and the Divergence Theorem",
+        "slug": "15-stokes-theorem-and-the-divergence-theorem",
+        "topics": [
+          {
+            "number": "15.1",
+            "title": "Curl and Its Geometric Interpretation",
+            "slug": "01-curl-and-its-geometric-interpretation"
+          },
+          {
+            "number": "15.2",
+            "title": "Divergence and Its Geometric Interpretation",
+            "slug": "02-divergence-and-its-geometric-interpretation"
+          },
+          {
+            "number": "15.3",
+            "title": "Stokes' Theorem",
+            "slug": "03-stokes-theorem"
+          },
+          {
+            "number": "15.4",
+            "title": "Surface Orientation and Boundary Orientation",
+            "slug": "04-surface-orientation-and-boundary-orientation"
+          },
+          {
+            "number": "15.5",
+            "title": "The Divergence Theorem",
+            "slug": "05-the-divergence-theorem"
+          },
+          {
+            "number": "15.6",
+            "title": "Flux Across Closed Surfaces",
+            "slug": "06-flux-across-closed-surfaces"
+          },
+          {
+            "number": "15.7",
+            "title": "Relationships Among the Fundamental Integral Theorems",
+            "slug": "07-relationships-among-the-fundamental-integral-theorems"
+          },
+          {
+            "number": "15.8",
+            "title": "Advanced Vector Calculus and Theorem Selection",
+            "slug": "08-advanced-vector-calculus-and-theorem-selection"
+          }
+        ]
+      }
+    ]
+  },
+  "linear-algebra": {
+    "code": "2.4",
+    "title": "Linear Algebra",
+    "units": [
+      {
+        "number": 1,
+        "title": "Systems of Linear Equations",
+        "slug": "01-systems-of-linear-equations",
+        "topics": [
+          {
+            "number": "1.1",
+            "title": "Linear Equations and Systems of Linear Equations",
+            "slug": "01-linear-equations-and-systems-of-linear-equations"
+          },
+          {
+            "number": "1.2",
+            "title": "Augmented Matrices and Elementary Row Operations",
+            "slug": "02-augmented-matrices-and-elementary-row-operations"
+          },
+          {
+            "number": "1.3",
+            "title": "Gaussian Elimination and Row Echelon Form",
+            "slug": "03-gaussian-elimination-and-row-echelon-form"
+          },
+          {
+            "number": "1.4",
+            "title": "Gauss–Jordan Elimination and Reduced Row Echelon Form",
+            "slug": "04-gaussjordan-elimination-and-reduced-row-echelon-form"
+          },
+          {
+            "number": "1.5",
+            "title": "Pivot Variables, Free Variables, and Parametric Solutions",
+            "slug": "05-pivot-variables-free-variables-and-parametric-solutions"
+          },
+          {
+            "number": "1.6",
+            "title": "Consistency, Uniqueness, and Infinite Solution Sets",
+            "slug": "06-consistency-uniqueness-and-infinite-solution-sets"
+          },
+          {
+            "number": "1.7",
+            "title": "Homogeneous Systems and Their Fundamental Properties",
+            "slug": "07-homogeneous-systems-and-their-fundamental-properties"
+          },
+          {
+            "number": "1.8",
+            "title": "Structure of Solution Sets and Advanced Linear Systems",
+            "slug": "08-structure-of-solution-sets-and-advanced-linear-systems"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Matrix Algebra and Invertibility",
+        "slug": "02-matrix-algebra-and-invertibility",
+        "topics": [
+          {
+            "number": "2.1",
+            "title": "Matrices and Their Algebraic Operations",
+            "slug": "01-matrices-and-their-algebraic-operations"
+          },
+          {
+            "number": "2.2",
+            "title": "Matrix Multiplication and Its Structural Properties",
+            "slug": "02-matrix-multiplication-and-its-structural-properties"
+          },
+          {
+            "number": "2.3",
+            "title": "Identity Matrices, Transposes, and Conjugate Transposes",
+            "slug": "03-identity-matrices-transposes-and-conjugate-transposes"
+          },
+          {
+            "number": "2.4",
+            "title": "Elementary Matrices and Row Operations",
+            "slug": "04-elementary-matrices-and-row-operations"
+          },
+          {
+            "number": "2.5",
+            "title": "Invertible Matrices and Matrix Inverses",
+            "slug": "05-invertible-matrices-and-matrix-inverses"
+          },
+          {
+            "number": "2.6",
+            "title": "The Invertible Matrix Theorem: Initial Equivalences",
+            "slug": "06-the-invertible-matrix-theorem-initial-equivalences"
+          },
+          {
+            "number": "2.7",
+            "title": "Matrix Factorizations and LU Decomposition",
+            "slug": "07-matrix-factorizations-and-lu-decomposition"
+          },
+          {
+            "number": "2.8",
+            "title": "Matrix Equations and Parameter-Dependent Invertibility",
+            "slug": "08-matrix-equations-and-parameter-dependent-invertibility"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "title": "Vector Spaces and Subspaces",
+        "slug": "03-vector-spaces-and-subspaces",
+        "topics": [
+          {
+            "number": "3.1",
+            "title": "Vector Spaces and Their Axioms",
+            "slug": "01-vector-spaces-and-their-axioms"
+          },
+          {
+            "number": "3.2",
+            "title": "Vector Spaces over the Real and Complex Numbers",
+            "slug": "02-vector-spaces-over-the-real-and-complex-numbers"
+          },
+          {
+            "number": "3.3",
+            "title": "Standard and Nonstandard Examples of Vector Spaces",
+            "slug": "03-standard-and-nonstandard-examples-of-vector-spaces"
+          },
+          {
+            "number": "3.4",
+            "title": "Subspaces and the Subspace Criterion",
+            "slug": "04-subspaces-and-the-subspace-criterion"
+          },
+          {
+            "number": "3.5",
+            "title": "Linear Combinations and Generated Subspaces",
+            "slug": "05-linear-combinations-and-generated-subspaces"
+          },
+          {
+            "number": "3.6",
+            "title": "Sums and Intersections of Subspaces",
+            "slug": "06-sums-and-intersections-of-subspaces"
+          },
+          {
+            "number": "3.7",
+            "title": "Direct Sums and Unique Decompositions",
+            "slug": "07-direct-sums-and-unique-decompositions"
+          },
+          {
+            "number": "3.8",
+            "title": "Abstract Vector Space Problems and Counterexamples",
+            "slug": "08-abstract-vector-space-problems-and-counterexamples"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Linear Independence, Bases, and Dimension",
+        "slug": "04-linear-independence-bases-and-dimension",
+        "topics": [
+          {
+            "number": "4.1",
+            "title": "Linear Dependence and Linear Independence",
+            "slug": "01-linear-dependence-and-linear-independence"
+          },
+          {
+            "number": "4.2",
+            "title": "Spanning Sets and Linear Combinations",
+            "slug": "02-spanning-sets-and-linear-combinations"
+          },
+          {
+            "number": "4.3",
+            "title": "Bases and Unique Coordinate Representations",
+            "slug": "03-bases-and-unique-coordinate-representations"
+          },
+          {
+            "number": "4.4",
+            "title": "The Exchange Lemma and Basis Replacement",
+            "slug": "04-the-exchange-lemma-and-basis-replacement"
+          },
+          {
+            "number": "4.5",
+            "title": "Dimension and the Dimension Theorem",
+            "slug": "05-dimension-and-the-dimension-theorem"
+          },
+          {
+            "number": "4.6",
+            "title": "Basis Extension and Basis Reduction",
+            "slug": "06-basis-extension-and-basis-reduction"
+          },
+          {
+            "number": "4.7",
+            "title": "Dimensions of Subspaces and Direct Sums",
+            "slug": "07-dimensions-of-subspaces-and-direct-sums"
+          },
+          {
+            "number": "4.8",
+            "title": "The Dimension Formula for Sums and Intersections",
+            "slug": "08-the-dimension-formula-for-sums-and-intersections"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "title": "Linear Transformations",
+        "slug": "05-linear-transformations",
+        "topics": [
+          {
+            "number": "5.1",
+            "title": "Linear Transformations and Linearity",
+            "slug": "01-linear-transformations-and-linearity"
+          },
+          {
+            "number": "5.2",
+            "title": "Kernels and Images of Linear Transformations",
+            "slug": "02-kernels-and-images-of-linear-transformations"
+          },
+          {
+            "number": "5.3",
+            "title": "Injectivity, Surjectivity, and Bijectivity",
+            "slug": "03-injectivity-surjectivity-and-bijectivity"
+          },
+          {
+            "number": "5.4",
+            "title": "The Rank-Nullity Theorem",
+            "slug": "04-the-rank-nullity-theorem"
+          },
+          {
+            "number": "5.5",
+            "title": "Composition and Inverses of Linear Transformations",
+            "slug": "05-composition-and-inverses-of-linear-transformations"
+          },
+          {
+            "number": "5.6",
+            "title": "Isomorphisms and Vector Space Equivalence",
+            "slug": "06-isomorphisms-and-vector-space-equivalence"
+          },
+          {
+            "number": "5.7",
+            "title": "Linear Maps Determined by Their Action on a Basis",
+            "slug": "07-linear-maps-determined-by-their-action-on-a-basis"
+          },
+          {
+            "number": "5.8",
+            "title": "Advanced Linear Transformation Problems",
+            "slug": "08-advanced-linear-transformation-problems"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "title": "Matrix Representations and Change of Basis",
+        "slug": "06-matrix-representations-and-change-of-basis",
+        "topics": [
+          {
+            "number": "6.1",
+            "title": "Coordinate Vectors Relative to Ordered Bases",
+            "slug": "01-coordinate-vectors-relative-to-ordered-bases"
+          },
+          {
+            "number": "6.2",
+            "title": "Matrix Representations of Linear Transformations",
+            "slug": "02-matrix-representations-of-linear-transformations"
+          },
+          {
+            "number": "6.3",
+            "title": "Coordinate Isomorphisms",
+            "slug": "03-coordinate-isomorphisms"
+          },
+          {
+            "number": "6.4",
+            "title": "Composition and Matrix Multiplication",
+            "slug": "04-composition-and-matrix-multiplication"
+          },
+          {
+            "number": "6.5",
+            "title": "Change-of-Basis Matrices",
+            "slug": "05-change-of-basis-matrices"
+          },
+          {
+            "number": "6.6",
+            "title": "Similar Matrices and Equivalent Representations",
+            "slug": "06-similar-matrices-and-equivalent-representations"
+          },
+          {
+            "number": "6.7",
+            "title": "Rank and the Four Fundamental Subspaces",
+            "slug": "07-rank-and-the-four-fundamental-subspaces"
+          },
+          {
+            "number": "6.8",
+            "title": "Basis Selection and Simplification of Linear Operators",
+            "slug": "08-basis-selection-and-simplification-of-linear-operators"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "title": "Determinants",
+        "slug": "07-determinants",
+        "topics": [
+          {
+            "number": "7.1",
+            "title": "The Determinant as an Alternating Multilinear Function",
+            "slug": "01-the-determinant-as-an-alternating-multilinear-function"
+          },
+          {
+            "number": "7.2",
+            "title": "Permutations and the Leibniz Formula",
+            "slug": "02-permutations-and-the-leibniz-formula"
+          },
+          {
+            "number": "7.3",
+            "title": "Cofactor Expansion and Minor Determinants",
+            "slug": "03-cofactor-expansion-and-minor-determinants"
+          },
+          {
+            "number": "7.4",
+            "title": "Elementary Row Operations and Determinants",
+            "slug": "04-elementary-row-operations-and-determinants"
+          },
+          {
+            "number": "7.5",
+            "title": "Multiplicativity and the Determinant of a Product",
+            "slug": "05-multiplicativity-and-the-determinant-of-a-product"
+          },
+          {
+            "number": "7.6",
+            "title": "Determinants, Invertibility, and Cramer's Rule",
+            "slug": "06-determinants-invertibility-and-cramer-s-rule"
+          },
+          {
+            "number": "7.7",
+            "title": "Geometric Interpretation: Orientation and Volume Scaling",
+            "slug": "07-geometric-interpretation-orientation-and-volume-scaling"
+          },
+          {
+            "number": "7.8",
+            "title": "Determinant Identities and Advanced Applications",
+            "slug": "08-determinant-identities-and-advanced-applications"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "title": "Eigenvalues and Eigenvectors",
+        "slug": "08-eigenvalues-and-eigenvectors",
+        "topics": [
+          {
+            "number": "8.1",
+            "title": "Eigenvalues and Eigenvectors of Linear Operators",
+            "slug": "01-eigenvalues-and-eigenvectors-of-linear-operators"
+          },
+          {
+            "number": "8.2",
+            "title": "Eigenspaces and Their Algebraic Structure",
+            "slug": "02-eigenspaces-and-their-algebraic-structure"
+          },
+          {
+            "number": "8.3",
+            "title": "Characteristic Polynomials",
+            "slug": "03-characteristic-polynomials"
+          },
+          {
+            "number": "8.4",
+            "title": "Algebraic and Geometric Multiplicity",
+            "slug": "04-algebraic-and-geometric-multiplicity"
+          },
+          {
+            "number": "8.5",
+            "title": "Eigenvalues of Triangular and Special Matrices",
+            "slug": "05-eigenvalues-of-triangular-and-special-matrices"
+          },
+          {
+            "number": "8.6",
+            "title": "Linear Independence of Eigenvectors",
+            "slug": "06-linear-independence-of-eigenvectors"
+          },
+          {
+            "number": "8.7",
+            "title": "Similarity Invariants and Eigenvalue Relationships",
+            "slug": "07-similarity-invariants-and-eigenvalue-relationships"
+          },
+          {
+            "number": "8.8",
+            "title": "Parameter-Dependent Eigenvalue Problems",
+            "slug": "08-parameter-dependent-eigenvalue-problems"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "title": "Diagonalization and Invariant Subspaces",
+        "slug": "09-diagonalization-and-invariant-subspaces",
+        "topics": [
+          {
+            "number": "9.1",
+            "title": "Diagonalizable Linear Operators",
+            "slug": "01-diagonalizable-linear-operators"
+          },
+          {
+            "number": "9.2",
+            "title": "Eigenvector Bases and Diagonal Representations",
+            "slug": "02-eigenvector-bases-and-diagonal-representations"
+          },
+          {
+            "number": "9.3",
+            "title": "Necessary and Sufficient Conditions for Diagonalizability",
+            "slug": "03-necessary-and-sufficient-conditions-for-diagonalizability"
+          },
+          {
+            "number": "9.4",
+            "title": "Eigenspace Decompositions and Direct Sums",
+            "slug": "04-eigenspace-decompositions-and-direct-sums"
+          },
+          {
+            "number": "9.5",
+            "title": "Invariant Subspaces and Restricted Operators",
+            "slug": "05-invariant-subspaces-and-restricted-operators"
+          },
+          {
+            "number": "9.6",
+            "title": "Matrix Powers and Polynomial Functions of Operators",
+            "slug": "06-matrix-powers-and-polynomial-functions-of-operators"
+          },
+          {
+            "number": "9.7",
+            "title": "Triangularization over the Complex Numbers",
+            "slug": "07-triangularization-over-the-complex-numbers"
+          },
+          {
+            "number": "9.8",
+            "title": "Advanced Diagonalization and Invariant Subspace Problems",
+            "slug": "08-advanced-diagonalization-and-invariant-subspace-problems"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "title": "Inner Product Spaces and Orthogonality",
+        "slug": "10-inner-product-spaces-and-orthogonality",
+        "topics": [
+          {
+            "number": "10.1",
+            "title": "Real and Complex Inner Products",
+            "slug": "01-real-and-complex-inner-products"
+          },
+          {
+            "number": "10.2",
+            "title": "Norms and Distances Induced by Inner Products",
+            "slug": "02-norms-and-distances-induced-by-inner-products"
+          },
+          {
+            "number": "10.3",
+            "title": "The Cauchy–Schwarz Inequality",
+            "slug": "03-the-cauchyschwarz-inequality"
+          },
+          {
+            "number": "10.4",
+            "title": "The Triangle Inequality and Geometric Consequences",
+            "slug": "04-the-triangle-inequality-and-geometric-consequences"
+          },
+          {
+            "number": "10.5",
+            "title": "Orthogonal and Orthonormal Sets",
+            "slug": "05-orthogonal-and-orthonormal-sets"
+          },
+          {
+            "number": "10.6",
+            "title": "The Gram–Schmidt Orthogonalization Process",
+            "slug": "06-the-gramschmidt-orthogonalization-process"
+          },
+          {
+            "number": "10.7",
+            "title": "Orthogonal Complements and Direct Decompositions",
+            "slug": "07-orthogonal-complements-and-direct-decompositions"
+          },
+          {
+            "number": "10.8",
+            "title": "Orthogonal and Unitary Operators",
+            "slug": "08-orthogonal-and-unitary-operators"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "title": "Orthogonal Projections and Least Squares",
+        "slug": "11-orthogonal-projections-and-least-squares",
+        "topics": [
+          {
+            "number": "11.1",
+            "title": "Orthogonal Projection onto Subspaces",
+            "slug": "01-orthogonal-projection-onto-subspaces"
+          },
+          {
+            "number": "11.2",
+            "title": "The Orthogonal Projection Theorem",
+            "slug": "02-the-orthogonal-projection-theorem"
+          },
+          {
+            "number": "11.3",
+            "title": "Projection Matrices and Their Properties",
+            "slug": "03-projection-matrices-and-their-properties"
+          },
+          {
+            "number": "11.4",
+            "title": "Best Approximation and Minimum-Distance Problems",
+            "slug": "04-best-approximation-and-minimum-distance-problems"
+          },
+          {
+            "number": "11.5",
+            "title": "Inconsistent Linear Systems and Least Squares",
+            "slug": "05-inconsistent-linear-systems-and-least-squares"
+          },
+          {
+            "number": "11.6",
+            "title": "The Normal Equations",
+            "slug": "06-the-normal-equations"
+          },
+          {
+            "number": "11.7",
+            "title": "QR Factorization and Orthogonal Methods",
+            "slug": "07-qr-factorization-and-orthogonal-methods"
+          },
+          {
+            "number": "11.8",
+            "title": "Advanced Least-Squares and Approximation Problems",
+            "slug": "08-advanced-least-squares-and-approximation-problems"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "title": "Adjoint Operators and the Spectral Theorem",
+        "slug": "12-adjoint-operators-and-the-spectral-theorem",
+        "topics": [
+          {
+            "number": "12.1",
+            "title": "Adjoint Operators and Their Matrix Representations",
+            "slug": "01-adjoint-operators-and-their-matrix-representations"
+          },
+          {
+            "number": "12.2",
+            "title": "Self-Adjoint and Hermitian Operators",
+            "slug": "02-self-adjoint-and-hermitian-operators"
+          },
+          {
+            "number": "12.3",
+            "title": "Orthogonal and Unitary Operators Revisited",
+            "slug": "03-orthogonal-and-unitary-operators-revisited"
+          },
+          {
+            "number": "12.4",
+            "title": "Normal Operators and Their Properties",
+            "slug": "04-normal-operators-and-their-properties"
+          },
+          {
+            "number": "12.5",
+            "title": "Eigenvalues and Orthogonality of Eigenvectors",
+            "slug": "05-eigenvalues-and-orthogonality-of-eigenvectors"
+          },
+          {
+            "number": "12.6",
+            "title": "The Spectral Theorem for Real Symmetric Matrices",
+            "slug": "06-the-spectral-theorem-for-real-symmetric-matrices"
+          },
+          {
+            "number": "12.7",
+            "title": "The Complex Spectral Theorem for Normal Operators",
+            "slug": "07-the-complex-spectral-theorem-for-normal-operators"
+          },
+          {
+            "number": "12.8",
+            "title": "Spectral Decomposition and Advanced Applications",
+            "slug": "08-spectral-decomposition-and-advanced-applications"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "title": "Singular Value Decomposition",
+        "slug": "13-singular-value-decomposition",
+        "topics": [
+          {
+            "number": "13.1",
+            "title": "Singular Values and Singular Vectors",
+            "slug": "01-singular-values-and-singular-vectors"
+          },
+          {
+            "number": "13.2",
+            "title": "Positive Semidefinite Operators and Singular Values",
+            "slug": "02-positive-semidefinite-operators-and-singular-values"
+          },
+          {
+            "number": "13.3",
+            "title": "Derivation of the Singular Value Decomposition",
+            "slug": "03-derivation-of-the-singular-value-decomposition"
+          },
+          {
+            "number": "13.4",
+            "title": "Geometric Interpretation of Singular Values",
+            "slug": "04-geometric-interpretation-of-singular-values"
+          },
+          {
+            "number": "13.5",
+            "title": "Rank, Null Spaces, and Singular Value Structure",
+            "slug": "05-rank-null-spaces-and-singular-value-structure"
+          },
+          {
+            "number": "13.6",
+            "title": "Orthogonal Projections and the Moore–Penrose Pseudoinverse",
+            "slug": "06-orthogonal-projections-and-the-moorepenrose-pseudoinverse"
+          },
+          {
+            "number": "13.7",
+            "title": "Low-Rank Approximation and Matrix Norms",
+            "slug": "07-low-rank-approximation-and-matrix-norms"
+          },
+          {
+            "number": "13.8",
+            "title": "Advanced Applications of Singular Value Decomposition",
+            "slug": "08-advanced-applications-of-singular-value-decomposition"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "title": "Quadratic Forms and Definiteness",
+        "slug": "14-quadratic-forms-and-definiteness",
+        "topics": [
+          {
+            "number": "14.1",
+            "title": "Quadratic Forms and Symmetric Matrix Representations",
+            "slug": "01-quadratic-forms-and-symmetric-matrix-representations"
+          },
+          {
+            "number": "14.2",
+            "title": "Positive Definite and Positive Semidefinite Matrices",
+            "slug": "02-positive-definite-and-positive-semidefinite-matrices"
+          },
+          {
+            "number": "14.3",
+            "title": "Negative Definite and Indefinite Quadratic Forms",
+            "slug": "03-negative-definite-and-indefinite-quadratic-forms"
+          },
+          {
+            "number": "14.4",
+            "title": "Principal Minors and Criteria for Positive Definiteness",
+            "slug": "04-principal-minors-and-criteria-for-positive-definiteness"
+          },
+          {
+            "number": "14.5",
+            "title": "Orthogonal Diagonalization of Quadratic Forms",
+            "slug": "05-orthogonal-diagonalization-of-quadratic-forms"
+          },
+          {
+            "number": "14.6",
+            "title": "Principal Axes and Quadratic Surfaces",
+            "slug": "06-principal-axes-and-quadratic-surfaces"
+          },
+          {
+            "number": "14.7",
+            "title": "Sylvester's Law of Inertia",
+            "slug": "07-sylvester-s-law-of-inertia"
+          },
+          {
+            "number": "14.8",
+            "title": "Advanced Quadratic Form Classification Problems",
+            "slug": "08-advanced-quadratic-form-classification-problems"
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "title": "Advanced Structure of Linear Operators",
+        "slug": "15-advanced-structure-of-linear-operators",
+        "topics": [
+          {
+            "number": "15.1",
+            "title": "Polynomial Functions of Linear Operators",
+            "slug": "01-polynomial-functions-of-linear-operators"
+          },
+          {
+            "number": "15.2",
+            "title": "The Cayley–Hamilton Theorem",
+            "slug": "02-the-cayleyhamilton-theorem"
+          },
+          {
+            "number": "15.3",
+            "title": "Minimal Polynomials and Annihilating Polynomials",
+            "slug": "03-minimal-polynomials-and-annihilating-polynomials"
+          },
+          {
+            "number": "15.4",
+            "title": "Minimal Polynomials and Diagonalizability",
+            "slug": "04-minimal-polynomials-and-diagonalizability"
+          },
+          {
+            "number": "15.5",
+            "title": "Generalized Eigenvectors and Generalized Eigenspaces",
+            "slug": "05-generalized-eigenvectors-and-generalized-eigenspaces"
+          },
+          {
+            "number": "15.6",
+            "title": "Nilpotent Operators and Jordan Blocks",
+            "slug": "06-nilpotent-operators-and-jordan-blocks"
+          },
+          {
+            "number": "15.7",
+            "title": "Jordan Canonical Form over the Complex Numbers",
+            "slug": "07-jordan-canonical-form-over-the-complex-numbers"
+          },
+          {
+            "number": "15.8",
+            "title": "Operator Structure and Canonical Form Synthesis",
+            "slug": "08-operator-structure-and-canonical-form-synthesis"
+          }
+        ]
+      }
+    ]
+  },
+  "differential-equations": {
+    "code": "2.5",
+    "title": "Differential Equations",
+    "units": [
+      {
+        "number": 1,
+        "title": "Foundations of Ordinary Differential Equations",
+        "slug": "01-foundations-of-ordinary-differential-equations",
+        "topics": [
+          {
+            "number": "1.1",
+            "title": "Differential Equations and Mathematical Models",
+            "slug": "01-differential-equations-and-mathematical-models"
+          },
+          {
+            "number": "1.2",
+            "title": "Order, Linearity, and Classification of Equations",
+            "slug": "02-order-linearity-and-classification-of-equations"
+          },
+          {
+            "number": "1.3",
+            "title": "Explicit, Implicit, and Parametric Solution Representations",
+            "slug": "03-explicit-implicit-and-parametric-solution-representations"
+          },
+          {
+            "number": "1.4",
+            "title": "General Solutions, Particular Solutions, and Solution Families",
+            "slug": "04-general-solutions-particular-solutions-and-solution-families"
+          },
+          {
+            "number": "1.5",
+            "title": "Initial-Value Problems and Boundary-Value Problems",
+            "slug": "05-initial-value-problems-and-boundary-value-problems"
+          },
+          {
+            "number": "1.6",
+            "title": "Direction Fields and Integral Curves",
+            "slug": "06-direction-fields-and-integral-curves"
+          },
+          {
+            "number": "1.7",
+            "title": "Solution Intervals and Maximal Solutions",
+            "slug": "07-solution-intervals-and-maximal-solutions"
+          },
+          {
+            "number": "1.8",
+            "title": "Fundamental Questions of Existence, Uniqueness, and Behavior",
+            "slug": "08-fundamental-questions-of-existence-uniqueness-and-behavior"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Separable and Autonomous First-Order Equations",
+        "slug": "02-separable-and-autonomous-first-order-equations",
+        "topics": [
+          {
+            "number": "2.1",
+            "title": "Separable Differential Equations",
+            "slug": "01-separable-differential-equations"
+          },
+          {
+            "number": "2.2",
+            "title": "Separation of Variables and Integration",
+            "slug": "02-separation-of-variables-and-integration"
+          },
+          {
+            "number": "2.3",
+            "title": "Initial Conditions and Solution Branches",
+            "slug": "03-initial-conditions-and-solution-branches"
+          },
+          {
+            "number": "2.4",
+            "title": "Equilibrium Solutions and Lost Solutions",
+            "slug": "04-equilibrium-solutions-and-lost-solutions"
+          },
+          {
+            "number": "2.5",
+            "title": "Autonomous Equations and Phase Lines",
+            "slug": "05-autonomous-equations-and-phase-lines"
+          },
+          {
+            "number": "2.6",
+            "title": "Growth, Decay, and Logistic Equations",
+            "slug": "06-growth-decay-and-logistic-equations"
+          },
+          {
+            "number": "2.7",
+            "title": "Finite-Time Blow-Up and Maximal Intervals",
+            "slug": "07-finite-time-blow-up-and-maximal-intervals"
+          },
+          {
+            "number": "2.8",
+            "title": "Advanced Separable Equations and Qualitative Analysis",
+            "slug": "08-advanced-separable-equations-and-qualitative-analysis"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "title": "First-Order Linear Differential Equations",
+        "slug": "03-first-order-linear-differential-equations",
+        "topics": [
+          {
+            "number": "3.1",
+            "title": "Standard Form of First-Order Linear Equations",
+            "slug": "01-standard-form-of-first-order-linear-equations"
+          },
+          {
+            "number": "3.2",
+            "title": "Homogeneous First-Order Linear Equations",
+            "slug": "02-homogeneous-first-order-linear-equations"
+          },
+          {
+            "number": "3.3",
+            "title": "Integrating Factors and Their Derivation",
+            "slug": "03-integrating-factors-and-their-derivation"
+          },
+          {
+            "number": "3.4",
+            "title": "General Solutions of Nonhomogeneous Equations",
+            "slug": "04-general-solutions-of-nonhomogeneous-equations"
+          },
+          {
+            "number": "3.5",
+            "title": "Initial-Value Problems and Uniqueness",
+            "slug": "05-initial-value-problems-and-uniqueness"
+          },
+          {
+            "number": "3.6",
+            "title": "The Superposition Principle and Solution Structure",
+            "slug": "06-the-superposition-principle-and-solution-structure"
+          },
+          {
+            "number": "3.7",
+            "title": "Linear Equations with Variable Coefficients",
+            "slug": "07-linear-equations-with-variable-coefficients"
+          },
+          {
+            "number": "3.8",
+            "title": "Advanced First-Order Linear Equations and Applications",
+            "slug": "08-advanced-first-order-linear-equations-and-applications"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Exact Equations and Nonlinear First-Order Methods",
+        "slug": "04-exact-equations-and-nonlinear-first-order-methods",
+        "topics": [
+          {
+            "number": "4.1",
+            "title": "Differential Forms and Exact Equations",
+            "slug": "01-differential-forms-and-exact-equations"
+          },
+          {
+            "number": "4.2",
+            "title": "Potential Functions and Exactness Conditions",
+            "slug": "02-potential-functions-and-exactness-conditions"
+          },
+          {
+            "number": "4.3",
+            "title": "Exact Equations and Initial-Value Problems",
+            "slug": "03-exact-equations-and-initial-value-problems"
+          },
+          {
+            "number": "4.4",
+            "title": "Integrating Factors for Nonexact Equations",
+            "slug": "04-integrating-factors-for-nonexact-equations"
+          },
+          {
+            "number": "4.5",
+            "title": "Homogeneous First-Order Equations and Ratio Substitutions",
+            "slug": "05-homogeneous-first-order-equations-and-ratio-substitutions"
+          },
+          {
+            "number": "4.6",
+            "title": "Bernoulli Differential Equations",
+            "slug": "06-bernoulli-differential-equations"
+          },
+          {
+            "number": "4.7",
+            "title": "Riccati Equations with a Known Particular Solution",
+            "slug": "07-riccati-equations-with-a-known-particular-solution"
+          },
+          {
+            "number": "4.8",
+            "title": "Advanced First-Order Transformations and Solution Methods",
+            "slug": "08-advanced-first-order-transformations-and-solution-methods"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "title": "Existence, Uniqueness, and Dependence on Initial Conditions",
+        "slug": "05-existence-uniqueness-and-dependence-on-initial-conditions",
+        "topics": [
+          {
+            "number": "5.1",
+            "title": "The Integral Formulation of Initial-Value Problems",
+            "slug": "01-the-integral-formulation-of-initial-value-problems"
+          },
+          {
+            "number": "5.2",
+            "title": "Continuity and Local Existence of Solutions",
+            "slug": "02-continuity-and-local-existence-of-solutions"
+          },
+          {
+            "number": "5.3",
+            "title": "The Picard–Lindelöf Existence and Uniqueness Theorem",
+            "slug": "03-the-picardlindelof-existence-and-uniqueness-theorem"
+          },
+          {
+            "number": "5.4",
+            "title": "Lipschitz Conditions and Uniqueness",
+            "slug": "04-lipschitz-conditions-and-uniqueness"
+          },
+          {
+            "number": "5.5",
+            "title": "Picard Iteration and Successive Approximations",
+            "slug": "05-picard-iteration-and-successive-approximations"
+          },
+          {
+            "number": "5.6",
+            "title": "Nonuniqueness and Counterexamples",
+            "slug": "06-nonuniqueness-and-counterexamples"
+          },
+          {
+            "number": "5.7",
+            "title": "Continuation, Maximal Solutions, and Finite-Time Blow-Up",
+            "slug": "07-continuation-maximal-solutions-and-finite-time-blow-up"
+          },
+          {
+            "number": "5.8",
+            "title": "Continuous Dependence on Initial Conditions and Parameters",
+            "slug": "08-continuous-dependence-on-initial-conditions-and-parameters"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "title": "Second-Order Linear Homogeneous Equations",
+        "slug": "06-second-order-linear-homogeneous-equations",
+        "topics": [
+          {
+            "number": "6.1",
+            "title": "Second-Order Linear Differential Equations",
+            "slug": "01-second-order-linear-differential-equations"
+          },
+          {
+            "number": "6.2",
+            "title": "Homogeneous Equations and the Superposition Principle",
+            "slug": "02-homogeneous-equations-and-the-superposition-principle"
+          },
+          {
+            "number": "6.3",
+            "title": "Linear Independence of Solutions",
+            "slug": "03-linear-independence-of-solutions"
+          },
+          {
+            "number": "6.4",
+            "title": "The Wronskian and Abel's Identity",
+            "slug": "04-the-wronskian-and-abel-s-identity"
+          },
+          {
+            "number": "6.5",
+            "title": "Constant-Coefficient Equations with Distinct Real Roots",
+            "slug": "05-constant-coefficient-equations-with-distinct-real-roots"
+          },
+          {
+            "number": "6.6",
+            "title": "Repeated Characteristic Roots",
+            "slug": "06-repeated-characteristic-roots"
+          },
+          {
+            "number": "6.7",
+            "title": "Complex Characteristic Roots and Real Solutions",
+            "slug": "07-complex-characteristic-roots-and-real-solutions"
+          },
+          {
+            "number": "6.8",
+            "title": "Fundamental Solution Sets and Initial-Value Problems",
+            "slug": "08-fundamental-solution-sets-and-initial-value-problems"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "title": "Nonhomogeneous Linear Equations and Solution Methods",
+        "slug": "07-nonhomogeneous-linear-equations-and-solution-methods",
+        "topics": [
+          {
+            "number": "7.1",
+            "title": "Structure of Nonhomogeneous Linear Equations",
+            "slug": "01-structure-of-nonhomogeneous-linear-equations"
+          },
+          {
+            "number": "7.2",
+            "title": "Particular Solutions and the General Solution",
+            "slug": "02-particular-solutions-and-the-general-solution"
+          },
+          {
+            "number": "7.3",
+            "title": "The Method of Undetermined Coefficients",
+            "slug": "03-the-method-of-undetermined-coefficients"
+          },
+          {
+            "number": "7.4",
+            "title": "Resonant Forcing and Modified Trial Solutions",
+            "slug": "04-resonant-forcing-and-modified-trial-solutions"
+          },
+          {
+            "number": "7.5",
+            "title": "The Annihilator Method",
+            "slug": "05-the-annihilator-method"
+          },
+          {
+            "number": "7.6",
+            "title": "Reduction of Order",
+            "slug": "06-reduction-of-order"
+          },
+          {
+            "number": "7.7",
+            "title": "Variation of Parameters",
+            "slug": "07-variation-of-parameters"
+          },
+          {
+            "number": "7.8",
+            "title": "Advanced Nonhomogeneous Equations and Method Selection",
+            "slug": "08-advanced-nonhomogeneous-equations-and-method-selection"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "title": "Higher-Order Linear Differential Equations",
+        "slug": "08-higher-order-linear-differential-equations",
+        "topics": [
+          {
+            "number": "8.1",
+            "title": "Linear Differential Operators and Operator Notation",
+            "slug": "01-linear-differential-operators-and-operator-notation"
+          },
+          {
+            "number": "8.2",
+            "title": "Homogeneous Equations of Order n",
+            "slug": "02-homogeneous-equations-of-order-n"
+          },
+          {
+            "number": "8.3",
+            "title": "Existence, Uniqueness, and Fundamental Solution Sets",
+            "slug": "03-existence-uniqueness-and-fundamental-solution-sets"
+          },
+          {
+            "number": "8.4",
+            "title": "Higher-Order Wronskians and Abel's Formula",
+            "slug": "04-higher-order-wronskians-and-abel-s-formula"
+          },
+          {
+            "number": "8.5",
+            "title": "Constant-Coefficient Equations and Characteristic Polynomials",
+            "slug": "05-constant-coefficient-equations-and-characteristic-polynomials"
+          },
+          {
+            "number": "8.6",
+            "title": "Repeated and Complex Characteristic Roots",
+            "slug": "06-repeated-and-complex-characteristic-roots"
+          },
+          {
+            "number": "8.7",
+            "title": "Nonhomogeneous Equations and Higher-Order Variation of Parameters",
+            "slug": "07-nonhomogeneous-equations-and-higher-order-variation-of-parameters"
+          },
+          {
+            "number": "8.8",
+            "title": "Advanced Higher-Order Linear Equations and Solution Structure",
+            "slug": "08-advanced-higher-order-linear-equations-and-solution-structure"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "title": "Oscillations, Damping, and Forced Motion",
+        "slug": "09-oscillations-damping-and-forced-motion",
+        "topics": [
+          {
+            "number": "9.1",
+            "title": "The Harmonic Oscillator",
+            "slug": "01-the-harmonic-oscillator"
+          },
+          {
+            "number": "9.2",
+            "title": "Mass–Spring Models and Newton's Second Law",
+            "slug": "02-massspring-models-and-newton-s-second-law"
+          },
+          {
+            "number": "9.3",
+            "title": "Undamped Free Oscillations",
+            "slug": "03-undamped-free-oscillations"
+          },
+          {
+            "number": "9.4",
+            "title": "Damped Oscillations and Characteristic Roots",
+            "slug": "04-damped-oscillations-and-characteristic-roots"
+          },
+          {
+            "number": "9.5",
+            "title": "Overdamping, Critical Damping, and Underdamping",
+            "slug": "05-overdamping-critical-damping-and-underdamping"
+          },
+          {
+            "number": "9.6",
+            "title": "Forced Oscillations and Steady-State Response",
+            "slug": "06-forced-oscillations-and-steady-state-response"
+          },
+          {
+            "number": "9.7",
+            "title": "Resonance, Transient Behavior, and Long-Term Response",
+            "slug": "07-resonance-transient-behavior-and-long-term-response"
+          },
+          {
+            "number": "9.8",
+            "title": "Advanced Oscillation and Forcing Problems",
+            "slug": "08-advanced-oscillation-and-forcing-problems"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "title": "Laplace Transforms and Initial-Value Problems",
+        "slug": "10-laplace-transforms-and-initial-value-problems",
+        "topics": [
+          {
+            "number": "10.1",
+            "title": "Definition and Convergence of the Laplace Transform",
+            "slug": "01-definition-and-convergence-of-the-laplace-transform"
+          },
+          {
+            "number": "10.2",
+            "title": "Linearity and Elementary Transform Formulas",
+            "slug": "02-linearity-and-elementary-transform-formulas"
+          },
+          {
+            "number": "10.3",
+            "title": "Transforms of Derivatives and Initial Conditions",
+            "slug": "03-transforms-of-derivatives-and-initial-conditions"
+          },
+          {
+            "number": "10.4",
+            "title": "Solving Linear Initial-Value Problems",
+            "slug": "04-solving-linear-initial-value-problems"
+          },
+          {
+            "number": "10.5",
+            "title": "Translation Theorems and Unit Step Functions",
+            "slug": "05-translation-theorems-and-unit-step-functions"
+          },
+          {
+            "number": "10.6",
+            "title": "Convolution and the Convolution Theorem",
+            "slug": "06-convolution-and-the-convolution-theorem"
+          },
+          {
+            "number": "10.7",
+            "title": "Impulsive Forcing and the Dirac Delta Formalism",
+            "slug": "07-impulsive-forcing-and-the-dirac-delta-formalism"
+          },
+          {
+            "number": "10.8",
+            "title": "Advanced Laplace Transform Problems and Inverse Transforms",
+            "slug": "08-advanced-laplace-transform-problems-and-inverse-transforms"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "title": "Systems of Linear Differential Equations",
+        "slug": "11-systems-of-linear-differential-equations",
+        "topics": [
+          {
+            "number": "11.1",
+            "title": "First-Order Systems and Vector Formulation",
+            "slug": "01-first-order-systems-and-vector-formulation"
+          },
+          {
+            "number": "11.2",
+            "title": "Reduction of Higher-Order Equations to First-Order Systems",
+            "slug": "02-reduction-of-higher-order-equations-to-first-order-systems"
+          },
+          {
+            "number": "11.3",
+            "title": "Homogeneous Linear Systems with Constant Coefficients",
+            "slug": "03-homogeneous-linear-systems-with-constant-coefficients"
+          },
+          {
+            "number": "11.4",
+            "title": "Eigenvalues, Eigenvectors, and Matrix Solutions",
+            "slug": "04-eigenvalues-eigenvectors-and-matrix-solutions"
+          },
+          {
+            "number": "11.5",
+            "title": "Complex Eigenvalues and Real Solution Representations",
+            "slug": "05-complex-eigenvalues-and-real-solution-representations"
+          },
+          {
+            "number": "11.6",
+            "title": "Repeated Eigenvalues and Generalized Eigenvectors",
+            "slug": "06-repeated-eigenvalues-and-generalized-eigenvectors"
+          },
+          {
+            "number": "11.7",
+            "title": "Matrix Exponentials and Fundamental Matrices",
+            "slug": "07-matrix-exponentials-and-fundamental-matrices"
+          },
+          {
+            "number": "11.8",
+            "title": "Nonhomogeneous Systems and Variation of Constants",
+            "slug": "08-nonhomogeneous-systems-and-variation-of-constants"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "title": "Qualitative Theory and Nonlinear Dynamical Systems",
+        "slug": "12-qualitative-theory-and-nonlinear-dynamical-systems",
+        "topics": [
+          {
+            "number": "12.1",
+            "title": "Autonomous Systems and Phase Space",
+            "slug": "01-autonomous-systems-and-phase-space"
+          },
+          {
+            "number": "12.2",
+            "title": "Equilibrium Points and Trajectories",
+            "slug": "02-equilibrium-points-and-trajectories"
+          },
+          {
+            "number": "12.3",
+            "title": "Phase Portraits of Planar Linear Systems",
+            "slug": "03-phase-portraits-of-planar-linear-systems"
+          },
+          {
+            "number": "12.4",
+            "title": "Eigenvalue Classification and Linear Stability",
+            "slug": "04-eigenvalue-classification-and-linear-stability"
+          },
+          {
+            "number": "12.5",
+            "title": "Nonlinear Equilibria and Jacobian Linearization",
+            "slug": "05-nonlinear-equilibria-and-jacobian-linearization"
+          },
+          {
+            "number": "12.6",
+            "title": "Local Stability and Linearization Theorems",
+            "slug": "06-local-stability-and-linearization-theorems"
+          },
+          {
+            "number": "12.7",
+            "title": "Lyapunov Functions and Direct Stability Arguments",
+            "slug": "07-lyapunov-functions-and-direct-stability-arguments"
+          },
+          {
+            "number": "12.8",
+            "title": "Advanced Phase-Plane Analysis and Nonlinear Behavior",
+            "slug": "08-advanced-phase-plane-analysis-and-nonlinear-behavior"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "title": "Power Series Solutions of Differential Equations",
+        "slug": "13-power-series-solutions-of-differential-equations",
+        "topics": [
+          {
+            "number": "13.1",
+            "title": "Power Series Solutions and Analytic Coefficients",
+            "slug": "01-power-series-solutions-and-analytic-coefficients"
+          },
+          {
+            "number": "13.2",
+            "title": "Ordinary Points of Linear Differential Equations",
+            "slug": "02-ordinary-points-of-linear-differential-equations"
+          },
+          {
+            "number": "13.3",
+            "title": "Power Series Substitution and Coefficient Matching",
+            "slug": "03-power-series-substitution-and-coefficient-matching"
+          },
+          {
+            "number": "13.4",
+            "title": "Recurrence Relations for Series Coefficients",
+            "slug": "04-recurrence-relations-for-series-coefficients"
+          },
+          {
+            "number": "13.5",
+            "title": "Initial Conditions and Independent Series Solutions",
+            "slug": "05-initial-conditions-and-independent-series-solutions"
+          },
+          {
+            "number": "13.6",
+            "title": "Singular Points and Regular Singular Classification",
+            "slug": "06-singular-points-and-regular-singular-classification"
+          },
+          {
+            "number": "13.7",
+            "title": "The Frobenius Method and Indicial Equations",
+            "slug": "07-the-frobenius-method-and-indicial-equations"
+          },
+          {
+            "number": "13.8",
+            "title": "Advanced Frobenius Solutions and Exceptional Root Cases",
+            "slug": "08-advanced-frobenius-solutions-and-exceptional-root-cases"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "title": "Boundary-Value Problems and Eigenvalue Equations",
+        "slug": "14-boundary-value-problems-and-eigenvalue-equations",
+        "topics": [
+          {
+            "number": "14.1",
+            "title": "Initial-Value Problems Versus Boundary-Value Problems",
+            "slug": "01-initial-value-problems-versus-boundary-value-problems"
+          },
+          {
+            "number": "14.2",
+            "title": "Two-Point Boundary Conditions",
+            "slug": "02-two-point-boundary-conditions"
+          },
+          {
+            "number": "14.3",
+            "title": "Existence, Uniqueness, and Nonuniqueness of Boundary-Value Solutions",
+            "slug": "03-existence-uniqueness-and-nonuniqueness-of-boundary-value-solutions"
+          },
+          {
+            "number": "14.4",
+            "title": "Homogeneous Boundary-Value Problems and Eigenvalues",
+            "slug": "04-homogeneous-boundary-value-problems-and-eigenvalues"
+          },
+          {
+            "number": "14.5",
+            "title": "Sturm–Liouville Equations: Elementary Theory",
+            "slug": "05-sturmliouville-equations-elementary-theory"
+          },
+          {
+            "number": "14.6",
+            "title": "Orthogonality of Eigenfunctions",
+            "slug": "06-orthogonality-of-eigenfunctions"
+          },
+          {
+            "number": "14.7",
+            "title": "Green's Functions for Regular Second-Order Boundary-Value Problems",
+            "slug": "07-green-s-functions-for-regular-second-order-boundary-value-problems"
+          },
+          {
+            "number": "14.8",
+            "title": "Advanced Boundary-Value Problems and Solvability Conditions",
+            "slug": "08-advanced-boundary-value-problems-and-solvability-conditions"
+          }
+        ]
+      },
+      {
+        "number": 15,
+        "title": "Numerical Methods for Ordinary Differential Equations",
+        "slug": "15-numerical-methods-for-ordinary-differential-equations",
+        "topics": [
+          {
+            "number": "15.1",
+            "title": "Numerical Initial-Value Problems and Discretization",
+            "slug": "01-numerical-initial-value-problems-and-discretization"
+          },
+          {
+            "number": "15.2",
+            "title": "Euler's Method and Its Geometric Derivation",
+            "slug": "02-euler-s-method-and-its-geometric-derivation"
+          },
+          {
+            "number": "15.3",
+            "title": "Local Truncation Error and Global Error",
+            "slug": "03-local-truncation-error-and-global-error"
+          },
+          {
+            "number": "15.4",
+            "title": "Improved Euler and Second-Order Runge–Kutta Methods",
+            "slug": "04-improved-euler-and-second-order-rungekutta-methods"
+          },
+          {
+            "number": "15.5",
+            "title": "Classical Fourth-Order Runge–Kutta Method",
+            "slug": "05-classical-fourth-order-rungekutta-method"
+          },
+          {
+            "number": "15.6",
+            "title": "Consistency, Convergence, and Numerical Stability",
+            "slug": "06-consistency-convergence-and-numerical-stability"
+          },
+          {
+            "number": "15.7",
+            "title": "Step-Size Selection and Error Control",
+            "slug": "07-step-size-selection-and-error-control"
+          },
+          {
+            "number": "15.8",
+            "title": "Advanced Numerical Approximation and Method Comparison",
+            "slug": "08-advanced-numerical-approximation-and-method-comparison"
+          }
+        ]
+      }
+    ]
+  },
+  "calculus-i": {
+    "code": "2.1",
+    "title": "Calculus I",
+    "units": [
+      {
+        "number": 1,
+        "title": "Limits and Their Foundations",
+        "slug": "01-limits-and-their-foundations",
+        "topics": [
+          {
+            "number": "1.1",
+            "title": "The Limit of a Real-Valued Function",
+            "slug": "01-the-limit-of-a-real-valued-function"
+          },
+          {
+            "number": "1.2",
+            "title": "One-Sided Limits and Their Relationships",
+            "slug": "02-one-sided-limits-and-their-relationships"
+          },
+          {
+            "number": "1.3",
+            "title": "Limit Laws and Algebraic Evaluation",
+            "slug": "03-limit-laws-and-algebraic-evaluation"
+          },
+          {
+            "number": "1.4",
+            "title": "The Epsilon–Delta Definition of a Limit",
+            "slug": "04-the-epsilondelta-definition-of-a-limit"
+          },
+          {
+            "number": "1.5",
+            "title": "Rigorous Limit Proofs",
+            "slug": "05-rigorous-limit-proofs"
+          },
+          {
+            "number": "1.6",
+            "title": "The Squeeze Theorem",
+            "slug": "06-the-squeeze-theorem"
+          },
+          {
+            "number": "1.7",
+            "title": "Infinite Limits and Unbounded Behavior",
+            "slug": "07-infinite-limits-and-unbounded-behavior"
+          },
+          {
+            "number": "1.8",
+            "title": "Limits at Infinity and Asymptotic Behavior",
+            "slug": "08-limits-at-infinity-and-asymptotic-behavior"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Continuity and Its Consequences",
+        "slug": "02-continuity-and-its-consequences",
+        "topics": [
+          {
+            "number": "2.1",
+            "title": "Continuity at a Point",
+            "slug": "01-continuity-at-a-point"
+          },
+          {
+            "number": "2.2",
+            "title": "One-Sided Continuity and Continuity on Intervals",
+            "slug": "02-one-sided-continuity-and-continuity-on-intervals"
+          },
+          {
+            "number": "2.3",
+            "title": "Algebra of Continuous Functions",
+            "slug": "03-algebra-of-continuous-functions"
+          },
+          {
+            "number": "2.4",
+            "title": "Continuity of Composite Functions",
+            "slug": "04-continuity-of-composite-functions"
+          },
+          {
+            "number": "2.5",
+            "title": "Classification of Discontinuities",
+            "slug": "05-classification-of-discontinuities"
+          },
+          {
+            "number": "2.6",
+            "title": "The Intermediate Value Theorem",
+            "slug": "06-the-intermediate-value-theorem"
+          },
+          {
+            "number": "2.7",
+            "title": "The Extreme Value Theorem",
+            "slug": "07-the-extreme-value-theorem"
+          },
+          {
+            "number": "2.8",
+            "title": "Uniform Continuity on Closed Intervals: An Introduction",
+            "slug": "08-uniform-continuity-on-closed-intervals-an-introduction"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "title": "The Derivative and Differentiability",
+        "slug": "03-the-derivative-and-differentiability",
+        "topics": [
+          {
+            "number": "3.1",
+            "title": "Average and Instantaneous Rates of Change",
+            "slug": "01-average-and-instantaneous-rates-of-change"
+          },
+          {
+            "number": "3.2",
+            "title": "The Derivative as a Limit",
+            "slug": "02-the-derivative-as-a-limit"
+          },
+          {
+            "number": "3.3",
+            "title": "Derivatives from First Principles",
+            "slug": "03-derivatives-from-first-principles"
+          },
+          {
+            "number": "3.4",
+            "title": "Geometric Interpretation and Tangent Lines",
+            "slug": "04-geometric-interpretation-and-tangent-lines"
+          },
+          {
+            "number": "3.5",
+            "title": "Differentiability and Continuity",
+            "slug": "05-differentiability-and-continuity"
+          },
+          {
+            "number": "3.6",
+            "title": "One-Sided Derivatives and Nondifferentiability",
+            "slug": "06-one-sided-derivatives-and-nondifferentiability"
+          },
+          {
+            "number": "3.7",
+            "title": "The Derivative as a Function",
+            "slug": "07-the-derivative-as-a-function"
+          },
+          {
+            "number": "3.8",
+            "title": "Higher-Order Derivatives",
+            "slug": "08-higher-order-derivatives"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Fundamental Rules of Differentiation",
+        "slug": "04-fundamental-rules-of-differentiation",
+        "topics": [
+          {
+            "number": "4.1",
+            "title": "Derivatives of Constant and Power Functions",
+            "slug": "01-derivatives-of-constant-and-power-functions"
+          },
+          {
+            "number": "4.2",
+            "title": "The Constant Multiple and Sum Rules",
+            "slug": "02-the-constant-multiple-and-sum-rules"
+          },
+          {
+            "number": "4.3",
+            "title": "The Product Rule",
+            "slug": "03-the-product-rule"
+          },
+          {
+            "number": "4.4",
+            "title": "The Quotient Rule",
+            "slug": "04-the-quotient-rule"
+          },
+          {
+            "number": "4.5",
+            "title": "The Chain Rule",
+            "slug": "05-the-chain-rule"
+          },
+          {
+            "number": "4.6",
+            "title": "Differentiation of Composite Functions",
+            "slug": "06-differentiation-of-composite-functions"
+          },
+          {
+            "number": "4.7",
+            "title": "Repeated Differentiation and Higher Derivatives",
+            "slug": "07-repeated-differentiation-and-higher-derivatives"
+          },
+          {
+            "number": "4.8",
+            "title": "Proofs and Structural Applications of Differentiation Rules",
+            "slug": "08-proofs-and-structural-applications-of-differentiation-rules"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "title": "Differentiation of Elementary Transcendental Functions",
+        "slug": "05-differentiation-of-elementary-transcendental-functions",
+        "topics": [
+          {
+            "number": "5.1",
+            "title": "Derivatives of Sine and Cosine",
+            "slug": "01-derivatives-of-sine-and-cosine"
+          },
+          {
+            "number": "5.2",
+            "title": "Derivatives of the Remaining Trigonometric Functions",
+            "slug": "02-derivatives-of-the-remaining-trigonometric-functions"
+          },
+          {
+            "number": "5.3",
+            "title": "Derivatives of Exponential Functions",
+            "slug": "03-derivatives-of-exponential-functions"
+          },
+          {
+            "number": "5.4",
+            "title": "Derivatives of Natural and General Logarithmic Functions",
+            "slug": "04-derivatives-of-natural-and-general-logarithmic-functions"
+          },
+          {
+            "number": "5.5",
+            "title": "Differentiation of Inverse Functions",
+            "slug": "05-differentiation-of-inverse-functions"
+          },
+          {
+            "number": "5.6",
+            "title": "Derivatives of Inverse Trigonometric Functions",
+            "slug": "06-derivatives-of-inverse-trigonometric-functions"
+          },
+          {
+            "number": "5.7",
+            "title": "Logarithmic Differentiation",
+            "slug": "07-logarithmic-differentiation"
+          },
+          {
+            "number": "5.8",
+            "title": "Complex Expressions Involving Elementary Functions",
+            "slug": "08-complex-expressions-involving-elementary-functions"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "title": "Implicit Differentiation and Related Rates",
+        "slug": "06-implicit-differentiation-and-related-rates",
+        "topics": [
+          {
+            "number": "6.1",
+            "title": "Explicit and Implicit Functional Relationships",
+            "slug": "01-explicit-and-implicit-functional-relationships"
+          },
+          {
+            "number": "6.2",
+            "title": "Implicit Differentiation",
+            "slug": "02-implicit-differentiation"
+          },
+          {
+            "number": "6.3",
+            "title": "Tangent Lines to Implicitly Defined Curves",
+            "slug": "03-tangent-lines-to-implicitly-defined-curves"
+          },
+          {
+            "number": "6.4",
+            "title": "Higher-Order Implicit Derivatives",
+            "slug": "04-higher-order-implicit-derivatives"
+          },
+          {
+            "number": "6.5",
+            "title": "Rates of Change and Functional Dependence",
+            "slug": "05-rates-of-change-and-functional-dependence"
+          },
+          {
+            "number": "6.6",
+            "title": "Related Rates in Geometric Problems",
+            "slug": "06-related-rates-in-geometric-problems"
+          },
+          {
+            "number": "6.7",
+            "title": "Related Rates in Physical and Applied Contexts",
+            "slug": "07-related-rates-in-physical-and-applied-contexts"
+          },
+          {
+            "number": "6.8",
+            "title": "Advanced Implicit Differentiation and Rate Problems",
+            "slug": "08-advanced-implicit-differentiation-and-rate-problems"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "title": "Fundamental Theorems of Differential Calculus",
+        "slug": "07-fundamental-theorems-of-differential-calculus",
+        "topics": [
+          {
+            "number": "7.1",
+            "title": "Local Extrema and Fermat's Theorem",
+            "slug": "01-local-extrema-and-fermat-s-theorem"
+          },
+          {
+            "number": "7.2",
+            "title": "Critical Points and Necessary Conditions for Extrema",
+            "slug": "02-critical-points-and-necessary-conditions-for-extrema"
+          },
+          {
+            "number": "7.3",
+            "title": "Rolle's Theorem",
+            "slug": "03-rolle-s-theorem"
+          },
+          {
+            "number": "7.4",
+            "title": "The Mean Value Theorem",
+            "slug": "04-the-mean-value-theorem"
+          },
+          {
+            "number": "7.5",
+            "title": "Consequences of the Mean Value Theorem",
+            "slug": "05-consequences-of-the-mean-value-theorem"
+          },
+          {
+            "number": "7.6",
+            "title": "Monotonicity and Derivative Sign",
+            "slug": "06-monotonicity-and-derivative-sign"
+          },
+          {
+            "number": "7.7",
+            "title": "The Generalized Mean Value Theorem",
+            "slug": "07-the-generalized-mean-value-theorem"
+          },
+          {
+            "number": "7.8",
+            "title": "L'Hôpital's Rule and Indeterminate Forms",
+            "slug": "08-l-hopital-s-rule-and-indeterminate-forms"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "title": "Derivative-Based Function Analysis",
+        "slug": "08-derivative-based-function-analysis",
+        "topics": [
+          {
+            "number": "8.1",
+            "title": "Increasing and Decreasing Functions",
+            "slug": "01-increasing-and-decreasing-functions"
+          },
+          {
+            "number": "8.2",
+            "title": "The First Derivative Test",
+            "slug": "02-the-first-derivative-test"
+          },
+          {
+            "number": "8.3",
+            "title": "Concavity and the Second Derivative",
+            "slug": "03-concavity-and-the-second-derivative"
+          },
+          {
+            "number": "8.4",
+            "title": "The Second Derivative Test",
+            "slug": "04-the-second-derivative-test"
+          },
+          {
+            "number": "8.5",
+            "title": "Inflection Points and Changes in Concavity",
+            "slug": "05-inflection-points-and-changes-in-concavity"
+          },
+          {
+            "number": "8.6",
+            "title": "Asymptotic Behavior and Function Analysis",
+            "slug": "06-asymptotic-behavior-and-function-analysis"
+          },
+          {
+            "number": "8.7",
+            "title": "Comprehensive Curve Sketching",
+            "slug": "07-comprehensive-curve-sketching"
+          },
+          {
+            "number": "8.8",
+            "title": "Parameter-Dependent Function Behavior",
+            "slug": "08-parameter-dependent-function-behavior"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "title": "Optimization and Extremal Problems",
+        "slug": "09-optimization-and-extremal-problems",
+        "topics": [
+          {
+            "number": "9.1",
+            "title": "Local and Global Optimization",
+            "slug": "01-local-and-global-optimization"
+          },
+          {
+            "number": "9.2",
+            "title": "Optimization on Closed Intervals",
+            "slug": "02-optimization-on-closed-intervals"
+          },
+          {
+            "number": "9.3",
+            "title": "Constrained Optimization in One Variable",
+            "slug": "03-constrained-optimization-in-one-variable"
+          },
+          {
+            "number": "9.4",
+            "title": "Geometric Optimization Problems",
+            "slug": "04-geometric-optimization-problems"
+          },
+          {
+            "number": "9.5",
+            "title": "Applied Optimization and Mathematical Modeling",
+            "slug": "05-applied-optimization-and-mathematical-modeling"
+          },
+          {
+            "number": "9.6",
+            "title": "Optimization Involving Transcendental Functions",
+            "slug": "06-optimization-involving-transcendental-functions"
+          },
+          {
+            "number": "9.7",
+            "title": "Parameterized Optimization Problems",
+            "slug": "07-parameterized-optimization-problems"
+          },
+          {
+            "number": "9.8",
+            "title": "Advanced Optimization and Proof of Optimality",
+            "slug": "08-advanced-optimization-and-proof-of-optimality"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "title": "Linear Approximation and Numerical Methods",
+        "slug": "10-linear-approximation-and-numerical-methods",
+        "topics": [
+          {
+            "number": "10.1",
+            "title": "Local Linearity of Differentiable Functions",
+            "slug": "01-local-linearity-of-differentiable-functions"
+          },
+          {
+            "number": "10.2",
+            "title": "Linearization and Tangent-Line Approximation",
+            "slug": "02-linearization-and-tangent-line-approximation"
+          },
+          {
+            "number": "10.3",
+            "title": "Differentials and Approximate Changes",
+            "slug": "03-differentials-and-approximate-changes"
+          },
+          {
+            "number": "10.4",
+            "title": "Relative Error and Error Propagation",
+            "slug": "04-relative-error-and-error-propagation"
+          },
+          {
+            "number": "10.5",
+            "title": "Newton's Method",
+            "slug": "05-newton-s-method"
+          },
+          {
+            "number": "10.6",
+            "title": "Geometric Interpretation of Newton Iteration",
+            "slug": "06-geometric-interpretation-of-newton-iteration"
+          },
+          {
+            "number": "10.7",
+            "title": "Convergence and Failure of Newton's Method",
+            "slug": "07-convergence-and-failure-of-newton-s-method"
+          },
+          {
+            "number": "10.8",
+            "title": "Taylor's Theorem: First- and Second-Order Approximations",
+            "slug": "08-taylor-s-theorem-first-and-second-order-approximations"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "title": "The Definite Integral",
+        "slug": "11-the-definite-integral",
+        "topics": [
+          {
+            "number": "11.1",
+            "title": "Accumulation, Area, and the Motivation for Integration",
+            "slug": "01-accumulation-area-and-the-motivation-for-integration"
+          },
+          {
+            "number": "11.2",
+            "title": "Partitions and Riemann Sums",
+            "slug": "02-partitions-and-riemann-sums"
+          },
+          {
+            "number": "11.3",
+            "title": "Upper and Lower Sums",
+            "slug": "03-upper-and-lower-sums"
+          },
+          {
+            "number": "11.4",
+            "title": "The Riemann Definition of the Definite Integral",
+            "slug": "04-the-riemann-definition-of-the-definite-integral"
+          },
+          {
+            "number": "11.5",
+            "title": "Integrability of Continuous and Monotone Functions",
+            "slug": "05-integrability-of-continuous-and-monotone-functions"
+          },
+          {
+            "number": "11.6",
+            "title": "Fundamental Properties of Definite Integrals",
+            "slug": "06-fundamental-properties-of-definite-integrals"
+          },
+          {
+            "number": "11.7",
+            "title": "Geometric Interpretation and Signed Area",
+            "slug": "07-geometric-interpretation-and-signed-area"
+          },
+          {
+            "number": "11.8",
+            "title": "Integral Estimates and Inequalities",
+            "slug": "08-integral-estimates-and-inequalities"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "title": "The Fundamental Theorem of Calculus",
+        "slug": "12-the-fundamental-theorem-of-calculus",
+        "topics": [
+          {
+            "number": "12.1",
+            "title": "Accumulation Functions and Their Derivatives",
+            "slug": "01-accumulation-functions-and-their-derivatives"
+          },
+          {
+            "number": "12.2",
+            "title": "The Fundamental Theorem of Calculus, Part I",
+            "slug": "02-the-fundamental-theorem-of-calculus-part-i"
+          },
+          {
+            "number": "12.3",
+            "title": "Antiderivatives and Indefinite Integrals",
+            "slug": "03-antiderivatives-and-indefinite-integrals"
+          },
+          {
+            "number": "12.4",
+            "title": "The Fundamental Theorem of Calculus, Part II",
+            "slug": "04-the-fundamental-theorem-of-calculus-part-ii"
+          },
+          {
+            "number": "12.5",
+            "title": "Elementary Antiderivative Formulas",
+            "slug": "05-elementary-antiderivative-formulas"
+          },
+          {
+            "number": "12.6",
+            "title": "Substitution and the Reverse Chain Rule",
+            "slug": "06-substitution-and-the-reverse-chain-rule"
+          },
+          {
+            "number": "12.7",
+            "title": "Area Between Curves",
+            "slug": "07-area-between-curves"
+          },
+          {
+            "number": "12.8",
+            "title": "Net Change and Accumulation Applications",
+            "slug": "08-net-change-and-accumulation-applications"
+          }
+        ]
+      }
+    ]
+  },
+  "precalculus": {
+    "code": "1.1",
+    "title": "Precalculus",
+    "units": [
+      {
+        "number": 1,
+        "title": "Mathematical Language, Logic, and Proof",
+        "slug": "01-mathematical-language-logic-and-proof",
+        "topics": [
+          {
+            "number": "1.1",
+            "title": "Mathematical Statements and Logical Connectives",
+            "slug": "01-mathematical-statements-and-logical-connectives"
+          },
+          {
+            "number": "1.2",
+            "title": "Quantifiers, Negation, and Logical Equivalence",
+            "slug": "02-quantifiers-negation-and-logical-equivalence"
+          },
+          {
+            "number": "1.3",
+            "title": "Sets, Subsets, and Set Operations",
+            "slug": "03-sets-subsets-and-set-operations"
+          },
+          {
+            "number": "1.4",
+            "title": "Number Systems and Their Properties",
+            "slug": "04-number-systems-and-their-properties"
+          },
+          {
+            "number": "1.5",
+            "title": "Direct Proof and Proof by Contrapositive",
+            "slug": "05-direct-proof-and-proof-by-contrapositive"
+          },
+          {
+            "number": "1.6",
+            "title": "Proof by Contradiction",
+            "slug": "06-proof-by-contradiction"
+          },
+          {
+            "number": "1.7",
+            "title": "Mathematical Induction",
+            "slug": "07-mathematical-induction"
+          },
+          {
+            "number": "1.8",
+            "title": "Counterexamples and Mathematical Conjectures",
+            "slug": "08-counterexamples-and-mathematical-conjectures"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Algebraic Structures and Inequalities",
+        "slug": "02-algebraic-structures-and-inequalities",
+        "topics": [
+          {
+            "number": "2.1",
+            "title": "Algebraic Operations and Structural Identities",
+            "slug": "01-algebraic-operations-and-structural-identities"
+          },
+          {
+            "number": "2.2",
+            "title": "Factorization and Polynomial Identities",
+            "slug": "02-factorization-and-polynomial-identities"
+          },
+          {
+            "number": "2.3",
+            "title": "Rational Expressions and Domain Restrictions",
+            "slug": "03-rational-expressions-and-domain-restrictions"
+          },
+          {
+            "number": "2.4",
+            "title": "Radicals, Rational Exponents, and Algebraic Equations",
+            "slug": "04-radicals-rational-exponents-and-algebraic-equations"
+          },
+          {
+            "number": "2.5",
+            "title": "Absolute Value and Distance",
+            "slug": "05-absolute-value-and-distance"
+          },
+          {
+            "number": "2.6",
+            "title": "Linear, Polynomial, and Rational Inequalities",
+            "slug": "06-linear-polynomial-and-rational-inequalities"
+          },
+          {
+            "number": "2.7",
+            "title": "Classical Inequalities: AM–GM and Cauchy–Schwarz",
+            "slug": "07-classical-inequalities-amgm-and-cauchyschwarz"
+          },
+          {
+            "number": "2.8",
+            "title": "Equations and Inequalities Involving Parameters",
+            "slug": "08-equations-and-inequalities-involving-parameters"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "title": "Functions and Their Structure",
+        "slug": "03-functions-and-their-structure",
+        "topics": [
+          {
+            "number": "3.1",
+            "title": "Relations, Functions, Domains, and Codomains",
+            "slug": "01-relations-functions-domains-and-codomains"
+          },
+          {
+            "number": "3.2",
+            "title": "Images, Preimages, and Ranges",
+            "slug": "02-images-preimages-and-ranges"
+          },
+          {
+            "number": "3.3",
+            "title": "Function Evaluation and Piecewise Definitions",
+            "slug": "03-function-evaluation-and-piecewise-definitions"
+          },
+          {
+            "number": "3.4",
+            "title": "Function Composition and Decomposition",
+            "slug": "04-function-composition-and-decomposition"
+          },
+          {
+            "number": "3.5",
+            "title": "Injective, Surjective, and Bijective Functions",
+            "slug": "05-injective-surjective-and-bijective-functions"
+          },
+          {
+            "number": "3.6",
+            "title": "Inverse Functions and Domain Restrictions",
+            "slug": "06-inverse-functions-and-domain-restrictions"
+          },
+          {
+            "number": "3.7",
+            "title": "Symmetry, Periodicity, and Function Transformations",
+            "slug": "07-symmetry-periodicity-and-function-transformations"
+          },
+          {
+            "number": "3.8",
+            "title": "Monotonicity, Boundedness, and Extremal Behavior",
+            "slug": "08-monotonicity-boundedness-and-extremal-behavior"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Polynomial and Rational Functions",
+        "slug": "04-polynomial-and-rational-functions",
+        "topics": [
+          {
+            "number": "4.1",
+            "title": "Polynomial Functions and Degree",
+            "slug": "01-polynomial-functions-and-degree"
+          },
+          {
+            "number": "4.2",
+            "title": "Polynomial Division and the Remainder Theorem",
+            "slug": "02-polynomial-division-and-the-remainder-theorem"
+          },
+          {
+            "number": "4.3",
+            "title": "The Factor Theorem and Multiplicity of Roots",
+            "slug": "03-the-factor-theorem-and-multiplicity-of-roots"
+          },
+          {
+            "number": "4.4",
+            "title": "Polynomial Equations and Root Relationships",
+            "slug": "04-polynomial-equations-and-root-relationships"
+          },
+          {
+            "number": "4.5",
+            "title": "Vieta's Formulas",
+            "slug": "05-vieta-s-formulas"
+          },
+          {
+            "number": "4.6",
+            "title": "Polynomial Graphs and End Behavior",
+            "slug": "06-polynomial-graphs-and-end-behavior"
+          },
+          {
+            "number": "4.7",
+            "title": "Rational Functions, Zeros, and Singularities",
+            "slug": "07-rational-functions-zeros-and-singularities"
+          },
+          {
+            "number": "4.8",
+            "title": "Asymptotes, Sign Analysis, and Rational Inequalities",
+            "slug": "08-asymptotes-sign-analysis-and-rational-inequalities"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "title": "Exponential and Logarithmic Functions",
+        "slug": "05-exponential-and-logarithmic-functions",
+        "topics": [
+          {
+            "number": "5.1",
+            "title": "Exponents and Exponential Functions",
+            "slug": "01-exponents-and-exponential-functions"
+          },
+          {
+            "number": "5.2",
+            "title": "Exponential Laws and Their Justification",
+            "slug": "02-exponential-laws-and-their-justification"
+          },
+          {
+            "number": "5.3",
+            "title": "Logarithms as Inverse Functions",
+            "slug": "03-logarithms-as-inverse-functions"
+          },
+          {
+            "number": "5.4",
+            "title": "Logarithmic Identities and Change of Base",
+            "slug": "04-logarithmic-identities-and-change-of-base"
+          },
+          {
+            "number": "5.5",
+            "title": "Exponential and Logarithmic Equations",
+            "slug": "05-exponential-and-logarithmic-equations"
+          },
+          {
+            "number": "5.6",
+            "title": "Exponential and Logarithmic Inequalities",
+            "slug": "06-exponential-and-logarithmic-inequalities"
+          },
+          {
+            "number": "5.7",
+            "title": "Growth, Decay, and Compound Interest",
+            "slug": "07-growth-decay-and-compound-interest"
+          },
+          {
+            "number": "5.8",
+            "title": "Comparative Growth Rates and Asymptotic Behavior",
+            "slug": "08-comparative-growth-rates-and-asymptotic-behavior"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "title": "Trigonometric Foundations",
+        "slug": "06-trigonometric-foundations",
+        "topics": [
+          {
+            "number": "6.1",
+            "title": "Angles, Radians, and Arc Length",
+            "slug": "01-angles-radians-and-arc-length"
+          },
+          {
+            "number": "6.2",
+            "title": "The Unit Circle and Trigonometric Definitions",
+            "slug": "02-the-unit-circle-and-trigonometric-definitions"
+          },
+          {
+            "number": "6.3",
+            "title": "Exact Trigonometric Values",
+            "slug": "03-exact-trigonometric-values"
+          },
+          {
+            "number": "6.4",
+            "title": "Symmetry, Periodicity, and Reference Angles",
+            "slug": "04-symmetry-periodicity-and-reference-angles"
+          },
+          {
+            "number": "6.5",
+            "title": "Fundamental Trigonometric Identities",
+            "slug": "05-fundamental-trigonometric-identities"
+          },
+          {
+            "number": "6.6",
+            "title": "Trigonometric Graphs and Transformations",
+            "slug": "06-trigonometric-graphs-and-transformations"
+          },
+          {
+            "number": "6.7",
+            "title": "Inverse Trigonometric Functions",
+            "slug": "07-inverse-trigonometric-functions"
+          },
+          {
+            "number": "6.8",
+            "title": "Trigonometric Equations and General Solutions",
+            "slug": "08-trigonometric-equations-and-general-solutions"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "title": "Advanced Trigonometry",
+        "slug": "07-advanced-trigonometry",
+        "topics": [
+          {
+            "number": "7.1",
+            "title": "Angle Addition and Subtraction Formulas",
+            "slug": "01-angle-addition-and-subtraction-formulas"
+          },
+          {
+            "number": "7.2",
+            "title": "Double-Angle and Half-Angle Formulas",
+            "slug": "02-double-angle-and-half-angle-formulas"
+          },
+          {
+            "number": "7.3",
+            "title": "Product-to-Sum and Sum-to-Product Identities",
+            "slug": "03-product-to-sum-and-sum-to-product-identities"
+          },
+          {
+            "number": "7.4",
+            "title": "Trigonometric Substitutions and Algebraic Transformations",
+            "slug": "04-trigonometric-substitutions-and-algebraic-transformations"
+          },
+          {
+            "number": "7.5",
+            "title": "Advanced Trigonometric Equations",
+            "slug": "05-advanced-trigonometric-equations"
+          },
+          {
+            "number": "7.6",
+            "title": "Trigonometric Inequalities",
+            "slug": "06-trigonometric-inequalities"
+          },
+          {
+            "number": "7.7",
+            "title": "The Laws of Sines and Cosines",
+            "slug": "07-the-laws-of-sines-and-cosines"
+          },
+          {
+            "number": "7.8",
+            "title": "Geometric Applications and Trigonometric Proofs",
+            "slug": "08-geometric-applications-and-trigonometric-proofs"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "title": "Complex Numbers",
+        "slug": "08-complex-numbers",
+        "topics": [
+          {
+            "number": "8.1",
+            "title": "Construction and Algebra of Complex Numbers",
+            "slug": "01-construction-and-algebra-of-complex-numbers"
+          },
+          {
+            "number": "8.2",
+            "title": "Complex Conjugation and Modulus",
+            "slug": "02-complex-conjugation-and-modulus"
+          },
+          {
+            "number": "8.3",
+            "title": "The Complex Plane and Geometric Interpretation",
+            "slug": "03-the-complex-plane-and-geometric-interpretation"
+          },
+          {
+            "number": "8.4",
+            "title": "Polar Representation of Complex Numbers",
+            "slug": "04-polar-representation-of-complex-numbers"
+          },
+          {
+            "number": "8.5",
+            "title": "Multiplication and Division in Polar Form",
+            "slug": "05-multiplication-and-division-in-polar-form"
+          },
+          {
+            "number": "8.6",
+            "title": "De Moivre's Theorem",
+            "slug": "06-de-moivre-s-theorem"
+          },
+          {
+            "number": "8.7",
+            "title": "Complex Roots and Roots of Unity",
+            "slug": "07-complex-roots-and-roots-of-unity"
+          },
+          {
+            "number": "8.8",
+            "title": "Polynomial Equations over the Complex Numbers",
+            "slug": "08-polynomial-equations-over-the-complex-numbers"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "title": "Analytic Geometry and Conic Sections",
+        "slug": "09-analytic-geometry-and-conic-sections",
+        "topics": [
+          {
+            "number": "9.1",
+            "title": "Coordinate Geometry and Distance",
+            "slug": "01-coordinate-geometry-and-distance"
+          },
+          {
+            "number": "9.2",
+            "title": "Lines, Slopes, and Geometric Constraints",
+            "slug": "02-lines-slopes-and-geometric-constraints"
+          },
+          {
+            "number": "9.3",
+            "title": "Circles and Their Equations",
+            "slug": "03-circles-and-their-equations"
+          },
+          {
+            "number": "9.4",
+            "title": "Parabolas and the Focus–Directrix Definition",
+            "slug": "04-parabolas-and-the-focusdirectrix-definition"
+          },
+          {
+            "number": "9.5",
+            "title": "Ellipses and Their Geometric Properties",
+            "slug": "05-ellipses-and-their-geometric-properties"
+          },
+          {
+            "number": "9.6",
+            "title": "Hyperbolas and Their Asymptotes",
+            "slug": "06-hyperbolas-and-their-asymptotes"
+          },
+          {
+            "number": "9.7",
+            "title": "Translation and Rotation of Coordinate Axes",
+            "slug": "07-translation-and-rotation-of-coordinate-axes"
+          },
+          {
+            "number": "9.8",
+            "title": "Classification of General Quadratic Equations",
+            "slug": "08-classification-of-general-quadratic-equations"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "title": "Vectors, Parametric Equations, and Polar Coordinates",
+        "slug": "10-vectors-parametric-equations-and-polar-coordinates",
+        "topics": [
+          {
+            "number": "10.1",
+            "title": "Vectors and Geometric Operations",
+            "slug": "01-vectors-and-geometric-operations"
+          },
+          {
+            "number": "10.2",
+            "title": "Vector Magnitude and Direction",
+            "slug": "02-vector-magnitude-and-direction"
+          },
+          {
+            "number": "10.3",
+            "title": "Dot Products, Projections, and Orthogonality",
+            "slug": "03-dot-products-projections-and-orthogonality"
+          },
+          {
+            "number": "10.4",
+            "title": "Vector Equations of Lines",
+            "slug": "04-vector-equations-of-lines"
+          },
+          {
+            "number": "10.5",
+            "title": "Parametric Equations and Curves",
+            "slug": "05-parametric-equations-and-curves"
+          },
+          {
+            "number": "10.6",
+            "title": "Polar Coordinates and Coordinate Conversion",
+            "slug": "06-polar-coordinates-and-coordinate-conversion"
+          },
+          {
+            "number": "10.7",
+            "title": "Polar Curves and Their Symmetries",
+            "slug": "07-polar-curves-and-their-symmetries"
+          },
+          {
+            "number": "10.8",
+            "title": "Connections Between Cartesian, Parametric, and Polar Representations",
+            "slug": "08-connections-between-cartesian-parametric-and-polar-representations"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "title": "Sequences, Series, and Discrete Structures",
+        "slug": "11-sequences-series-and-discrete-structures",
+        "topics": [
+          {
+            "number": "11.1",
+            "title": "Sequences and Recursive Definitions",
+            "slug": "01-sequences-and-recursive-definitions"
+          },
+          {
+            "number": "11.2",
+            "title": "Arithmetic and Geometric Progressions",
+            "slug": "02-arithmetic-and-geometric-progressions"
+          },
+          {
+            "number": "11.3",
+            "title": "Finite Sums and Sigma Notation",
+            "slug": "03-finite-sums-and-sigma-notation"
+          },
+          {
+            "number": "11.4",
+            "title": "Telescoping Sums",
+            "slug": "04-telescoping-sums"
+          },
+          {
+            "number": "11.5",
+            "title": "Mathematical Induction and Summation Identities",
+            "slug": "05-mathematical-induction-and-summation-identities"
+          },
+          {
+            "number": "11.6",
+            "title": "Binomial Coefficients and the Binomial Theorem",
+            "slug": "06-binomial-coefficients-and-the-binomial-theorem"
+          },
+          {
+            "number": "11.7",
+            "title": "Elementary Recurrence Relations",
+            "slug": "07-elementary-recurrence-relations"
+          },
+          {
+            "number": "11.8",
+            "title": "Infinite Geometric Series and Convergence",
+            "slug": "08-infinite-geometric-series-and-convergence"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "title": "Foundations of Mathematical Analysis",
+        "slug": "12-foundations-of-mathematical-analysis",
+        "topics": [
+          {
+            "number": "12.1",
+            "title": "Intervals, Neighborhoods, and Real Number Structure",
+            "slug": "01-intervals-neighborhoods-and-real-number-structure"
+          },
+          {
+            "number": "12.2",
+            "title": "Absolute Value Inequalities and Distance",
+            "slug": "02-absolute-value-inequalities-and-distance"
+          },
+          {
+            "number": "12.3",
+            "title": "Intuitive and Formal Definitions of Limits",
+            "slug": "03-intuitive-and-formal-definitions-of-limits"
+          },
+          {
+            "number": "12.4",
+            "title": "Limit Laws and Algebraic Evaluation",
+            "slug": "04-limit-laws-and-algebraic-evaluation"
+          },
+          {
+            "number": "12.5",
+            "title": "One-Sided Limits and Infinite Limits",
+            "slug": "05-one-sided-limits-and-infinite-limits"
+          },
+          {
+            "number": "12.6",
+            "title": "Continuity and Discontinuity",
+            "slug": "06-continuity-and-discontinuity"
+          },
+          {
+            "number": "12.7",
+            "title": "The Intermediate Value Theorem",
+            "slug": "07-the-intermediate-value-theorem"
+          },
+          {
+            "number": "12.8",
+            "title": "Difference Quotients and the Motivation for Derivatives",
+            "slug": "08-difference-quotients-and-the-motivation-for-derivatives"
+          }
+        ]
+      }
+    ]
+  }
+}

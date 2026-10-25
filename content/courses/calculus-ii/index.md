@@ -1,19 +1,15 @@
 ---
 title: "Calculus II"
-description: "Calculus II at Palisade. Course materials are in preparation."
 course: "2.2"
-status: planned
+kind: "course"
+placeholder: true
+trackable: false
 ---
 
-Materials are in preparation. No lessons are published yet.
+Course materials are in preparation.
 
-## Planned structure
-
-- Orientation and prerequisites
-- Articles and proofs
-- Practice with worked solutions
-- Unit and final examinations
+- [Syllabus](./syllabus/)
+- [Units](./units/)
+- [Final examinations](./examinations/)
 
 <div class="course-progress" data-course="2.2" aria-live="polite" hidden></div>
-
-[All courses](../../#course-catalog)
