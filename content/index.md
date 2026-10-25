@@ -1,14 +1,14 @@
 ---
 title: Palisade
-description: Original mathematics. Uncompromising depth. A free, self-paced education for ambitious independent thinkers.
+description: A free, self-paced education for ambitious independent thinkers.
 ---
 
-<div class="summit-heading"><span>INDEPENDENT MATHEMATICS</span><span>BUILT FOR DEPTH</span></div>
+<div class="summit-heading"><span>INDEPENDENT MATHEMATICS</span></div>
 
 <div class="summit-hero">
-<div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> A HIGHER STANDARD OF UNDERSTANDING</div>
+<div class="eyebrow"><span class="status-dot" aria-hidden="true"></span></div>
 <h1>Go beyond<br>the <em>answer.</em></h1>
-<p class="hero-intro">Mathematics for those who want to understand all the way down. Original thinking. Rigorous foundations. No shortcuts.</p>
+<p class="hero-intro">Mathematics for those who want to understand it.</p>
 <div class="hero-actions"><a class="summit-link internal" href="./#course-catalog">Explore the curriculum <span aria-hidden="true">↗</span></a><a class="hero-secondary internal" href="./about">Our philosophy <span aria-hidden="true">→</span></a></div>
 <div class="summit-caption"><span>FREE / SELF-PACED / TEXT-FIRST</span><span>OPEN BY DESIGN</span></div>
 </div>
@@ -33,7 +33,3 @@ description: Original mathematics. Uncompromising depth. A free, self-paced educ
 <div class="world-map"><canvas aria-hidden="true"></canvas><p class="map-fallback">Independent learning. Open to the world.</p></div>
 <div class="map-caption"><span>ONE SHARED LANGUAGE: MATHEMATICS</span><span class="map-hint">MOVE TO EXPLORE <span aria-hidden="true">↗</span></span></div>
 </section>
-
-<div class="field-note"><span class="field-note-number">01 / THE METHOD</span><h2>Read carefully. Reason independently.<br>Earn your understanding.</h2><p>Original articles, proofs, deliberate practice, and demanding examinations. Free and self-paced. Entirely text-based.</p><a class="text-link internal" href="./about">The Palisade philosophy <span aria-hidden="true">→</span></a></div>
-
-<div class="availability-note"><span class="status-dot" aria-hidden="true"></span><p><strong>The foundation is being laid.</strong> No course materials are published yet. The catalog describes the intended scope, not currently available instruction.</p></div>
