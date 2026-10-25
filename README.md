@@ -65,3 +65,9 @@ Design reference: [Dark Mode Design Expert](https://github.com/curiositech/some_
 Every page and shared component uses self-hosted Cascadia Mono (400, 500, and 600 weights, Latin subset) from `@fontsource/cascadia-mono` 5.3.0. Its SIL Open Font License is included beside the font files. All interface, branding, and map colors use equal RGB channels; links, focus states, and status labels stay distinguishable through contrast and structure.
 
 Recent Pages assets are retained from the five previous successful deployments so cached HTML can still load its matching CSS and scripts. Only missing web resources are copied; HTML, images, and logos are never restored. An asset manifest bounds retention to those builds. Run `python -m unittest discover -s scripts -p 'test_*.py'` to check this behavior.
+
+## Scroll ruler and page indexes
+
+The fixed right-edge ruler adapts `plugins/palisade-nav/reference/scroll_percentage_ruler_component.html` to the neutral Cascadia Mono design. It is included by the global page renderer, so all existing and future page types receive it, including the 404 and minimal frames. Its tick scale maps to the real document height; resize and mutation observers, font readiness, and media-load events recalculate that range as content changes. Short pages show 000% with scrubbing disabled. Mouse/touch scrubbing, keyboard navigation, reduced motion, and idle/hidden-tab suspension are supported. The demo's artificial height, global text-selection restriction, font CDN, and Tailwind are not used.
+
+Authored Markdown directory indexes render their own ordered links once through `PalisadeAuthoredPage`; folders without an authored index retain Quartz's automatic listing. This prevents the duplicate link lists previously appended below course and unit indexes.

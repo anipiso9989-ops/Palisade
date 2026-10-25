@@ -134,3 +134,5 @@ export const PalisadeNav = () => {
   Nav.afterDOMLoaded = clientScript
   return Nav
 }
+
+export { default } from "./authored-page.js"

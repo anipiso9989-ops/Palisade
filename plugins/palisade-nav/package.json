@@ -10,7 +10,10 @@
   "quartz": {
     "name": "palisade-nav",
     "displayName": "Palisade navigation",
-    "category": "component",
+    "category": [
+      "component",
+      "pageType"
+    ],
     "version": "1.0.0",
     "quartzVersion": ">=5.0.0",
     "components": {
@@ -22,6 +25,6 @@
     }
   },
   "scripts": {
-    "build": "node --check index.js && node --check progress.js && node --check world-map.js && node --check curriculum.js && node --check tree.js"
+    "build": "node --check index.js && node --check progress.js && node --check world-map.js && node --check curriculum.js && node --check tree.js && node --check authored-page.js"
   }
 }

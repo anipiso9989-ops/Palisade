@@ -591,3 +591,154 @@ progress {
     font-size: 0.78rem;
   }
 }
+
+/* Scroll ruler adapted from the supplied HTML, using the site's neutral tokens. */
+:root {
+  --ruler-width: 54px;
+  --ruler-gutter: 68px;
+}
+html.has-scroll-ruler {
+  scrollbar-width: none;
+}
+html.has-scroll-ruler::-webkit-scrollbar {
+  display: none;
+}
+html.has-scroll-ruler > body {
+  padding-right: var(--ruler-gutter);
+}
+.scroll-ruler,
+.scroll-ruler * {
+  box-sizing: border-box;
+}
+.scroll-ruler {
+  position: fixed;
+  inset: 0 0 0 auto;
+  width: var(--ruler-width);
+  background: rgba(12, 12, 12, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-left: 1px solid rgba(255, 255, 255, 0.07);
+  z-index: 50;
+  cursor: ns-resize;
+  touch-action: none;
+  user-select: none;
+}
+.scroll-ruler[hidden] {
+  display: none;
+}
+.scroll-ruler[aria-disabled="true"] {
+  cursor: default;
+}
+.scroll-ruler:focus-visible {
+  outline: 2px solid var(--tertiary);
+  outline-offset: -2px;
+}
+.ruler-track {
+  position: absolute;
+  inset: 18px 0;
+}
+.ruler-tick {
+  position: absolute;
+  right: 0;
+  height: 1px;
+  transform: translateY(-0.5px);
+  transform-origin: right center;
+  pointer-events: none;
+}
+.ruler-tick.minor {
+  width: 8px;
+  background: rgba(255, 255, 255, 0.16);
+}
+.ruler-tick.medium {
+  width: 14px;
+  background: rgba(255, 255, 255, 0.28);
+}
+.ruler-tick.major {
+  width: 22px;
+  background: rgba(255, 255, 255, 0.48);
+}
+.ruler-progress-fill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 0;
+  background: linear-gradient(180deg, rgba(228, 228, 228, 0.2), #f4f4f4);
+  pointer-events: none;
+}
+.ruler-hover-line {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.22);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+@media (hover: hover) {
+  .scroll-ruler:hover .ruler-hover-line {
+    opacity: 1;
+  }
+}
+.ruler-playhead {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+.scroll-ruler .percentage-badge {
+  position: relative;
+  right: 14px;
+  height: 20px;
+  min-width: 44px;
+  padding: 0 6px;
+  border-radius: 3px;
+  background: #e4e4e4;
+  border: 1px solid #f4f4f4;
+  box-shadow:
+    0 2px 10px rgba(244, 244, 244, 0.2),
+    0 0 0 1px rgba(0, 0, 0, 0.6);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font: 600 10.5px/1 var(--mono-font);
+  letter-spacing: 0.04em;
+  color: #090909;
+  font-variant-numeric: tabular-nums;
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
+.scroll-ruler .playhead-needle {
+  position: absolute;
+  right: 0;
+  width: var(--ruler-width);
+  height: 1.5px;
+  background: #f4f4f4;
+  box-shadow: 0 0 8px rgba(244, 244, 244, 0.2);
+  transform: translateY(-50%);
+}
+.scroll-ruler .playhead-cap {
+  position: absolute;
+  right: 0;
+  width: 3px;
+  height: 7px;
+  border-radius: 1px 0 0 1px;
+  background: #fafafa;
+  transform: translateY(-50%);
+}
+@media (max-width: 800px) {
+  :root {
+    --ruler-width: 28px;
+    --ruler-gutter: 48px;
+  }
+  .scroll-ruler .percentage-badge {
+    right: 9px;
+    min-width: 36px;
+    padding: 0 4px;
+    font-size: 9px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll Percentage Ruler Component</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #09090b;
+      --ruler-bg: rgba(12, 12, 15, 0.88);
+      --ruler-border: rgba(255, 255, 255, 0.07);
+      --tick-minor: rgba(255, 255, 255, 0.16);
+      --tick-medium: rgba(255, 255, 255, 0.28);
+      --tick-major: rgba(255, 255, 255, 0.48);
+      --tick-active: rgba(244, 244, 245, 0.9);
+      --accent-neutral: #e4e4e7;
+      --accent-neutral-bright: #f4f4f5;
+      --accent-glow: rgba(244, 244, 245, 0.28);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background-color: var(--bg-dark);
+      color: #ffffff;
+      /* Hide native scrollbar so the custom ruler is the sole scroll indicator */
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    html::-webkit-scrollbar {
+      display: none;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      min-height: 600vh;
+      overflow-x: hidden;
+      user-select: none;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Subtle text-free architectural background lines so scroll movement is visually perceptible */
+    .scroll-canvas {
+      position: relative;
+      width: 100%;
+      height: 600vh;
+      background-image:
+        radial-gradient(circle at 50% 15%, rgba(244, 244, 245, 0.045) 0%, transparent 55%),
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.025) 0%, transparent 60%),
+        radial-gradient(circle at 50% 85%, rgba(244, 244, 245, 0.04) 0%, transparent 55%),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 100% 12vh;
+    }
+
+    /* Fixed Right-Edge Ruler Container */
+    .ruler-rail {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 54px;
+      height: 100vh;
+      background: var(--ruler-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-left: 1px solid var(--ruler-border);
+      z-index: 50;
+      cursor: ns-resize;
+      touch-action: none;
+    }
+
+    /* Inner vertical track inset slightly so 000% and 100% badges never clip */
+    .ruler-track {
+      position: absolute;
+      top: 18px;
+      bottom: 18px;
+      left: 0;
+      right: 0;
+    }
+
+    /* Individual Tick Marks */
+    .ruler-tick {
+      position: absolute;
+      right: 0;
+      height: 1px;
+      transform: translateY(-0.5px);
+      transform-origin: right center;
+      pointer-events: none;
+      will-change: transform, background-color, opacity, width;
+    }
+
+    .ruler-tick.minor {
+      width: 8px;
+      background-color: var(--tick-minor);
+    }
+
+    .ruler-tick.medium {
+      width: 14px;
+      background-color: var(--tick-medium);
+    }
+
+    .ruler-tick.major {
+      width: 22px;
+      background-color: var(--tick-major);
+    }
+
+    /* Passed progress line along the right edge */
+    .ruler-progress-fill {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 0%;
+      background: linear-gradient(180deg, rgba(228, 228, 231, 0.2) 0%, var(--accent-neutral-bright) 100%);
+      pointer-events: none;
+      will-change: height;
+    }
+
+    /* Hover preview hairline */
+    .ruler-hover-line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.22);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.15s ease;
+      will-change: transform;
+    }
+
+    .ruler-rail:hover .ruler-hover-line {
+      opacity: 1;
+    }
+
+    /* Moving Playhead Assembly (Percentage Badge + Needle Line) */
+    .ruler-playhead {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      pointer-events: none;
+      will-change: transform;
+      transform: translate3d(0, 0px, 0);
+    }
+
+    /* The vivid blue percentage pill sitting on/jutting from the ruler */
+    .percentage-badge {
+      position: relative;
+      right: 14px;
+      height: 20px;
+      min-width: 44px;
+      padding: 0 6px;
+      border-radius: 3px;
+      background-color: var(--accent-neutral);
+      border: 1px solid var(--accent-neutral-bright);
+      box-shadow:
+        0 2px 10px var(--accent-glow),
+        0 0 0 1px rgba(0, 0, 0, 0.6);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      color: #09090b;
+      font-variant-numeric: tabular-nums;
+      transform: translateY(-50%);
+      white-space: nowrap;
+    }
+
+    /* Crisp horizontal needle connecting the badge to the right viewport edge */
+    .playhead-needle {
+      position: absolute;
+      right: 0;
+      width: 54px;
+      height: 1.5px;
+      background-color: var(--accent-neutral-bright);
+      box-shadow: 0 0 8px var(--accent-glow);
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+
+    /* Small glowing cap on the far right edge of the needle */
+    .playhead-cap {
+      position: absolute;
+      right: 0;
+      width: 3px;
+      height: 7px;
+      border-radius: 1px 0 0 1px;
+      background-color: #fafafa;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Scrollable Blank Canvas (No Text) -->
+  <main class="scroll-canvas" id="scrollCanvas"></main>
+
+  <!-- Fixed Right-Side Scroll Ruler Component -->
+  <aside class="ruler-rail" id="rulerRail" aria-label="Scroll progress">
+    <div class="ruler-track" id="rulerTrack">
+      <div class="ruler-progress-fill" id="rulerProgressFill"></div>
+      <div class="ruler-hover-line" id="rulerHoverLine"></div>
+      <div id="ticksContainer"></div>
+
+      <!-- Smoothly Animated Playhead with Changing Percentage -->
+      <div class="ruler-playhead" id="rulerPlayhead">
+        <div class="playhead-needle"></div>
+        <div class="playhead-cap"></div>
+        <div class="percentage-badge" id="percentageValue">000%</div>
+      </div>
+    </div>
+  </aside>
+
+  <script>
+    (function () {
+      const TOTAL_TICKS = 100; // 0 to 100 inclusive (101 tick marks)
+      const LERP_FACTOR = 0.14; // Smooth damping factor for fluid motion
+
+      const rulerRail = document.getElementById('rulerRail');
+      const rulerTrack = document.getElementById('rulerTrack');
+      const ticksContainer = document.getElementById('ticksContainer');
+      const rulerPlayhead = document.getElementById('rulerPlayhead');
+      const rulerProgressFill = document.getElementById('rulerProgressFill');
+      const rulerHoverLine = document.getElementById('rulerHoverLine');
+      const percentageValue = document.getElementById('percentageValue');
+
+      // Generate 101 precision tick marks (0% to 100%)
+      const tickElements = [];
+      const fragment = document.createDocumentFragment();
+
+      for (let i = 0; i <= TOTAL_TICKS; i++) {
+        const tick = document.createElement('div');
+        const isMajor = i % 10 === 0;
+        const isMedium = !isMajor && i % 5 === 0;
+
+        tick.className = 'ruler-tick ' + (isMajor ? 'major' : isMedium ? 'medium' : 'minor');
+        tick.style.top = i + '%';
+
+        fragment.appendChild(tick);
+        tickElements.push({
+          el: tick,
+          percent: i / TOTAL_TICKS,
+          baseWidth: isMajor ? 22 : isMedium ? 14 : 8,
+          isMajor,
+          isMedium
+        });
+      }
+      ticksContainer.appendChild(fragment);
+
+      // State for smooth lerped animation
+      let targetProgress = 0;
+      let currentProgress = 0;
+      let isDragging = false;
+
+      function getScrollMax() {
+        return Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      }
+
+      function readScrollProgress() {
+        const maxScroll = getScrollMax();
+        targetProgress = Math.min(1, Math.max(0, window.scrollY / maxScroll));
+      }
+
+      function formatPercentage(progress) {
+        const pct = Math.round(progress * 100);
+        return String(pct).padStart(3, '0') + '%';
+      }
+
+      function renderRuler(progress) {
+        const trackHeight = rulerTrack.clientHeight;
+        const yPx = progress * trackHeight;
+
+        // Move playhead smoothly down the track
+        rulerPlayhead.style.transform = `translate3d(0, ${yPx.toFixed(2)}px, 0)`;
+
+        // Update trailing progress bar along the spine
+        rulerProgressFill.style.height = `${(progress * 100).toFixed(2)}%`;
+
+        // Update 3-digit zero-padded percentage readout (000% -> 100%)
+        percentageValue.textContent = formatPercentage(progress);
+
+        // Subtle magnetic proximity wave & active state on tick marks
+        for (let i = 0; i < tickElements.length; i++) {
+          const item = tickElements[i];
+          const dist = Math.abs(item.percent - progress);
+          const influence = Math.max(0, 1 - dist / 0.045); // Ticks within 4.5% of playhead react
+
+          if (influence > 0) {
+            const extraWidth = influence * 10;
+            item.el.style.width = `${(item.baseWidth + extraWidth).toFixed(1)}px`;
+            item.el.style.backgroundColor = `rgba(244, 244, 245, ${(0.4 + influence * 0.6).toFixed(2)})`;
+          } else if (item.percent <= progress) {
+            item.el.style.width = `${item.baseWidth}px`;
+            item.el.style.backgroundColor = item.isMajor
+              ? 'rgba(228, 228, 231, 0.62)'
+              : item.isMedium
+              ? 'rgba(228, 228, 231, 0.38)'
+              : 'rgba(228, 228, 231, 0.22)';
+          } else {
+            item.el.style.width = `${item.baseWidth}px`;
+            item.el.style.backgroundColor = '';
+          }
+        }
+      }
+
+      function tickLoop() {
+        readScrollProgress();
+
+        const diff = targetProgress - currentProgress;
+        if (Math.abs(diff) > 0.0001) {
+          currentProgress += diff * LERP_FACTOR;
+        } else {
+          currentProgress = targetProgress;
+        }
+
+        renderRuler(currentProgress);
+        requestAnimationFrame(tickLoop);
+      }
+
+      // Allow clicking or scrubbing directly on the ruler bar to scroll
+      function scrubToClientY(clientY) {
+        const rect = rulerTrack.getBoundingClientRect();
+        const clampedY = Math.min(rect.bottom, Math.max(rect.top, clientY));
+        const ratio = (clampedY - rect.top) / Math.max(1, rect.height);
+        const maxScroll = getScrollMax();
+        window.scrollTo({
+          top: ratio * maxScroll,
+          behavior: 'auto'
+        });
+        targetProgress = ratio;
+      }
+
+      rulerRail.addEventListener('pointerdown', (e) => {
+        isDragging = true;
+        rulerRail.setPointerCapture(e.pointerId);
+        scrubToClientY(e.clientY);
+      });
+
+      rulerRail.addEventListener('pointermove', (e) => {
+        const rect = rulerTrack.getBoundingClientRect();
+        const hoverY = Math.min(rect.height, Math.max(0, e.clientY - rect.top));
+        rulerHoverLine.style.transform = `translate3d(0, ${hoverY.toFixed(1)}px, 0)`;
+
+        if (isDragging) {
+          scrubToClientY(e.clientY);
+        }
+      });
+
+      rulerRail.addEventListener('pointerup', (e) => {
+        if (isDragging) {
+          isDragging = false;
+          rulerRail.releasePointerCapture(e.pointerId);
+        }
+      });
+
+      rulerRail.addEventListener('pointercancel', () => {
+        isDragging = false;
+      });
+
+      // Initialize position and start animation loop
+      readScrollProgress();
+      currentProgress = targetProgress;
+      renderRuler(currentProgress);
+      requestAnimationFrame(tickLoop);
+    })();
+  </script>
+</body>
+</html>

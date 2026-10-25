@@ -1,6 +1,7 @@
 import { render } from "preact-render-to-string"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import BodyConstructor from "./Body"
+import ScrollRuler from "./ScrollRuler"
 import {
   CSSResource,
   JSResource,
@@ -365,6 +366,7 @@ export function renderPage(
             ]}
           </Body>
         </div>
+        <ScrollRuler {...componentData} />
       </body>
       {pageResources.js
         .filter((resource) => resource.loadTime === "afterDOMReady")
