@@ -40,9 +40,15 @@ npm run build
 - Quartz search, Markdown navigation, KaTeX, drafts, and a local navigation plugin.
 - Browser-local completion tracking for future published articles, with an honest empty state today.
 - Authoring templates for units, articles, practice, and examinations.
-- CI builds and an optional, manually triggered GitHub Pages deployment workflow.
+- CI builds and automatic GitHub Pages deployment on every push to `v5` (after Pages is enabled).
 
 Start with [the authoring guide](docs/palisade/AUTHORING.md). The mission is to cultivate world-class mathematical thinkers through intellectual excellence. Original curriculum quality comes before catalog expansion.
+
+## Website deployment
+
+The project site uses `https://anipiso9989-ops.github.io/Palisade/`. Enable **Settings → Pages → Source: GitHub Actions** once, then each push to `v5` rebuilds and deploys the site automatically. The workflow also supports manual deployment from `v5`. A failed build leaves the previous deployment in place.
+
+GitHub Free requires a public repository for Pages; private source requires a supported paid plan. The address `palisade.github.io` requires control of the GitHub account or organization named `palisade`.
 
 ## Technology and licensing
 
