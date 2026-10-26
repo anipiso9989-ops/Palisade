@@ -1,94 +1,170 @@
-// This file is shipped as a Quartz afterDOMLoaded resource. No network requests.
-;(() => {
-  function renderProgress() {
-    const data = document.getElementById("palisade-progress-data")
-    if (!data) return
-    const items = JSON.parse(data.dataset.items || "[]")
-    const courses = JSON.parse(data.dataset.courses || "[]")
-    const key = data.dataset.storageKey
-    let saved = {}
-    let storageAvailable = true
-    try {
-      const raw = JSON.parse(localStorage.getItem(key) || "{}")
-      if (raw && typeof raw === "object" && !Array.isArray(raw)) saved = raw
-    } catch {
-      storageAvailable = false
-    }
-    const count = (course) =>
-      items.filter((i) => (!course || i.course === course) && saved[i.id] === true).length
-    const total = (course) => items.filter((i) => !course || i.course === course).length
-    const message = (course) =>
-      !storageAvailable
-        ? "Browser storage is unavailable. Progress cannot be saved here."
-        : total(course)
-          ? `${count(course)} of ${total(course)} articles marked complete`
-          : "No articles published yet."
-    document.querySelectorAll(".course-progress").forEach((el) => {
-      el.replaceChildren()
-      el.hidden = total(el.dataset.course) === 0
-      if (el.hidden) return
-      const title = document.createElement("h3")
-      title.textContent = "Your reading progress"
-      const p = document.createElement("p")
-      p.textContent = message(el.dataset.course)
-      el.append(title, p)
+// Inlined into the Quartz afterDOMLoaded resource by index.js, with the
+// shared calculation and persistence functions supplied explicitly.
+export function initializeProgress(document, window, summarizeProgress, createCompletionStore) {
+  let store
+  let storageKey
+  let currentData
+  let meters = []
+  let examinations = []
+
+  const element = (tag, className, text) => {
+    const node = document.createElement(tag)
+    if (className) node.className = className
+    if (text !== undefined) node.textContent = text
+    return node
+  }
+
+  function meter(parent, items, course, unit, label, master = false) {
+    const wrapper = element("div", `progress-meter${master ? " progress-meter-master" : ""}`)
+    const details = element("p", "progress-details")
+    const percentage = element("span", "progress-percentage")
+    const count = element("span", "progress-count")
+    details.append(percentage, count)
+    const bar = element("div", "dither-progress")
+    bar.setAttribute("role", "progressbar")
+    bar.setAttribute("aria-label", label)
+    bar.setAttribute("aria-valuemin", "0")
+    bar.setAttribute("aria-valuemax", "100")
+    const fill = element("span", "dither-progress-fill")
+    fill.setAttribute("aria-hidden", "true")
+    bar.append(fill)
+    wrapper.append(details, bar)
+    parent.append(wrapper)
+    meters.push({ wrapper, percentage, count, bar, fill, items, course, unit })
+  }
+
+  function storageStatus(parent) {
+    const warning = element("p", "progress-storage-status")
+    warning.setAttribute("role", "status")
+    parent.append(warning)
+  }
+
+  function build(courses, items) {
+    meters = []
+    examinations = []
+    document.querySelectorAll(".course-progress").forEach((node) => {
+      node.replaceChildren()
+      const course = courses.find((entry) => entry.code === node.dataset.course)
+      node.hidden = !course
+      if (!course) return
+      node.append(element("h3", "", "Your course progress"))
+      meter(node, items, course.code, undefined, `${course.title} overall progress`, true)
+      storageStatus(node)
     })
     const dashboard = document.querySelector(".progress-dashboard")
-    if (dashboard) {
-      dashboard.replaceChildren()
-      if (!items.length) {
-        const empty = document.createElement("p")
-        empty.textContent = "No articles are available to track yet."
-        dashboard.append(empty)
+    if (!dashboard) return
+    dashboard.replaceChildren()
+    if (!courses.length) {
+      dashboard.append(element("p", "progress-empty", "No courses are registered yet."))
+    }
+    for (const course of courses) {
+      const section = element("section", "progress-row")
+      section.append(element("h2", "", course.title))
+      meter(section, items, course.code, undefined, `${course.title} overall progress`, true)
+      const units = element("div", "progress-units")
+      for (const unit of course.units) {
+        const row = element("section", "progress-unit")
+        const label = `Unit ${unit.number} — ${unit.title}`
+        row.append(element("h3", "", label))
+        meter(row, items, course.code, unit.id, `${course.title}, ${label} progress`)
+        units.append(row)
       }
-      for (const course of courses.filter((c) => total(c.code) > 0)) {
-        const row = document.createElement("section")
-        row.className = "progress-row"
-        const label = document.createElement("h2")
-        label.textContent = course.title
-        const text = document.createElement("p")
-        text.textContent = message(course.code)
-        row.append(label, text)
-        if (total(course.code)) {
-          const meter = document.createElement("progress")
-          meter.max = total(course.code)
-          meter.value = count(course.code)
-          meter.setAttribute("aria-label", `${course.title} reading progress`)
-          row.append(meter)
+      section.append(units)
+      const finals = items.filter((item) => item.course === course.code && item.unit === null)
+      if (finals.length) {
+        section.append(element("h3", "progress-examinations-title", "Course examinations"))
+        const list = element("ul", "progress-examinations")
+        for (const item of finals) {
+          const row = element("li", "")
+          const label = element("span", "", item.title)
+          const status = element("span", "progress-examination-status")
+          row.append(label, status)
+          list.append(row)
+          examinations.push({ id: item.id, status })
         }
-        dashboard.append(row)
+        section.append(list)
       }
-      if (!storageAvailable) {
-        const warning = document.createElement("p")
-        warning.setAttribute("role", "status")
-        warning.textContent = message()
-        dashboard.append(warning)
+      dashboard.append(section)
+    }
+    storageStatus(dashboard)
+  }
+
+  function update(state) {
+    for (const view of meters) {
+      const { completed, total, percent } = summarizeProgress(
+        view.items,
+        state.records,
+        view.course,
+        view.unit,
+      )
+      const display = percent === null ? "No published content yet" : `${Math.round(percent)}%`
+      view.percentage.textContent = display
+      view.count.textContent = `${completed} / ${total} items complete`
+      view.wrapper.classList.toggle("progress-meter-empty", percent === null)
+      if (percent === null) {
+        view.bar.hidden = true
+        view.bar.removeAttribute("aria-valuenow")
+      } else {
+        view.bar.hidden = false
+        view.bar.setAttribute("aria-valuenow", String(percent))
       }
+      view.bar.setAttribute("aria-valuetext", `${display}; ${completed} of ${total} items complete`)
+      // Keep the DOM nodes between updates so filling and reversing transition.
+      view.fill.style.width = `${percent ?? 0}%`
+    }
+    for (const exam of examinations) {
+      exam.status.textContent = state.records[exam.id] === true ? "Complete" : "Incomplete"
     }
     const button = document.getElementById("mark-article")
+    const status = document.getElementById("completion-status")
     if (button) {
-      const id = data.dataset.currentId
-      const completed = saved[id] === true
-      button.disabled = !storageAvailable
+      const id = currentData.dataset.currentId
+      const completed = Object.hasOwn(state.records, id) && state.records[id] === true
+      button.disabled = !state.available
       button.setAttribute("aria-pressed", String(completed))
-      button.textContent = completed ? "Article complete · Undo" : "Mark article complete"
-      document.getElementById("completion-status").textContent = storageAvailable
-        ? "Saved only in this browser."
-        : message()
-      button.onclick = () => {
-        saved[id] = !completed
-        try {
-          localStorage.setItem(key, JSON.stringify(saved))
-          renderProgress()
-        } catch {
-          button.disabled = true
-          document.getElementById("completion-status").textContent =
-            "Browser storage is unavailable. This change was not saved."
+      button.textContent = completed ? "Undo" : "All done"
+      if (status) status.textContent = state.message
+    }
+    document.querySelectorAll(".progress-storage-status").forEach((node) => {
+      node.hidden = state.available
+      node.textContent = state.available ? "" : state.message
+    })
+  }
+
+  function renderProgress() {
+    const data = document.getElementById("palisade-progress-data")
+    if (!data) {
+      currentData = undefined
+      return
+    }
+    if (!store || storageKey !== data.dataset.storageKey) {
+      storageKey = data.dataset.storageKey
+      store = createCompletionStore(() => window.localStorage, storageKey)
+    }
+    if (currentData !== data) {
+      currentData = data
+      const items = JSON.parse(data.dataset.items || "[]")
+      const courses = JSON.parse(data.dataset.courses || "[]")
+      build(courses, items)
+      const button = document.getElementById("mark-article")
+      if (button) {
+        button.onclick = () => {
+          const id = data.dataset.currentId
+          if (items.some((item) => item.id === id)) update(store.toggle(id))
         }
       }
     }
+    update(store.read())
   }
-  document.addEventListener("nav", renderProgress)
-  window.addEventListener("storage", renderProgress)
+
+  document.addEventListener("nav", () => {
+    // Quartz can morph and reuse the hidden data element during navigation.
+    // Rebind the current control and meters even if that element is unchanged.
+    currentData = undefined
+    renderProgress()
+  })
+  window.addEventListener("storage", (event) => {
+    if (event.key === storageKey || event.key === null) renderProgress()
+  })
   renderProgress()
-})()
+}

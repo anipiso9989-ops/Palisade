@@ -3,8 +3,11 @@ title: "Unit 01 — Examination"
 course: "1.1"
 unit: "01"
 kind: examination
+progressId: precalculus-unit-01-examination
 draft: true
 ---
+
+<!-- Replace the sample course/unit/progressId. Keep progressId unchanged after publication. -->
 
 ## Instructions
 
@@ -12,4 +15,4 @@ draft: true
 
 ## Problems
 
-<!-- For finals, create variants A and B with equivalent objectives and difficulty. -->
+<!-- Use final-examination.md for course examinations. -->

@@ -25,6 +25,6 @@
     }
   },
   "scripts": {
-    "build": "node --check index.js && node --check progress.js && node --check world-map.js && node --check curriculum.js && node --check tree.js && node --check authored-page.js"
+    "build": "node --check index.js && node --check progress.js && node --check progress-registry.js && node --check completion.js && node --check world-map.js && node --check curriculum.js && node --check tree.js && node --check authored-page.js"
   }
 }

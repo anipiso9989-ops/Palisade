@@ -1,14 +1,23 @@
 import { h } from "preact"
 import { readFileSync } from "node:fs"
 import { curriculumTree } from "./curriculum.js"
+import { contentPath, createProgressRegistry } from "./progress-registry.js"
 
 const courses = JSON.parse(readFileSync(new URL("./courses.json", import.meta.url), "utf8"))
 const curriculum = JSON.parse(readFileSync(new URL("./curriculum.json", import.meta.url), "utf8"))
 const tree = curriculumTree(courses, curriculum)
-const clientScript = ["progress.js", "world-map.js", "tree.js"]
+// These modules are dependency-free; inline the same source tested in Node.
+const progressSource = ["completion.js", "progress.js"]
   .map((file) => readFileSync(new URL(file, import.meta.url), "utf8"))
-  .join("\n;\n")
-  .replace("__CURRICULUM_TREE__", JSON.stringify(tree))
+  .join("\n")
+  .replace(/^export (?=function )/gm, "")
+const progressScript = `;(() => {${progressSource}\ninitializeProgress(document, window, summarizeProgress, createCompletionStore)})();\n`
+const clientScript =
+  progressScript +
+  ["world-map.js", "tree.js"]
+    .map((file) => readFileSync(new URL(file, import.meta.url), "utf8"))
+    .join("\n;\n")
+    .replace("__CURRICULUM_TREE__", JSON.stringify(tree))
 const rootOf = (slug) =>
   slug
     .split("/")
@@ -17,6 +26,7 @@ const rootOf = (slug) =>
     .join("/") || "."
 
 export const PalisadeNav = () => {
+  const registries = new WeakMap()
   const Nav = ({ fileData, allFiles, cfg }) => {
     const root = rootOf(fileData.slug)
     const current = fileData.slug.replace(/\/index$/, "")
@@ -62,26 +72,16 @@ export const PalisadeNav = () => {
           h("div", { class: "tree-children" }, active ? renderTree(node.children) : null),
         )
       })
-    const items = allFiles
-      .filter(
-        (f) =>
-          f.frontmatter?.trackable === true &&
-          f.frontmatter?.placeholder !== true &&
-          f.frontmatter?.kind === "article" &&
-          f.frontmatter?.draft !== true &&
-          f.frontmatter?.unlisted !== true &&
-          f.frontmatter?.publish !== false &&
-          courses.some((c) => c.code === String(f.frontmatter?.course)),
-      )
-      .map((f) => ({ id: f.frontmatter.progressId, course: String(f.frontmatter.course) }))
-    const ids = items.map((i) => i.id)
-    if (
-      ids.some((id) => typeof id !== "string" || !id.trim()) ||
-      new Set(ids).size !== ids.length
-    ) {
-      throw new Error("Every published trackable article needs a unique, nonempty progressId.")
+    if (!registries.has(allFiles)) {
+      const registry = createProgressRegistry(courses, curriculum, allFiles)
+      registries.set(allFiles, {
+        items: JSON.stringify(registry.items),
+        courses: JSON.stringify(registry.courses),
+        byPath: new Map(registry.items.map((item) => [item.path, item.id])),
+      })
     }
-    const activeId = items.find((i) => i.id === fileData.frontmatter?.progressId)?.id
+    const registry = registries.get(allFiles)
+    const activeId = registry.byPath.get(contentPath(fileData.slug))
     return h(
       "div",
       { class: "palisade-navigation" },
@@ -111,8 +111,8 @@ export const PalisadeNav = () => {
       h("div", {
         id: "palisade-progress-data",
         hidden: true,
-        "data-items": JSON.stringify(items),
-        "data-courses": JSON.stringify(courses),
+        "data-items": registry.items,
+        "data-courses": registry.courses,
         "data-current-id": activeId || "",
         "data-storage-key": `palisade:${cfg.baseUrl}:progress:v1`,
       }),
@@ -122,10 +122,20 @@ export const PalisadeNav = () => {
             { class: "article-completion" },
             h(
               "button",
-              { id: "mark-article", type: "button", "aria-pressed": "false" },
-              "Mark article complete",
+              {
+                id: "mark-article",
+                type: "button",
+                disabled: true,
+                "aria-pressed": "false",
+                "aria-describedby": "completion-status",
+              },
+              "All done",
             ),
-            h("p", { id: "completion-status", role: "status" }),
+            h(
+              "p",
+              { id: "completion-status", role: "status" },
+              "Enable JavaScript to save progress.",
+            ),
           )
         : null,
     )

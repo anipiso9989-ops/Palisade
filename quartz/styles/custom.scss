@@ -333,26 +333,88 @@ article .katex-display {
   font: 500 0.85rem var(--ui-font);
   margin: 0 0 10px;
 }
-.course-progress p {
-  font-size: 0.9rem;
-  margin: 0;
-}
 .progress-row {
   border-bottom: 1px solid var(--lightgray);
-  padding: 22px 0;
+  padding: 28px 0;
+  min-width: 0;
 }
 .progress-row h2 {
   font-size: 1.2rem;
-  margin: 0;
+  margin: 0 0 14px;
 }
-.progress-row p {
-  font: 0.8rem/1.7 var(--ui-font);
-  margin-bottom: 0;
+.progress-units {
+  display: grid;
+  gap: 22px;
+  padding-top: 24px;
 }
-progress {
-  width: 100%;
-  accent-color: var(--secondary);
-  height: 6px;
+.progress-unit {
+  min-width: 0;
+  padding-left: 16px;
+  border-left: 1px solid var(--lightgray);
+}
+.progress-unit h3,
+.progress-examinations-title {
+  font: 500 0.85rem/1.6 var(--ui-font);
+  margin: 0 0 8px;
+}
+.progress-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+  font: 0.75rem/1.6 var(--ui-font);
+  margin: 0 0 8px;
+}
+.progress-percentage {
+  color: var(--dark);
+}
+.progress-count,
+.progress-examination-status {
+  color: var(--gray);
+}
+.dither-progress {
+  height: 10px;
+  overflow: hidden;
+  background: #202020;
+  border: 1px solid #454545;
+}
+.dither-progress[hidden] {
+  display: none;
+}
+.dither-progress-fill {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: repeating-conic-gradient(#dedede 0% 25%, #707070 0% 50%) 0 0 / 4px 4px;
+  transition: width 240ms ease;
+}
+.progress-meter-master .dither-progress {
+  height: 20px;
+}
+.progress-meter-master .progress-percentage {
+  font-size: 0.9rem;
+}
+.progress-meter-empty .progress-percentage,
+.progress-empty {
+  color: var(--gray);
+}
+.progress-examinations-title {
+  margin-top: 24px;
+}
+.progress-examinations {
+  list-style: none;
+  padding: 0;
+  font: 0.75rem/1.6 var(--ui-font);
+}
+.progress-examinations li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+  padding: 4px 0;
+}
+.progress-storage-status {
+  font: 0.75rem/1.6 var(--ui-font);
 }
 .article-completion {
   margin-top: 22px;
@@ -360,11 +422,17 @@ progress {
 .article-completion button {
   background: var(--secondary);
   color: var(--light);
-  border: 0;
-  border-radius: 5px;
+  border: 1px solid var(--secondary);
+  border-radius: 0;
+  min-height: 44px;
+  min-width: 88px;
   padding: 12px;
   cursor: pointer;
   font: 500 0.76rem/1.4 var(--ui-font);
+}
+.article-completion button:focus-visible {
+  outline: 2px solid var(--dark);
+  outline-offset: 4px;
 }
 .article-completion button:disabled {
   opacity: 0.6;
