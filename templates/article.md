@@ -3,10 +3,11 @@ title: "Article title"
 course: "1.1"
 unit: "01"
 kind: article
-trackable: true
 progressId: precalculus-unit-01-article-01
 draft: true
 ---
+
+<!-- Replace the sample course/unit/progressId. Keep progressId unchanged after publication. -->
 
 ## Purpose
 
