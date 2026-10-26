@@ -1,3 +1,5 @@
+import { h, Fragment } from "preact"
+import { CompletionControl } from "./completion-control.js"
 import { ContentBody } from "@quartz-community/content-page/components"
 
 // Authored folder indexes already provide their own ordered navigation. Render
@@ -6,7 +8,14 @@ export default () => ({
   name: "PalisadeAuthoredPage",
   priority: 20,
   match: ({ slug, fileData }) =>
-    slug.endsWith("/index") && /\.md$/.test(fileData.relativePath ?? ""),
+    /\.md$/.test(fileData.relativePath ?? "") &&
+    (slug.endsWith("/index") || ["article", "examination"].includes(fileData.frontmatter?.kind)),
   layout: "content",
-  body: ContentBody,
+  body: () => {
+    const Body = ContentBody()
+    return Object.assign(
+      (props) => h(Fragment, {}, h(Body, props), h(CompletionControl, props)),
+      Body,
+    )
+  },
 })

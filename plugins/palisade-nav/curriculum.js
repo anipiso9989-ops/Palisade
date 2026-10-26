@@ -16,12 +16,14 @@ export function curriculumTree(courses, curriculum) {
             return {
               title: `Unit ${unit.number} — ${unit.title}`,
               path,
+              unit: unit.slug,
               children: [
                 ...unit.topics.map((topic) => ({
+                  kind: "article",
                   title: `${topic.number} — ${topic.title}`,
                   path: `${path}/${topic.slug}`,
                 })),
-                { title: "Unit examination", path: `${path}/examination` },
+                { kind: "examination", title: "Unit examination", path: `${path}/examination` },
               ],
             }
           }),
@@ -30,8 +32,16 @@ export function curriculumTree(courses, curriculum) {
           title: "Final examinations",
           path: `${base}/examinations`,
           children: [
-            { title: "Final Examination A", path: `${base}/examinations/final-a` },
-            { title: "Final Examination B", path: `${base}/examinations/final-b` },
+            {
+              kind: "examination",
+              title: "Final Examination A",
+              path: `${base}/examinations/final-a`,
+            },
+            {
+              kind: "examination",
+              title: "Final Examination B",
+              path: `${base}/examinations/final-b`,
+            },
           ],
         },
       ],

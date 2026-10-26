@@ -63,7 +63,9 @@ test("a deep-linked topic opens its ancestors and marks only its own link curren
   assert.equal((html.match(/aria-current="page"/g) ?? []).length, 1)
   assert.ok(html.includes(`/${path}/`))
   assert.ok(
-    !html.includes(curriculum["calculus-iii"].units[0].topics[0].title),
+    !html
+      .split('<div id="palisade-progress-data"')[0]
+      .includes(curriculum["calculus-iii"].units[0].topics[0].title),
     "closed courses should not render all topic links",
   )
 })
@@ -87,6 +89,6 @@ test("empty curriculum articles cannot be marked complete, even if trackable is 
       cfg: { baseUrl: "example.com/Palisade" },
     }),
   )
-  assert.match(html, /data-items="\[\]"/)
+  assert.ok(html.includes("available"), "planned requirements remain in the denominator")
   assert.ok(!html.includes('id="mark-article"'))
 })

@@ -3,7 +3,7 @@ title: Progress
 description: Your course and unit completion, saved in this browser.
 ---
 
-Mark topics and examinations **All done** as you finish them. Use **Undo** to reverse a completion. Each published item counts equally; final examinations count toward the course only.
+Mark topics and examinations **All done** as you finish them. Use **Undo** to reverse a completion. Every topic, unit examination, and final in the course outline has equal weight, including material not yet published. Unpublished items reserve their share but cannot be marked complete. Final examinations count toward the course only.
 
 <div class="progress-dashboard" aria-live="polite" aria-label="Course and unit progress"></div>
 
