@@ -2,11 +2,10 @@
 title: "Precalculus"
 course: "1.1"
 kind: "course"
-placeholder: true
 trackable: false
 ---
 
-Course materials are in preparation.
+The course syllabus and Unit 1 are available. Units 2–12 remain in preparation. Begin with the syllabus, then study the articles in their listed order.
 
 - [Syllabus](./syllabus/)
 - [Units](./units/)

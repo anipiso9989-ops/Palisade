@@ -6,7 +6,7 @@ An independent, text-first mathematics education project for ambitious students,
 
 ## Current state
 
-The six courses have navigable, empty curriculum structures: 83 units and 664 topics, with a syllabus for each course, one examination per unit, and equivalent final examination placeholders A and B. No lesson, syllabus, problem set, solution, or examination content has been authored. Empty pages do not count toward reading progress.
+The six courses have navigable curriculum structures: 83 units and 664 topics, with a syllabus for each course, one examination per unit, and equivalent final examination placeholders A and B. Precalculus now has its supplied syllabus and a complete Unit 1: eight articles with 160 practice problems, a 30-problem unit examination, and a separate answer key. Other units and courses remain placeholders. Empty pages do not count toward reading progress.
 
 | Course | Title                  | Level        |
 | ------ | ---------------------- | ------------ |
@@ -38,7 +38,7 @@ npm run build
 
 - Responsive dark design, accessible focus states, and readable mathematical typography.
 - Quartz search, Markdown navigation, KaTeX, drafts, and a local navigation plugin.
-- Browser-local completion tracking for authored articles; empty curriculum pages are excluded.
+- Browser-local completion tracking for authored topics and examinations; empty curriculum pages are excluded.
 - Authoring templates for units, articles, practice, and examinations.
 - CI builds and automatic GitHub Pages deployment on every push to `v5` (after Pages is enabled).
 
