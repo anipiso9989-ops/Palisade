@@ -342,6 +342,40 @@ article .katex-display {
   font-size: 1.2rem;
   margin: 0 0 14px;
 }
+.progress-toggle {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  min-height: 44px;
+  cursor: pointer;
+  list-style: none;
+}
+.progress-toggle::-webkit-details-marker {
+  display: none;
+}
+.progress-toggle h2,
+.progress-toggle h3 {
+  margin: 0;
+  min-width: 0;
+}
+.progress-toggle:focus-visible {
+  outline: 2px solid var(--dark);
+  outline-offset: 4px;
+}
+.progress-chevron {
+  display: inline-block;
+  flex: 0 0 7px;
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 180ms ease;
+}
+.progress-row[open] > .progress-toggle > .progress-chevron,
+.progress-unit[open] > .progress-toggle > .progress-chevron {
+  transform: rotate(45deg);
+}
 .progress-units {
   display: grid;
   gap: 22px;
