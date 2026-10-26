@@ -26,14 +26,15 @@ test("all six curricula have every ordered topic, unit exam, syllabus, and final
     const markdown = readFileSync(file, "utf8")
     const [, frontmatter, body] = markdown.split("---")
     const meta = parse(frontmatter)
-    assert.equal(meta.placeholder, true)
-    assert.equal(meta.trackable, false)
-    if (["article", "syllabus", "examination"].includes(meta.kind)) {
+    if (meta.placeholder === true) assert.equal(meta.trackable, false)
+    if (meta.placeholder === true && ["article", "syllabus", "examination"].includes(meta.kind)) {
       assert.equal(
         body.replace(/<!--[\s\S]*?-->/g, "").trim(),
         "",
         `authored content in ${node.path}`,
       )
+    } else if (["article", "syllabus", "examination"].includes(meta.kind) && meta.draft !== true) {
+      assert.ok(body.trim(), `published content must not be empty: ${node.path}`)
     }
   }
   for (const course of courses) {

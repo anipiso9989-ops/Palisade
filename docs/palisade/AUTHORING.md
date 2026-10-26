@@ -1,6 +1,6 @@
 # Authoring Palisade
 
-Palisade contains empty curriculum pages for six courses: 83 units, 664 topics, a syllabus per course, an examination per unit, and final examinations A and B. These are navigable placeholders, not authored instruction.
+Palisade defines six courses: 83 units, 664 topics, a syllabus per course, an examination per unit, and final examinations A and B. Precalculus has its approved syllabus and authored Unit 1. Other instructional pages remain navigable placeholders.
 
 ## Development
 
@@ -20,7 +20,7 @@ Use `content/courses/precalculus/units/01-name/` for the first unit. Copy the te
 
 The ordered outline lives in `plugins/palisade-nav/curriculum.json`. Each course uses `syllabus/index.md`, `units/index.md`, numbered unit folders, numbered topic folders, a unit's `examination/index.md`, and `examinations/final-a/index.md` and `final-b/index.md`. Every destination uses a directory index so nested asset and navigation paths resolve consistently.
 
-Empty pages have `placeholder: true` and `trackable: false`. When publishing a reviewed topic or examination, remove both flags (or set `placeholder: false` and `trackable: true`) and give it a stable `progressId` as described below. Use `draft: true` while writing; drafts are omitted from the build. Update the outline manifest when changing titles, order, or routes. Collection pages contain navigation links only; no syllabus, lessons, problems, or examinations have been written.
+Empty pages have `placeholder: true` and `trackable: false`. When publishing a reviewed topic or examination, remove both flags (or set `placeholder: false` and `trackable: true`) and give it a stable `progressId` as described below. Use `draft: true` while writing; drafts are omitted from the build. Update the outline manifest when changing titles, order, or routes. Collection pages contain navigation links only. Do not publish a placeholder as instruction without completing review and updating its metadata.
 
 Use Markdown links for sequential reading. Use `$...$` for inline math and `$$...$$` for display math. KaTeX is configured with common number-set macros. Use semantic headings and descriptive links. Prefer concise exposition with explicit assumptions, definitions, reasoning, and proofs.
 
