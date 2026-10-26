@@ -8,6 +8,7 @@ import { createProgressRegistry } from "./progress-registry.js"
 import { summarizeProgress, createCompletionStore } from "./completion.js"
 import { initializeProgress } from "./progress.js"
 import { PalisadeNav } from "./index.js"
+import { CompletionControl } from "./completion-control.js"
 
 const courses = [{ code: "future", slug: "abstract-algebra", title: "Abstract Algebra" }]
 const unit = { number: 1, slug: "01-groups", title: "Groups", topics: [] }
@@ -338,14 +339,16 @@ test("newly published topics and both exam types get native, accessible completi
   ]
   const Nav = PalisadeNav()
   for (const fileData of pages) {
-    const html = render(
+    const navigation = render(
       Nav({ fileData, allFiles: pages, cfg: { baseUrl: "example.com/Palisade" } }),
     )
+    assert.ok(!navigation.includes('id="mark-article"'))
+    assert.match(navigation, /data-storage-key="palisade:example.com\/Palisade:progress:v1"/)
+    const html = render(CompletionControl({ fileData, allFiles: pages }))
     assert.match(html, /<button id="mark-article" type="button"/)
     assert.match(html, /aria-pressed="false"/)
     assert.match(html, /aria-describedby="completion-status"/)
     assert.match(html, />All done<\/button>/)
-    assert.match(html, /data-storage-key="palisade:example.com\/Palisade:progress:v1"/)
   }
   const landing = { slug: `courses/${course.slug}/index`, frontmatter: { progressId: "shared" } }
   assert.ok(
@@ -494,4 +497,42 @@ test("only dashboard courses and units have independent native collapse controls
   assert.equal(units[0].open, false, "reopening a course preserves its unit states")
   env.window.dispatch("storage", { key })
   assert.equal(units[0].open, false, "cross-tab refresh preserves collapse state")
+})
+
+test("Precalculus uses all 110 curriculum items, with nine equal-weight items per unit", () => {
+  const allCourses = JSON.parse(readFileSync(new URL("./courses.json", import.meta.url)))
+  const outline = JSON.parse(readFileSync(new URL("./curriculum.json", import.meta.url)))
+  const first = outline.precalculus.units[0]
+  const topic = {
+    slug: `courses/precalculus/units/${first.slug}/${first.topics[0].slug}/index`,
+    frontmatter: { kind: "article", course: "1.1", unit: "01", progressId: "existing-topic" },
+  }
+  const result = createProgressRegistry(allCourses, outline, [topic])
+  const saved = { "existing-topic": true }
+  const course = summarizeProgress(result.requirements, saved, "1.1")
+  const unit = summarizeProgress(result.requirements, saved, "1.1", first.slug)
+  assert.equal(course.total, 110)
+  assert.equal(course.completed, 1)
+  assert.equal(course.percent, 100 / 110)
+  assert.equal(unit.total, 9)
+  assert.equal(unit.completed, 1)
+  assert.equal(unit.percent, 100 / 9)
+  const finals = result.requirements.filter((i) => i.course === "1.1" && i.unit === null)
+  assert.equal(finals.length, 2)
+  assert.ok(finals.every((i) => i.kind === "examination" && i.available === false))
+  // Pending requirements cannot gain completion through a stale storage record.
+  saved[finals[0].id] = true
+  assert.equal(summarizeProgress(result.requirements, saved, "1.1").completed, 1)
+  // Publishing a final replaces its planned slot instead of adding another item.
+  const published = createProgressRegistry(allCourses, outline, [
+    topic,
+    {
+      slug: `${finals[0].path}/index`,
+      frontmatter: { course: "1.1", kind: "examination", progressId: "final-a" },
+    },
+  ])
+  saved["final-a"] = true
+  assert.equal(summarizeProgress(published.requirements, saved, "1.1").total, 110)
+  assert.equal(summarizeProgress(published.requirements, saved, "1.1").completed, 2)
+  assert.equal(summarizeProgress(published.requirements, saved, "1.1", first.slug).completed, 1)
 })

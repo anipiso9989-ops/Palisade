@@ -8,7 +8,8 @@ export function summarizeProgress(items, records, course, unit) {
   )
   const total = eligible.size
   const completed = [...eligible.keys()].filter(
-    (id) => Object.hasOwn(records, id) && records[id] === true,
+    (id) =>
+      eligible.get(id).available !== false && Object.hasOwn(records, id) && records[id] === true,
   ).length
   return { completed, total, percent: total ? (completed / total) * 100 : null }
 }

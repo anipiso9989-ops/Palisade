@@ -1,3 +1,5 @@
+import { curriculumTree } from "./curriculum.js"
+
 // Build-time discovery only. Quartz supplies the published files, and we also
 // check publication flags so the same rules hold in previews and tests.
 export function contentPath(slug = "") {
@@ -76,5 +78,42 @@ export function createProgressRegistry(courses, curriculum, files) {
       title: meta.title || path.split("/").at(-1),
     })
   }
-  return { courses: registered, items }
+  const byPath = new Map(items.map((item) => [item.path, item]))
+  const sourceByPath = new Map(
+    files.map((file) => [contentPath(file.slug), file.frontmatter ?? {}]),
+  )
+  const requirements = new Map()
+  // The outline defines the whole course, including material still to come.
+  // Publication determines whether a requirement can be completed, not its weight.
+  function visit(nodes, course, unit = null) {
+    for (const node of nodes) {
+      const membership = node.unit ?? unit
+      if (node.kind) {
+        const meta = sourceByPath.get(node.path)
+        // Explicit opt-outs on authored pages remain excluded. Placeholder
+        // trackable:false means "not available yet", not "remove from syllabus".
+        if (!(meta?.trackable === false && meta.placeholder !== true)) {
+          const published = byPath.get(node.path)
+          requirements.set(
+            node.path,
+            published ?? {
+              id: `planned:${node.path}`,
+              path: node.path,
+              course,
+              unit: membership,
+              kind: node.kind,
+              title: node.title,
+              available: false,
+            },
+          )
+        }
+      }
+      if (node.children) visit(node.children, course, membership)
+    }
+  }
+  curriculumTree(courses, curriculum).forEach((node, i) =>
+    visit(node.children, String(courses[i].code)),
+  )
+  for (const item of items) requirements.set(item.path, item)
+  return { courses: registered, items, requirements: [...requirements.values()] }
 }

@@ -50,3 +50,31 @@ test("authored folder pages render their ordered navigation exactly once", () =>
   assert.equal((html.match(/href="\.\/unit-01\/"/g) ?? []).length, 1)
   assert.ok(!html.includes("page-listing"))
 })
+
+test("completion control renders after the article and never inside the sidebar", () => {
+  const fileData = {
+    slug: "courses/precalculus/units/01-mathematical-language-logic-and-proof/topic/index",
+    frontmatter: { course: "1.1", unit: "01", kind: "article", progressId: "stable" },
+  }
+  const Body = createPage().body()
+  const html = render(
+    Body({
+      fileData,
+      allFiles: [fileData],
+      displayClass: "",
+      tree: {
+        type: "root",
+        children: [
+          {
+            type: "element",
+            tagName: "p",
+            properties: {},
+            children: [{ type: "text", value: "Last article paragraph" }],
+          },
+        ],
+      },
+    }),
+  )
+  assert.ok(html.indexOf('id="mark-article"') > html.indexOf("</article>"))
+  assert.equal((html.match(/id="mark-article"/g) ?? []).length, 1)
+})

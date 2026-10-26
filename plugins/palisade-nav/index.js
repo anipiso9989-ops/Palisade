@@ -1,10 +1,9 @@
 import { h } from "preact"
 import { readFileSync } from "node:fs"
 import { curriculumTree } from "./curriculum.js"
-import { contentPath, createProgressRegistry } from "./progress-registry.js"
+import { contentPath } from "./progress-registry.js"
+import { courses, curriculum, getProgressRegistry } from "./progress-data.js"
 
-const courses = JSON.parse(readFileSync(new URL("./courses.json", import.meta.url), "utf8"))
-const curriculum = JSON.parse(readFileSync(new URL("./curriculum.json", import.meta.url), "utf8"))
 const tree = curriculumTree(courses, curriculum)
 // These modules are dependency-free; inline the same source tested in Node.
 const progressSource = ["completion.js", "progress.js"]
@@ -73,9 +72,17 @@ export const PalisadeNav = () => {
         )
       })
     if (!registries.has(allFiles)) {
-      const registry = createProgressRegistry(courses, curriculum, allFiles)
+      const registry = getProgressRegistry(allFiles)
       registries.set(allFiles, {
-        items: JSON.stringify(registry.items),
+        items: JSON.stringify(
+          registry.requirements.map(({ id, course, unit, available, title }) => ({
+            id,
+            course,
+            unit,
+            available,
+            ...(unit === null ? { title } : {}),
+          })),
+        ),
         courses: JSON.stringify(registry.courses),
         byPath: new Map(registry.items.map((item) => [item.path, item.id])),
       })
@@ -116,28 +123,6 @@ export const PalisadeNav = () => {
         "data-current-id": activeId || "",
         "data-storage-key": `palisade:${cfg.baseUrl}:progress:v1`,
       }),
-      activeId
-        ? h(
-            "div",
-            { class: "article-completion" },
-            h(
-              "button",
-              {
-                id: "mark-article",
-                type: "button",
-                disabled: true,
-                "aria-pressed": "false",
-                "aria-describedby": "completion-status",
-              },
-              "All done",
-            ),
-            h(
-              "p",
-              { id: "completion-status", role: "status" },
-              "Enable JavaScript to save progress.",
-            ),
-          )
-        : null,
     )
   }
   Nav.beforeDOMLoaded = 'document.documentElement.setAttribute("saved-theme", "dark")'

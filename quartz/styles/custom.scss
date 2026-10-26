@@ -451,7 +451,9 @@ article .katex-display {
   font: 0.75rem/1.6 var(--ui-font);
 }
 .article-completion {
-  margin-top: 22px;
+  border-top: 1px solid var(--lightgray);
+  padding-top: 24px;
+  margin: 32px 0;
 }
 .article-completion button {
   background: var(--secondary);

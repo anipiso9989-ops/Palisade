@@ -89,7 +89,7 @@ export function initializeProgress(document, window, summarizeProgress, createCo
           const status = element("span", "progress-examination-status")
           row.append(label, status)
           list.append(row)
-          examinations.push({ id: item.id, status })
+          examinations.push({ id: item.id, available: item.available, status })
         }
         section.append(list)
       }
@@ -106,7 +106,8 @@ export function initializeProgress(document, window, summarizeProgress, createCo
         view.course,
         view.unit,
       )
-      const display = percent === null ? "No published content yet" : `${Math.round(percent)}%`
+      const display =
+        percent === null ? "No published content yet" : `${Number(percent.toFixed(2))}%`
       view.percentage.textContent = display
       view.count.textContent = `${completed} / ${total} items complete`
       view.wrapper.classList.toggle("progress-meter-empty", percent === null)
@@ -122,7 +123,12 @@ export function initializeProgress(document, window, summarizeProgress, createCo
       view.fill.style.width = `${percent ?? 0}%`
     }
     for (const exam of examinations) {
-      exam.status.textContent = state.records[exam.id] === true ? "Complete" : "Incomplete"
+      exam.status.textContent =
+        exam.available === false
+          ? "Not published yet"
+          : state.records[exam.id] === true
+            ? "Complete"
+            : "Incomplete"
     }
     const button = document.getElementById("mark-article")
     const status = document.getElementById("completion-status")
@@ -159,7 +165,8 @@ export function initializeProgress(document, window, summarizeProgress, createCo
       if (button) {
         button.onclick = () => {
           const id = data.dataset.currentId
-          if (items.some((item) => item.id === id)) update(store.toggle(id))
+          if (items.some((item) => item.id === id && item.available !== false))
+            update(store.toggle(id))
         }
       }
     }
