@@ -33,6 +33,17 @@ export function initializeProgress(document, window, summarizeProgress, createCo
     meters.push({ wrapper, percentage, count, bar, fill, items, course, unit })
   }
 
+  function disclosure(className, heading, title) {
+    const details = element("details", className)
+    details.open = true
+    const summary = element("summary", "progress-toggle")
+    const chevron = element("span", "progress-chevron")
+    chevron.setAttribute("aria-hidden", "true")
+    summary.append(chevron, element(heading, "", title))
+    details.append(summary)
+    return details
+  }
+
   function storageStatus(parent) {
     const warning = element("p", "progress-storage-status")
     warning.setAttribute("role", "status")
@@ -58,14 +69,12 @@ export function initializeProgress(document, window, summarizeProgress, createCo
       dashboard.append(element("p", "progress-empty", "No courses are registered yet."))
     }
     for (const course of courses) {
-      const section = element("section", "progress-row")
-      section.append(element("h2", "", course.title))
+      const section = disclosure("progress-row", "h2", course.title)
       meter(section, items, course.code, undefined, `${course.title} overall progress`, true)
       const units = element("div", "progress-units")
       for (const unit of course.units) {
-        const row = element("section", "progress-unit")
         const label = `Unit ${unit.number} — ${unit.title}`
-        row.append(element("h3", "", label))
+        const row = disclosure("progress-unit", "h3", label)
         meter(row, items, course.code, unit.id, `${course.title}, ${label} progress`)
         units.append(row)
       }

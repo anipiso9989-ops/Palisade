@@ -466,3 +466,32 @@ test("authoring templates give topics and both examination scopes stable progres
     if (filename === "final-examination.md") assert.equal(meta.unit, undefined)
   }
 })
+
+test("only dashboard courses and units have independent native collapse controls", () => {
+  const env = browser()
+  start(env)
+  const course = env.document.querySelector(".progress-row")
+  const units = env.document.querySelectorAll(".progress-unit")
+  assert.equal(course.tagName, "details")
+  assert.equal(course.open, true)
+  assert.equal(course.children[0].tagName, "summary")
+  assert.equal(course.children[0].children[0].getAttribute("aria-hidden"), "true")
+  assert.equal(course.children[0].children[1].tagName, "h2")
+  for (const unit of units) {
+    assert.equal(unit.tagName, "details")
+    assert.equal(unit.open, true)
+    assert.equal(unit.children[0].tagName, "summary")
+    assert.equal(unit.children[0].children[1].tagName, "h3")
+  }
+  assert.equal(env.document.querySelectorAll(".progress-toggle").length, 1 + units.length)
+  units[0].open = false
+  course.open = false
+  env.button.onclick()
+  assert.equal(course.open, false, "completion updates preserve the course's collapsed state")
+  assert.equal(units[0].open, false, "completion updates preserve the unit's collapsed state")
+  assert.equal(units[1].open, true, "units toggle independently")
+  course.open = true
+  assert.equal(units[0].open, false, "reopening a course preserves its unit states")
+  env.window.dispatch("storage", { key })
+  assert.equal(units[0].open, false, "cross-tab refresh preserves collapse state")
+})
