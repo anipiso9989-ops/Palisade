@@ -37,7 +37,8 @@
       for (const node of items) {
         const link = document.createElement("a")
         link.className = "tree-link internal"
-        link.href = `${nav.dataset.treeRoot}/${node.path}/`
+        const version = nav.dataset.publication
+        link.href = `${nav.dataset.treeRoot}/${node.path}/${version ? `?v=${version}` : ""}`
         link.textContent = node.title
         if (node.path === current) link.setAttribute("aria-current", "page")
         if (!node.children) {

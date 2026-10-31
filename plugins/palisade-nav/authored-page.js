@@ -1,6 +1,7 @@
 import { h, Fragment } from "preact"
 import { CompletionControl } from "./completion-control.js"
 import { ContentBody } from "@quartz-community/content-page/components"
+import { versionContentLinks } from "./publication.js"
 
 // Authored folder indexes already provide their own ordered navigation. Render
 // that content once; keep FolderPage for folders without an authored index.
@@ -11,6 +12,7 @@ export default () => ({
     /\.md$/.test(fileData.relativePath ?? "") &&
     (slug.endsWith("/index") || ["article", "examination"].includes(fileData.frontmatter?.kind)),
   layout: "content",
+  treeTransforms: () => [versionContentLinks],
   body: () => {
     const Body = ContentBody()
     return Object.assign(

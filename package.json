@@ -22,6 +22,7 @@
     "prebuild": "npm run install-plugins",
     "dev": "npx quartz build --serve",
     "build": "npx quartz build",
+    "postbuild": "node scripts/check-published-content.js",
     "plugins": "npx quartz plugin install --from-config",
     "typecheck": "tsc --noEmit"
   },
