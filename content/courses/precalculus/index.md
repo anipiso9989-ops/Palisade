@@ -5,7 +5,7 @@ kind: "course"
 trackable: false
 ---
 
-The course syllabus and Unit 1 are available. Units 2–12 remain in preparation. Begin with the syllabus, then study the articles in their listed order.
+The course syllabus and Units 1–2 are available. Units 3–12 remain in preparation. Begin with the syllabus, then study the articles in their listed order.
 
 - [Syllabus](./syllabus/)
 - [Units](./units/)

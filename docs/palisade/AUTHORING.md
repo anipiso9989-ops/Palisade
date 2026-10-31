@@ -1,6 +1,6 @@
 # Authoring Palisade
 
-Palisade defines six courses: 83 units, 664 topics, a syllabus per course, an examination per unit, and final examinations A and B. Precalculus has its approved syllabus and authored Unit 1. Other instructional pages remain navigable placeholders.
+Palisade defines six courses: 83 units, 664 topics, a syllabus per course, an examination per unit, and final examinations A and B. Precalculus has its approved syllabus and authored Units 1–2. Other instructional pages remain navigable placeholders.
 
 ## Development
 
