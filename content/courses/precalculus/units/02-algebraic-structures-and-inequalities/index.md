@@ -2,7 +2,6 @@
 title: "Unit 2 — Algebraic Structures and Inequalities"
 course: "1.1"
 kind: "unit"
-placeholder: true
 trackable: false
 unit: "02"
 ---

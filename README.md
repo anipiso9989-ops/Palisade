@@ -6,7 +6,7 @@ An independent, text-first mathematics education project for ambitious students,
 
 ## Current state
 
-The six courses have navigable curriculum structures: 83 units and 664 topics, with a syllabus for each course, one examination per unit, and equivalent final examination placeholders A and B. Precalculus now has its supplied syllabus and a complete Unit 1: eight articles with 160 practice problems, a 30-problem unit examination, and a separate answer key. Other units and courses remain placeholders. Empty pages do not count toward reading progress.
+The six courses have navigable curriculum structures: 83 units and 664 topics, with a syllabus for each course, one examination per unit, and equivalent final examination placeholders A and B. Precalculus now has its supplied syllabus and complete Units 1–2: sixteen articles with 320 practice problems, two 30-problem unit examinations, and separate answer keys. Later units and other courses remain placeholders. Only authored materials can be marked complete; planned requirements retain their share of progress totals.
 
 | Course | Title                  | Level        |
 | ------ | ---------------------- | ------------ |
