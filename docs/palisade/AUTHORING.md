@@ -24,6 +24,10 @@ Empty pages have `placeholder: true` and `trackable: false`. When publishing a r
 
 Use Markdown links for sequential reading. Use `$...$` for inline math and `$$...$$` for display math. KaTeX is configured with common number-set macros. Use semantic headings and descriptive links. Prefer concise exposition with explicit assumptions, definitions, reasoning, and proofs.
 
+GitHub Pages caches HTML URLs for ten minutes. Navigation and article links include a deterministic `v` query derived from the published Markdown sources. Publishing a lesson changes these URLs, avoiding cached blank placeholders; routes and saved progress IDs stay the same. The server-rendered tree, lazy tree branches, and sequential/overview links use the same revision, including without JavaScript. Existing query parameters and section fragments are preserved. Write ordinary Markdown links; the page renderer adds the revision automatically.
+
+`npm run build` also checks its actual HTML output: every published article/exam must have a nonblank body, articles must retain their practice and answer sections, and links to local pages must carry the publication revision. A blank page or an unversioned internal link fails the build before deployment.
+
 ## Progress
 
 Published `kind: article` topics and `kind: examination` pages are automatically trackable. There is no progress list to maintain and no need to opt in with `trackable: true`. The registry is derived from `courses.json`, the units in `curriculum.json`, and Quartz's published file metadata. Topics added inside a unit count immediately, even before their link is added to the ordered navigation outline. Keep that outline up to date for navigation.

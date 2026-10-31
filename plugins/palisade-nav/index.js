@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs"
 import { curriculumTree } from "./curriculum.js"
 import { contentPath } from "./progress-registry.js"
 import { courses, curriculum, getProgressRegistry } from "./progress-data.js"
+import { getPublication } from "./publication.js"
 
 const tree = curriculumTree(courses, curriculum)
 // These modules are dependency-free; inline the same source tested in Node.
@@ -29,11 +30,12 @@ export const PalisadeNav = () => {
   const Nav = ({ fileData, allFiles, cfg }) => {
     const root = rootOf(fileData.slug)
     const current = fileData.slug.replace(/\/index$/, "")
+    const { revision } = getPublication(allFiles)
     const link = (url, title, extra = {}) =>
       h(
         "a",
         {
-          href: `${root}/${url}${url ? "/" : ""}`,
+          href: `${root}/${url}${url ? "/" : ""}?v=${revision}`,
           class: "palisade-nav-link internal",
           "aria-current":
             current === url || (url === "" && current === "index") ? "page" : undefined,
@@ -92,7 +94,7 @@ export const PalisadeNav = () => {
     return h(
       "div",
       { class: "palisade-navigation" },
-      h("a", { class: "site-name", href: `${root}/` }, "Palisade"),
+      h("a", { class: "site-name", href: `${root}/?v=${revision}` }, "Palisade"),
       h(
         "nav",
         { "aria-label": "Primary navigation", class: "palisade-primary" },
@@ -111,6 +113,7 @@ export const PalisadeNav = () => {
             class: "palisade-courses",
             "data-tree-root": root,
             "data-current": current,
+            "data-publication": revision,
           },
           ...renderTree(tree),
         ),
